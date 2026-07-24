@@ -25,6 +25,31 @@ function getOpenAI() {
   return client;
 }
 
+function getModel() {
+  return process.env.OPENAI_MODEL?.trim() || "gpt-5.6-terra";
+}
+
+function logTranslationError(error: unknown) {
+  if (error instanceof OpenAI.APIError) {
+    console.error("Translation request failed:", {
+      name: error.name,
+      message: error.message,
+      stack: error.stack,
+      status: error.status,
+      code: error.code,
+      requestId: error.requestID,
+    });
+    return;
+  }
+
+  console.error(
+    "Translation request failed:",
+    error instanceof Error
+      ? { name: error.name, message: error.message, stack: error.stack }
+      : { error: "Unknown error" },
+  );
+}
+
 export async function POST(request: Request) {
   if (!process.env.OPENAI_API_KEY) {
     return NextResponse.json(
@@ -59,7 +84,7 @@ export async function POST(request: Request) {
 
   try {
     const response = await getOpenAI().responses.parse({
-      model: process.env.OPENAI_MODEL ?? "gpt-5.6-terra",
+      model: getModel(),
       reasoning: { effort: "none" },
       max_output_tokens: 1_200,
       instructions: buildTranslationInstructions(parsedRequest.data),
@@ -82,10 +107,7 @@ export async function POST(request: Request) {
 
     return NextResponse.json(parsedResponse.data);
   } catch (error) {
-    console.error(
-      "Translation request failed:",
-      error instanceof Error ? error.name : "Unknown error",
-    );
+    logTranslationError(error);
 
     return NextResponse.json(
       { error: "We couldn't translate that. Please try again." },
