@@ -1,28 +1,22 @@
-# [Translation observation title]
+# Translation Observations
 
-## Purpose
+Track individual translation examples as you test the product. Record what worked, what felt off, and ideas for improving the prompt or UX.
 
-Record a translation example and evaluate its quality without overstating what
-the example demonstrates.
+| Date | Input | Output | Intensity | What worked well | What felt off | Ideas for improvement |
+|------|-------|--------|-----------|------------------|---------------|-----------------------|
+| | | | | | | |
 
-**Date:** YYYY-MM-DD
+## Patterns
 
-## Input
+Summarize recurring trends that emerge across multiple observations.
 
-[Add the source text.]
+- Repeated slang:
+- Strong translations:
+- Weak translations:
+- Prompt opportunities:
 
-## Output
+## Next Experiments
 
-[Add the translated text.]
-
-## What worked well
-
-- [Specific strength]
-
-## What felt off
-
-- [Specific issue or uncertainty]
-
-## Ideas for improvement
-
-- [Potential adjustment to test]
+- [ ]
+- [ ]
+- [ ]

@@ -2,7 +2,10 @@ import OpenAI from "openai";
 import { zodTextFormat } from "openai/helpers/zod";
 import { NextResponse } from "next/server";
 
-import { buildTranslationInstructions } from "@/lib/prompt";
+import {
+  defaultPromptVersion,
+  getTranslationPrompt,
+} from "@/lib/prompts";
 import {
   translationRequestSchema,
   translationResponseSchema,
@@ -83,11 +86,14 @@ export async function POST(request: Request) {
   }
 
   try {
+    const prompt = getTranslationPrompt(
+      parsedRequest.data.promptVersion ?? defaultPromptVersion,
+    );
     const response = await getOpenAI().responses.parse({
       model: getModel(),
       reasoning: { effort: "none" },
       max_output_tokens: 1_200,
-      instructions: buildTranslationInstructions(parsedRequest.data),
+      instructions: prompt.buildInstructions(parsedRequest.data),
       input: parsedRequest.data.text,
       text: {
         format: zodTextFormat(
@@ -105,7 +111,9 @@ export async function POST(request: Request) {
       throw new Error("The model returned an invalid translation.");
     }
 
-    return NextResponse.json(parsedResponse.data);
+    return NextResponse.json(parsedResponse.data, {
+      headers: { "X-Prompt-Version": prompt.version },
+    });
   } catch (error) {
     logTranslationError(error);
 

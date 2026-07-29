@@ -1,5 +1,7 @@
 import { z } from "zod";
 
+import { promptVersions } from "@/lib/prompts/types";
+
 export const MAX_INPUT_LENGTH = 2_000;
 
 export const translationRequestSchema = z.object({
@@ -10,6 +12,7 @@ export const translationRequestSchema = z.object({
     .max(MAX_INPUT_LENGTH, `Keep it under ${MAX_INPUT_LENGTH} characters.`),
   direction: z.enum(["standard-to-alpha", "alpha-to-standard"]),
   intensity: z.enum(["mild", "cooked", "ohio-max"]),
+  promptVersion: z.enum(promptVersions).optional(),
 });
 
 export const translationResponseSchema = z.object({
