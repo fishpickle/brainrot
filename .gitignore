@@ -13,6 +13,9 @@
 # testing
 /coverage
 
+# local research artifacts containing account metadata
+/research/private/
+
 # next.js
 /.next/
 /out/

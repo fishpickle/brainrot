@@ -1,0 +1,505 @@
+[
+  {
+    "id": "e92bc0fb-b881-4b34-9094-080dfc279b2e",
+    "timestamp": "2026-07-30T16:24:13.517Z",
+    "input": "This isn't my first rodeo.",
+    "direction": "standard-to-alpha",
+    "promptVersion": "v5.1",
+    "rating": "down",
+    "result": {
+      "translation": "I ain't new to this.",
+      "explanations": [
+        {
+          "original": "This isn't my first rodeo.",
+          "translated": "I ain't new to this.",
+          "reason": "Recasts the idiom as a direct youth-register way of saying the speaker has prior experience."
+        }
+      ]
+    }
+  },
+  {
+    "id": "1ddbc8a9-eba0-41a8-9876-3a4e4daf9099",
+    "timestamp": "2026-07-30T16:24:23.684Z",
+    "input": "This isn't my first rodeo.",
+    "direction": "standard-to-alpha",
+    "promptVersion": "v5.1",
+    "rating": "down",
+    "result": {
+      "translation": "I’ve been around this block before.",
+      "explanations": [
+        {
+          "original": "This isn't my first rodeo.",
+          "translated": "I’ve been around this block before.",
+          "reason": "Recasts the idiom as a natural internet-y way to say the speaker has prior experience with this situation."
+        }
+      ]
+    }
+  },
+  {
+    "id": "fc1653c3-6bd7-465f-a936-cff50ed42fd0",
+    "timestamp": "2026-07-30T16:24:37.891Z",
+    "input": "We dodged a bullet.",
+    "direction": "standard-to-alpha",
+    "promptVersion": "v5.1",
+    "rating": "up",
+    "result": {
+      "translation": "That was a near-miss fr.",
+      "explanations": [
+        {
+          "original": "dodged a bullet",
+          "translated": "near-miss",
+          "reason": "Recasts narrowly avoiding serious trouble as a contemporary, compact expression."
+        }
+      ]
+    }
+  },
+  {
+    "id": "4ddbc961-7285-4bd1-98a7-845037632703",
+    "timestamp": "2026-07-30T16:24:46.329Z",
+    "input": "We dodged a bullet.",
+    "direction": "standard-to-alpha",
+    "promptVersion": "v5.1",
+    "rating": "down",
+    "result": {
+      "translation": "That was a near-miss fr.",
+      "explanations": [
+        {
+          "original": "We dodged a bullet.",
+          "translated": "That was a near-miss fr.",
+          "reason": "Recasts the idiom for narrowly avoiding something bad; “fr” adds emphasis meaning “for real.”"
+        }
+      ]
+    }
+  },
+  {
+    "id": "0ffd9643-d094-470a-928b-08603c498bee",
+    "timestamp": "2026-07-30T16:25:11.253Z",
+    "input": "We dodged a bullet.",
+    "direction": "standard-to-alpha",
+    "promptVersion": "v5.1",
+    "rating": "down",
+    "result": {
+      "translation": "That was way too close—we beat the final boss.",
+      "explanations": [
+        {
+          "original": "We dodged a bullet.",
+          "translated": "That was way too close—we beat the final boss.",
+          "reason": "Recasts narrowly avoiding a serious problem as surviving a difficult final challenge, while preserving the sense of relief."
+        }
+      ]
+    }
+  },
+  {
+    "id": "3472eacf-5a21-438c-8151-b6de009f6970",
+    "timestamp": "2026-07-30T16:25:32.153Z",
+    "input": "She's been carrying the whole team lately.",
+    "direction": "standard-to-alpha",
+    "promptVersion": "v5.1",
+    "rating": "up",
+    "result": {
+      "translation": "She’s been hard-carrying the whole squad lately.",
+      "explanations": [
+        {
+          "original": "carrying the whole team",
+          "translated": "hard-carrying the whole squad",
+          "reason": "Gaming/internet slang for doing most of the work and driving the group’s success."
+        }
+      ]
+    }
+  },
+  {
+    "id": "05b3105e-9874-42af-b2d9-f6b3f06d8120",
+    "timestamp": "2026-07-30T16:26:04.807Z",
+    "input": "I didn't realize how much work this was going to be.",
+    "direction": "standard-to-alpha",
+    "promptVersion": "v5.1",
+    "rating": "up",
+    "result": {
+      "translation": "I didn’t clock this was gonna be such a grind.",
+      "explanations": [
+        {
+          "original": "didn't realize",
+          "translated": "didn’t clock",
+          "reason": "“Clock” is youth/internet vernacular for noticing or realizing something."
+        },
+        {
+          "original": "how much work this was going to be",
+          "translated": "this was gonna be such a grind",
+          "reason": "“Such a grind” naturally conveys that the task requires a lot of sustained, tiring work."
+        }
+      ]
+    }
+  },
+  {
+    "id": "a2e53bd0-ab65-4caa-bbff-d43d7c40fe23",
+    "timestamp": "2026-07-30T16:26:25.161Z",
+    "input": "The concert was sold out before I could buy tickets.",
+    "direction": "standard-to-alpha",
+    "promptVersion": "v5.1",
+    "rating": "down",
+    "result": {
+      "translation": "The concert was fully booked before I could secure tickets.",
+      "explanations": [
+        {
+          "original": "sold out",
+          "translated": "fully booked",
+          "reason": "Recasts the sellout status in a more contemporary, concise way while preserving that no tickets remained."
+        },
+        {
+          "original": "buy tickets",
+          "translated": "secure tickets",
+          "reason": "Uses a natural internet-era phrasing for successfully obtaining tickets."
+        }
+      ]
+    }
+  },
+  {
+    "id": "4335f063-a97d-40b9-9d58-296e06c3919a",
+    "timestamp": "2026-07-30T16:26:32.411Z",
+    "input": "The concert was sold out before I could buy tickets.",
+    "direction": "standard-to-alpha",
+    "promptVersion": "v5.1",
+    "rating": "up",
+    "result": {
+      "translation": "The concert went full sellout before I could cop tickets.",
+      "explanations": [
+        {
+          "original": "was sold out",
+          "translated": "went full sellout",
+          "reason": "Recasts the venue reaching complete ticket exhaustion in youth/internet vernacular."
+        },
+        {
+          "original": "buy tickets",
+          "translated": "cop tickets",
+          "reason": "“Cop” is current casual slang for successfully getting or buying something."
+        }
+      ]
+    }
+  },
+  {
+    "id": "59f66fd2-af03-4fb0-99ba-ece2911fddd8",
+    "timestamp": "2026-07-30T16:26:39.302Z",
+    "input": "The concert was sold out before I could buy tickets.",
+    "direction": "standard-to-alpha",
+    "promptVersion": "v5.1",
+    "rating": "down",
+    "result": {
+      "translation": "The concert was fully booked before I could even snag tickets.",
+      "explanations": [
+        {
+          "original": "sold out",
+          "translated": "fully booked",
+          "reason": "Uses a common online-style phrasing for an event with no tickets left."
+        },
+        {
+          "original": "buy tickets",
+          "translated": "snag tickets",
+          "reason": "“Snag” naturally means manage to get something, especially before it runs out."
+        }
+      ]
+    }
+  },
+  {
+    "id": "34b540ed-4297-47c0-af67-0d51ed1c15c4",
+    "timestamp": "2026-07-30T16:26:50.582Z",
+    "input": "The concert was sold out before I could buy tickets.",
+    "direction": "standard-to-alpha",
+    "promptVersion": "v5.1",
+    "rating": "up",
+    "result": {
+      "translation": "The concert hit capacity before I could cop tickets.",
+      "explanations": [
+        {
+          "original": "was sold out",
+          "translated": "hit capacity",
+          "reason": "Recasts all tickets being gone with a concise, current expression."
+        },
+        {
+          "original": "buy tickets",
+          "translated": "cop tickets",
+          "reason": "“Cop” is youth vernacular for buy or get."
+        }
+      ]
+    }
+  },
+  {
+    "id": "8ad95587-8a86-4fc9-b96c-9c10fde5aa97",
+    "timestamp": "2026-07-30T16:27:16.406Z",
+    "input": "I think we're overthinking this.",
+    "direction": "standard-to-alpha",
+    "promptVersion": "v5.1",
+    "rating": "up",
+    "result": {
+      "translation": "I think we’re lowkey making this way deeper than it needs to be.",
+      "explanations": [
+        {
+          "original": "overthinking this",
+          "translated": "making this way deeper than it needs to be",
+          "reason": "Recasts excessive analysis as treating a simple matter as overly deep."
+        }
+      ]
+    }
+  },
+  {
+    "id": "0d4437df-a58e-461d-8f25-0a59efc61b2c",
+    "timestamp": "2026-07-30T16:27:25.364Z",
+    "input": "I think we're overthinking this.",
+    "direction": "standard-to-alpha",
+    "promptVersion": "v5.1",
+    "rating": "down",
+    "result": {
+      "translation": "Lowkey, we’re doing too much on this.",
+      "explanations": [
+        {
+          "original": "I think we're overthinking this.",
+          "translated": "Lowkey, we’re doing too much on this.",
+          "reason": "Recasts unnecessary overanalysis as “doing too much,” with “lowkey” softening the opinion."
+        }
+      ]
+    }
+  },
+  {
+    "id": "41b47824-64cc-4029-b2fb-c8726957c542",
+    "timestamp": "2026-07-30T16:27:30.514Z",
+    "input": "I think we're overthinking this.",
+    "direction": "standard-to-alpha",
+    "promptVersion": "v5.1",
+    "rating": "down",
+    "result": {
+      "translation": "I think we’re making this way deeper than it needs to be.",
+      "explanations": [
+        {
+          "original": "overthinking this",
+          "translated": "making this way deeper than it needs to be",
+          "reason": "Recasts excessive analysis as making a simple situation unnecessarily complicated."
+        }
+      ]
+    }
+  },
+  {
+    "id": "884a3406-41fd-4998-a32a-f3cdd69ed487",
+    "timestamp": "2026-07-30T16:27:35.139Z",
+    "input": "I think we're overthinking this.",
+    "direction": "standard-to-alpha",
+    "promptVersion": "v5.1",
+    "rating": "down",
+    "result": {
+      "translation": "I think we’re making this way deeper than it needs to be.",
+      "explanations": [
+        {
+          "original": "overthinking this",
+          "translated": "making this way deeper than it needs to be",
+          "reason": "Recasts excessive analysis as turning a simple matter into something unnecessarily complicated."
+        }
+      ]
+    }
+  },
+  {
+    "id": "015eeef9-0a13-4ab7-8cf1-fc45bd7828eb",
+    "timestamp": "2026-07-30T16:27:52.535Z",
+    "input": "We're all on the same page now.",
+    "direction": "standard-to-alpha",
+    "promptVersion": "v5.1",
+    "rating": "down",
+    "result": {
+      "translation": "We’re all synced up now.",
+      "explanations": [
+        {
+          "original": "on the same page",
+          "translated": "synced up",
+          "reason": "Recasts shared understanding as being aligned or coordinated."
+        }
+      ]
+    }
+  },
+  {
+    "id": "25848f78-2e4a-4437-a8dd-bc9ffbc2d925",
+    "timestamp": "2026-07-30T16:28:11.418Z",
+    "input": "That explanation finally clicked for me.",
+    "direction": "standard-to-alpha",
+    "promptVersion": "v5.1",
+    "rating": "up",
+    "result": {
+      "translation": "That explanation finally unlocked my brain.",
+      "explanations": [
+        {
+          "original": "finally clicked for me",
+          "translated": "finally unlocked my brain",
+          "reason": "Recasts sudden understanding as an internet-style “brain unlock” while preserving the sense of finally grasping it."
+        }
+      ]
+    }
+  },
+  {
+    "id": "22d7f748-45ae-47a5-a0d7-510d7fb71006",
+    "timestamp": "2026-07-30T16:28:18.180Z",
+    "input": "That explanation finally clicked for me.",
+    "direction": "standard-to-alpha",
+    "promptVersion": "v5.1",
+    "rating": "down",
+    "result": {
+      "translation": "That explanation finally snapped into place for me.",
+      "explanations": [
+        {
+          "original": "finally clicked for me",
+          "translated": "finally snapped into place for me",
+          "reason": "Recasts sudden understanding with a natural, vivid internet-friendly image."
+        }
+      ]
+    }
+  },
+  {
+    "id": "ffc705e8-7483-4edb-b159-f6c7cabadc8d",
+    "timestamp": "2026-07-30T16:28:35.234Z",
+    "input": "You win some, you lose some.",
+    "direction": "standard-to-alpha",
+    "promptVersion": "v5.1",
+    "rating": "down",
+    "result": {
+      "translation": "Some W's, some L's—that's just how it goes.",
+      "explanations": [
+        {
+          "original": "You win some, you lose some.",
+          "translated": "Some W's, some L's—that's just how it goes.",
+          "reason": "“W's” and “L's” are online shorthand for wins and losses, preserving the resigned acceptance that both happen."
+        }
+      ]
+    }
+  },
+  {
+    "id": "203dca06-558e-4f98-a702-50b466073b11",
+    "timestamp": "2026-07-30T16:28:46.467Z",
+    "input": "You win some, you lose some.",
+    "direction": "standard-to-alpha",
+    "promptVersion": "v5.1",
+    "rating": "up",
+    "result": {
+      "translation": "Some days you’re up, some days you’re cooked.",
+      "explanations": [
+        {
+          "original": "You win some, you lose some.",
+          "translated": "Some days you’re up, some days you’re cooked.",
+          "reason": "Recasts the saying with current slang: “up” means doing well, while “cooked” means taking a loss or being in a bad spot."
+        }
+      ]
+    }
+  },
+  {
+    "id": "ad4a74fa-0d0e-45b9-a374-b7003e85803a",
+    "timestamp": "2026-07-30T16:30:44.117Z",
+    "input": "That escalated quickly.",
+    "direction": "standard-to-alpha",
+    "promptVersion": "v5.1",
+    "rating": "up",
+    "result": {
+      "translation": "That went from zero to full send real quick.",
+      "explanations": [
+        {
+          "original": "escalated quickly",
+          "translated": "went from zero to full send real quick",
+          "reason": "Recasts a rapid increase in intensity using current youth slang; “full send” means going all-in at maximum intensity."
+        }
+      ]
+    }
+  },
+  {
+    "id": "77c6a9ff-a9f4-42dc-95fa-b8003ad51c32",
+    "timestamp": "2026-07-30T16:31:12.311Z",
+    "input": "I'm not mad, just disappointed.",
+    "direction": "standard-to-alpha",
+    "promptVersion": "v5.1",
+    "rating": "up",
+    "result": {
+      "translation": "I’m not heated, just low-key disappointed.",
+      "explanations": [
+        {
+          "original": "mad",
+          "translated": "heated",
+          "reason": "“Heated” is current slang for being angry or upset."
+        },
+        {
+          "original": "just",
+          "translated": "low-key",
+          "reason": "“Low-key” softens the stated disappointment, matching the minimizing contrast in the original."
+        }
+      ]
+    }
+  },
+  {
+    "id": "cac8f52f-81d4-46b8-a73c-d84b2b2ce258",
+    "timestamp": "2026-07-30T16:31:32.941Z",
+    "input": "I almost spilled my coffee when I saw that.",
+    "direction": "standard-to-alpha",
+    "promptVersion": "v5.1",
+    "rating": "up",
+    "result": {
+      "translation": "That had me nearly launching my coffee when I saw it.",
+      "explanations": [
+        {
+          "original": "almost spilled my coffee",
+          "translated": "nearly launching my coffee",
+          "reason": "“Launching” gives the startled physical reaction a more vivid internet-youth recast while keeping the near-spill meaning."
+        }
+      ]
+    }
+  },
+  {
+    "id": "ee2d3afb-46f1-4ab9-b210-5ad00c2e277f",
+    "timestamp": "2026-07-30T16:31:39.533Z",
+    "input": "I almost spilled my coffee when I saw that.",
+    "direction": "standard-to-alpha",
+    "promptVersion": "v5.1",
+    "rating": "up",
+    "result": {
+      "translation": "Seeing that had me damn near launch my coffee.",
+      "explanations": [
+        {
+          "original": "I almost spilled my coffee when I saw that.",
+          "translated": "Seeing that had me damn near launch my coffee.",
+          "reason": "Recasts the startled near-spill as a vivid, natural internet-style reaction while preserving that it happened upon seeing it."
+        }
+      ]
+    }
+  },
+  {
+    "id": "f7f0abcf-11fa-41fb-ac8b-a0a0caa63cf1",
+    "timestamp": "2026-07-30T16:32:13.994Z",
+    "input": "I can't tell if you're being serious or joking.",
+    "direction": "standard-to-alpha",
+    "promptVersion": "v5.1",
+    "rating": "up",
+    "result": {
+      "translation": "I can’t tell if you’re deadass or just trolling.",
+      "explanations": [
+        {
+          "original": "being serious",
+          "translated": "deadass",
+          "reason": "“Deadass” means genuinely serious or sincere."
+        },
+        {
+          "original": "joking",
+          "translated": "trolling",
+          "reason": "“Trolling” recasts joking as deliberately messing with someone online."
+        }
+      ]
+    }
+  },
+  {
+    "id": "9ebbeba8-bb7f-4a65-9995-c98551014a16",
+    "timestamp": "2026-07-30T16:32:20.357Z",
+    "input": "I can't tell if you're being serious or joking.",
+    "direction": "standard-to-alpha",
+    "promptVersion": "v5.1",
+    "rating": "up",
+    "result": {
+      "translation": "I can’t clock if you’re deadass or just playing.",
+      "explanations": [
+        {
+          "original": "being serious or joking",
+          "translated": "deadass or just playing",
+          "reason": "“Deadass” means genuinely serious, while “just playing” keeps the possibility that the person is joking."
+        }
+      ]
+    }
+  }
+]

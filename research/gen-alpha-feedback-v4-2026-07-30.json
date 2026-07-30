@@ -1,0 +1,469 @@
+[
+  {
+    "id": "703a9fb4-5a48-41fb-b5ec-2acfa0057a55",
+    "timestamp": "2026-07-30T00:12:27.017Z",
+    "input": "Dinner will be ready in ten minutes.",
+    "direction": "standard-to-alpha",
+    "promptVersion": "v4",
+    "rating": "up",
+    "result": {
+      "translation": "Dinner drops in ten.",
+      "explanations": [
+        {
+          "original": "will be ready in ten minutes",
+          "translated": "drops in ten",
+          "reason": "“Drops” recasts the meal becoming available as a release, while “in ten” keeps the ten-minute timing."
+        }
+      ]
+    }
+  },
+  {
+    "id": "905f0bf0-6f9d-497f-8df3-dae69feecb51",
+    "timestamp": "2026-07-30T00:12:59.194Z",
+    "input": "Please clean your room before your friends arrive.",
+    "direction": "standard-to-alpha",
+    "promptVersion": "v4",
+    "rating": "up",
+    "result": {
+      "translation": "Before your friends pull up, get your room outta its flop era.",
+      "explanations": [
+        {
+          "original": "clean your room",
+          "translated": "get your room outta its flop era",
+          "reason": "A playful youth-register recast meaning to make the room look presentable again."
+        },
+        {
+          "original": "arrive",
+          "translated": "pull up",
+          "reason": "Common informal phrasing for coming over to a place."
+        }
+      ]
+    }
+  },
+  {
+    "id": "5bc9c3b9-9801-4d92-bf7c-fc9e75853741",
+    "timestamp": "2026-07-30T00:13:06.599Z",
+    "input": "Please clean your room before your friends arrive.",
+    "direction": "standard-to-alpha",
+    "promptVersion": "v4",
+    "rating": "up",
+    "result": {
+      "translation": "Get your room un-chaosed before your friends pull up.",
+      "explanations": [
+        {
+          "original": "clean your room",
+          "translated": "get your room un-chaosed",
+          "reason": "A playful, recoverable recast that means to remove the mess."
+        },
+        {
+          "original": "arrive",
+          "translated": "pull up",
+          "reason": "Common youth/internet phrasing for showing up at a place."
+        }
+      ]
+    }
+  },
+  {
+    "id": "e4180f17-185d-460a-b2d0-6ca3bd4cf2af",
+    "timestamp": "2026-07-30T00:13:31.140Z",
+    "input": "Don't forget to feed the dog.",
+    "direction": "standard-to-alpha",
+    "promptVersion": "v4",
+    "rating": "up",
+    "result": {
+      "translation": "Don’t let the dog’s food quest get ghosted.",
+      "explanations": [
+        {
+          "original": "Don't forget to feed the dog.",
+          "translated": "Don’t let the dog’s food quest get ghosted.",
+          "reason": "“Get ghosted” recasts being forgotten in internet vernacular while keeping the reminder to feed the dog."
+        }
+      ]
+    }
+  },
+  {
+    "id": "9a9b9ad7-4eef-4271-8d1d-83cde16dc0c5",
+    "timestamp": "2026-07-30T00:13:41.390Z",
+    "input": "Don't forget to feed the dog.",
+    "direction": "standard-to-alpha",
+    "promptVersion": "v4",
+    "rating": "up",
+    "result": {
+      "translation": "Don’t let the dog’s food bowl go ghost.",
+      "explanations": [
+        {
+          "original": "Don't forget to feed the dog.",
+          "translated": "Don’t let the dog’s food bowl go ghost.",
+          "reason": "“Go ghost” means disappear or be neglected here, recasting the reminder without changing the instruction to feed the dog."
+        }
+      ]
+    }
+  },
+  {
+    "id": "2cc6f3eb-6583-4911-aa23-27b543284e2f",
+    "timestamp": "2026-07-30T00:13:57.826Z",
+    "input": "Put your shoes by the door.",
+    "direction": "standard-to-alpha",
+    "promptVersion": "v4",
+    "rating": "up",
+    "result": {
+      "translation": "Park your kicks by the door.",
+      "explanations": [
+        {
+          "original": "Put your shoes",
+          "translated": "Park your kicks",
+          "reason": "“Kicks” is youth slang for shoes, and “park” gives the instruction a natural, playful recast without changing the action."
+        }
+      ]
+    }
+  },
+  {
+    "id": "48975512-1809-47c5-bddf-20a676c34571",
+    "timestamp": "2026-07-30T00:14:14.276Z",
+    "input": "We need to leave in five minutes.",
+    "direction": "standard-to-alpha",
+    "promptVersion": "v4",
+    "rating": "up",
+    "result": {
+      "translation": "We gotta dip in five.",
+      "explanations": [
+        {
+          "original": "leave",
+          "translated": "dip",
+          "reason": "“Dip” is a common youth-internet verb for leaving."
+        }
+      ]
+    }
+  },
+  {
+    "id": "a7c2cb25-bbb3-4684-b730-bcb7682ebd6f",
+    "timestamp": "2026-07-30T00:14:36.809Z",
+    "input": "Finish your vegetables before dessert.",
+    "direction": "standard-to-alpha",
+    "promptVersion": "v4",
+    "rating": "up",
+    "result": {
+      "translation": "Veggies gotta be gone before dessert drops.",
+      "explanations": [
+        {
+          "original": "Finish your vegetables before dessert.",
+          "translated": "Veggies gotta be gone before dessert drops.",
+          "reason": "“Dessert drops” recasts dessert being served as a new release arriving, while keeping the required order clear."
+        }
+      ]
+    }
+  },
+  {
+    "id": "316c575e-93cf-4080-af60-b4fbe140fc2e",
+    "timestamp": "2026-07-30T00:14:54.016Z",
+    "input": "Text me when you get there safely.",
+    "direction": "standard-to-alpha",
+    "promptVersion": "v4",
+    "rating": "up",
+    "result": {
+      "translation": "Hit my line when you make it there safe.",
+      "explanations": [
+        {
+          "original": "Text me",
+          "translated": "Hit my line",
+          "reason": "A current informal way to ask someone to message or call you."
+        }
+      ]
+    }
+  },
+  {
+    "id": "98595260-c6e7-4023-8646-2d4492badae6",
+    "timestamp": "2026-07-30T00:15:13.086Z",
+    "input": "I'm proud of how hard you've been working.",
+    "direction": "standard-to-alpha",
+    "promptVersion": "v4",
+    "rating": "up",
+    "result": {
+      "translation": "Low-key proud of you for going this hard.",
+      "explanations": [
+        {
+          "original": "I'm proud of how hard you've been working.",
+          "translated": "Low-key proud of you for going this hard.",
+          "reason": "“Going this hard” recasts sustained hard work in current youth vernacular, while “low-key proud” keeps the praise warm without overstating it."
+        }
+      ]
+    }
+  },
+  {
+    "id": "a806ba69-7847-4d7f-860a-569f60c3905c",
+    "timestamp": "2026-07-30T00:15:59.056Z",
+    "input": "I know you're trying to help, but I'm feeling frustrated because it seems like we're talking past each other.",
+    "direction": "standard-to-alpha",
+    "promptVersion": "v4",
+    "rating": "down",
+    "result": {
+      "translation": "I know you’re tryna help, but I’m getting frustrated ’cause it feels like we’re on two whole different wavelengths.",
+      "explanations": [
+        {
+          "original": "we're talking past each other",
+          "translated": "we’re on two whole different wavelengths",
+          "reason": "Recasts mutual misunderstanding as not being mentally aligned, while keeping the frustrated but non-accusatory tone."
+        }
+      ]
+    }
+  },
+  {
+    "id": "2f232f27-5f3d-4e30-b1f6-72eeb275815d",
+    "timestamp": "2026-07-30T00:16:27.571Z",
+    "input": "I was planning to leave early, but then the meeting ran long. Now I'm going to miss the train.",
+    "direction": "standard-to-alpha",
+    "promptVersion": "v4",
+    "rating": "up",
+    "result": {
+      "translation": "I was finna dip early, but the meeting kept yapping. Now I’m about to fumble the train.",
+      "explanations": [
+        {
+          "original": "planning to leave early",
+          "translated": "finna dip early",
+          "reason": "“Finna” means about to or intending to, and “dip” means leave."
+        },
+        {
+          "original": "the meeting ran long",
+          "translated": "the meeting kept yapping",
+          "reason": "Recasts an overlong meeting as one that would not stop talking."
+        },
+        {
+          "original": "miss the train",
+          "translated": "fumble the train",
+          "reason": "“Fumble” means fail to catch or lose an opportunity through bad timing."
+        }
+      ]
+    }
+  },
+  {
+    "id": "03ba4910-37ad-4fcd-9a98-fad70097ddeb",
+    "timestamp": "2026-07-30T00:17:02.979Z",
+    "input": "We spent three hours working on the project, only to realize we'd been solving the wrong problem the entire time.",
+    "direction": "standard-to-alpha",
+    "promptVersion": "v4",
+    "rating": "up",
+    "result": {
+      "translation": "We put three whole hours into the project, then clocked we’d been grinding the wrong problem the whole time.",
+      "explanations": [
+        {
+          "original": "only to realize",
+          "translated": "then clocked",
+          "reason": "“Clocked” is current slang for suddenly noticing or realizing something."
+        },
+        {
+          "original": "working on",
+          "translated": "grinding",
+          "reason": "“Grinding” recasts sustained effort in contemporary youth/internet vernacular."
+        }
+      ]
+    }
+  },
+  {
+    "id": "7abcee7a-770d-45f3-90c3-453fba1a2795",
+    "timestamp": "2026-07-30T00:17:17.695Z",
+    "input": "I thought today was going to be terrible. Instead, it turned out to be one of the best days I've had in months.",
+    "direction": "standard-to-alpha",
+    "promptVersion": "v4",
+    "rating": "up",
+    "result": {
+      "translation": "I was bracing for today to be straight cooked. Plot twist: it ended up being one of my biggest W days in months.",
+      "explanations": [
+        {
+          "original": "going to be terrible",
+          "translated": "to be straight cooked",
+          "reason": "“Cooked” frames the day as expected to go badly or be a disaster."
+        },
+        {
+          "original": "Instead, it turned out to be one of the best days I've had in months",
+          "translated": "Plot twist: it ended up being one of my biggest W days in months",
+          "reason": "“Plot twist” marks the unexpected reversal, while “W day” means a notably good or successful day."
+        }
+      ]
+    }
+  },
+  {
+    "id": "cc6481ff-c437-402e-9b66-b4970f84878a",
+    "timestamp": "2026-07-30T00:17:29.704Z",
+    "input": "I thought today was going to be terrible. Instead, it turned out to be one of the best days I've had in months.",
+    "direction": "standard-to-alpha",
+    "promptVersion": "v4",
+    "rating": "up",
+    "result": {
+      "translation": "I was bracing for today to be straight-up cursed. Plot twist: it low-key became one of my best days in months.",
+      "explanations": [
+        {
+          "original": "going to be terrible",
+          "translated": "straight-up cursed",
+          "reason": "Recasts an expected very bad day in current internet vernacular."
+        },
+        {
+          "original": "Instead, it turned out to be",
+          "translated": "Plot twist: it low-key became",
+          "reason": "Marks the unexpected positive reversal with a concise online-style turn of phrase."
+        }
+      ]
+    }
+  },
+  {
+    "id": "f4b98e34-44b5-49b6-8f33-e7dab565c9c4",
+    "timestamp": "2026-07-30T00:17:50.644Z",
+    "input": "Don't count your chickens before they hatch.",
+    "direction": "standard-to-alpha",
+    "promptVersion": "v4",
+    "rating": "up",
+    "result": {
+      "translation": "Don’t start flexing the eggs till they actually hatch.",
+      "explanations": [
+        {
+          "original": "Don't count your chickens before they hatch.",
+          "translated": "Don’t start flexing the eggs till they actually hatch.",
+          "reason": "Recasts the warning as not celebrating or assuming success before it happens."
+        }
+      ]
+    }
+  },
+  {
+    "id": "c7fdf02c-13db-4d56-a7a7-3200a11b4ced",
+    "timestamp": "2026-07-30T00:18:10.694Z",
+    "input": "The server returned a 500 error.",
+    "direction": "standard-to-alpha",
+    "promptVersion": "v4",
+    "rating": "up",
+    "result": {
+      "translation": "The server just hard-crashed with a 500.",
+      "explanations": [
+        {
+          "original": "returned a 500 error",
+          "translated": "hard-crashed with a 500",
+          "reason": "Uses a compact internet-style recast while preserving that the server produced an HTTP 500 error."
+        }
+      ]
+    }
+  },
+  {
+    "id": "204147fc-4961-4cce-b43b-c7bf5ce31251",
+    "timestamp": "2026-07-30T01:00:47.975Z",
+    "input": "Photosynthesis converts sunlight into chemical energy.",
+    "direction": "standard-to-alpha",
+    "promptVersion": "v4",
+    "rating": "down",
+    "result": {
+      "translation": "Photosynthesis turns sunlight into chemical energy—solar power getting stored in the plant’s battery.",
+      "explanations": [
+        {
+          "original": "converts sunlight into chemical energy",
+          "translated": "turns sunlight into chemical energy—solar power getting stored in the plant’s battery",
+          "reason": "The battery image makes the energy-storage idea more vivid while keeping the scientific terms recoverable."
+        }
+      ]
+    }
+  },
+  {
+    "id": "79e924a7-4760-471e-b843-03ca95488ab9",
+    "timestamp": "2026-07-30T01:00:58.437Z",
+    "input": "Photosynthesis converts sunlight into chemical energy.",
+    "direction": "standard-to-alpha",
+    "promptVersion": "v4",
+    "rating": "down",
+    "result": {
+      "translation": "Photosynthesis turns sunlight into stored chemical energy.",
+      "explanations": [
+        {
+          "original": "converts sunlight into chemical energy",
+          "translated": "turns sunlight into stored chemical energy",
+          "reason": "Kept the scientific meaning clear; “stored” reflects that photosynthesis captures energy in chemical bonds."
+        }
+      ]
+    }
+  },
+  {
+    "id": "aa574ed9-4e64-4c09-8acf-11c91006d79d",
+    "timestamp": "2026-07-30T01:01:07.937Z",
+    "input": "Photosynthesis converts sunlight into chemical energy.",
+    "direction": "standard-to-alpha",
+    "promptVersion": "v4",
+    "rating": "up",
+    "result": {
+      "translation": "Photosynthesis basically flips sunlight into chemical energy.",
+      "explanations": [
+        {
+          "original": "converts sunlight into",
+          "translated": "basically flips sunlight into",
+          "reason": "“Flips” gives the conversion a natural, punchier internet-register recast while preserving the scientific relationship."
+        }
+      ]
+    }
+  },
+  {
+    "id": "f7188b6a-e882-4a9f-ba7f-2b5ff27a76e6",
+    "timestamp": "2026-07-30T01:01:22.996Z",
+    "input": "Water expands when it freezes.",
+    "direction": "standard-to-alpha",
+    "promptVersion": "v4",
+    "rating": "up",
+    "result": {
+      "translation": "Water goes big when it freezes.",
+      "explanations": [
+        {
+          "original": "expands",
+          "translated": "goes big",
+          "reason": "A compact youth-vernacular recast that preserves the idea of increasing in volume."
+        }
+      ]
+    }
+  },
+  {
+    "id": "24d0bfed-6e92-4613-ba3a-9ddb15bd6326",
+    "timestamp": "2026-07-30T01:01:29.884Z",
+    "input": "Water expands when it freezes.",
+    "direction": "standard-to-alpha",
+    "promptVersion": "v4",
+    "rating": "up",
+    "result": {
+      "translation": "Water low-key gets bigger when it freezes up.",
+      "explanations": [
+        {
+          "original": "expands",
+          "translated": "low-key gets bigger",
+          "reason": "Uses a natural, informal recast while preserving the scientific claim."
+        }
+      ]
+    }
+  },
+  {
+    "id": "ae41c3b7-e6b2-406e-a938-1b3ac5b80791",
+    "timestamp": "2026-07-30T01:01:47.512Z",
+    "input": "Gravity accelerates objects toward the Earth.",
+    "direction": "standard-to-alpha",
+    "promptVersion": "v4",
+    "rating": "up",
+    "result": {
+      "translation": "Gravity be pulling objects down toward Earth, like a built-in yoink.",
+      "explanations": [
+        {
+          "original": "accelerates objects toward the Earth",
+          "translated": "be pulling objects down toward Earth, like a built-in yoink",
+          "reason": "Recasts acceleration as gravity’s constant downward pull while keeping the direction and cause clear."
+        }
+      ]
+    }
+  },
+  {
+    "id": "51316dbf-6bf0-4f52-9490-0ed3da63992e",
+    "timestamp": "2026-07-30T01:01:56.137Z",
+    "input": "Gravity accelerates objects toward the Earth.",
+    "direction": "standard-to-alpha",
+    "promptVersion": "v4",
+    "rating": "up",
+    "result": {
+      "translation": "Gravity basically yoinks objects back toward Earth.",
+      "explanations": [
+        {
+          "original": "accelerates objects toward the Earth",
+          "translated": "basically yoinks objects back toward Earth",
+          "reason": "“Yoinks” gives the sense of a pulling force in youth/internet vernacular while preserving the direction of motion."
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,634 @@
+[
+  {
+    "id": "c2646965-5977-45ca-a9f5-5cc11cecfbef",
+    "timestamp": "2026-07-29T21:19:24.881Z",
+    "input": "I have to study for my chemistry exam.",
+    "direction": "standard-to-alpha",
+    "promptVersion": "v3",
+    "rating": "up",
+    "result": {
+      "translation": "I gotta lock in for my chemistry exam.",
+      "explanations": [
+        {
+          "original": "have to study",
+          "translated": "gotta lock in",
+          "reason": "“Lock in” means to focus seriously on a task; it keeps the speaker’s personal obligation."
+        }
+      ]
+    }
+  },
+  {
+    "id": "39a23fcb-379b-4734-a4fe-a26436ec632e",
+    "timestamp": "2026-07-29T21:19:34.601Z",
+    "input": "I have to study for my chemistry exam.",
+    "direction": "standard-to-alpha",
+    "promptVersion": "v3",
+    "rating": "up",
+    "result": {
+      "translation": "I gotta lock in for my chemistry exam.",
+      "explanations": [
+        {
+          "original": "study for",
+          "translated": "lock in for",
+          "reason": "Means to focus seriously and put sustained effort into preparing."
+        }
+      ]
+    }
+  },
+  {
+    "id": "6c06d942-32c6-4f22-a344-079d48e2600b",
+    "timestamp": "2026-07-29T21:20:04.863Z",
+    "input": "I'm incredibly proud of you.",
+    "direction": "standard-to-alpha",
+    "promptVersion": "v3",
+    "rating": "up",
+    "result": {
+      "translation": "I’m actually so proud of you—you ate that fr.",
+      "explanations": [
+        {
+          "original": "I'm incredibly proud of you.",
+          "translated": "I’m actually so proud of you—you ate that fr.",
+          "reason": "“You ate that” means you did exceptionally well; “fr” reinforces that the praise is sincere."
+        }
+      ]
+    }
+  },
+  {
+    "id": "194f27cb-1f6b-4142-9457-00c16c04d977",
+    "timestamp": "2026-07-29T21:20:15.101Z",
+    "input": "I'm incredibly proud of you.",
+    "direction": "standard-to-alpha",
+    "promptVersion": "v3",
+    "rating": "up",
+    "result": {
+      "translation": "I’m actually so proud of you, that’s a huge W.",
+      "explanations": [
+        {
+          "original": "I'm incredibly proud of you.",
+          "translated": "I’m actually so proud of you, that’s a huge W.",
+          "reason": "“Huge W” frames the achievement as a meaningful win while keeping the speaker’s pride explicit."
+        }
+      ]
+    }
+  },
+  {
+    "id": "a24d46cd-8f99-468e-8529-856963fc643a",
+    "timestamp": "2026-07-29T21:20:23.060Z",
+    "input": "I'm incredibly proud of you.",
+    "direction": "standard-to-alpha",
+    "promptVersion": "v3",
+    "rating": "up",
+    "result": {
+      "translation": "I’m actually so proud of you—major W.",
+      "explanations": [
+        {
+          "original": "I'm incredibly proud of you.",
+          "translated": "I’m actually so proud of you—major W.",
+          "reason": "“Major W” frames the accomplishment as a big win while keeping the praise directed at the listener."
+        }
+      ]
+    }
+  },
+  {
+    "id": "4e79590d-9e2d-4057-8636-75c9297a402a",
+    "timestamp": "2026-07-29T21:20:41.184Z",
+    "input": "My mom said I have to clean my room.",
+    "direction": "standard-to-alpha",
+    "promptVersion": "v3",
+    "rating": "up",
+    "result": {
+      "translation": "My mom said I gotta get my room outta flop era.",
+      "explanations": [
+        {
+          "original": "clean my room",
+          "translated": "get my room outta flop era",
+          "reason": "A playful current-style recast meaning to stop the room from being messy or in bad shape."
+        }
+      ]
+    }
+  },
+  {
+    "id": "dc970811-62f0-4d24-b85f-da28604e5ceb",
+    "timestamp": "2026-07-29T21:20:53.313Z",
+    "input": "My mom said I have to clean my room.",
+    "direction": "standard-to-alpha",
+    "promptVersion": "v3",
+    "rating": "down",
+    "result": {
+      "translation": "My mom got me on room-cleaning duty.",
+      "explanations": [
+        {
+          "original": "said I have to clean my room",
+          "translated": "got me on room-cleaning duty",
+          "reason": "Recasts the mom-imposed obligation in a current, understandable slangy phrase while keeping the speaker’s required task."
+        }
+      ]
+    }
+  },
+  {
+    "id": "e074e370-0f0d-4719-b235-d5088370444e",
+    "timestamp": "2026-07-29T21:21:02.300Z",
+    "input": "My mom said I have to clean my room.",
+    "direction": "standard-to-alpha",
+    "promptVersion": "v3",
+    "rating": "up",
+    "result": {
+      "translation": "My mom said I gotta get my room from flop era to actually clean.",
+      "explanations": [
+        {
+          "original": "clean my room",
+          "translated": "get my room from flop era to actually clean",
+          "reason": "“Flop era” frames the room’s messy state as a failed phase, while keeping the required cleanup clear."
+        }
+      ]
+    }
+  },
+  {
+    "id": "00ed7350-3c7d-4376-959a-5ce263625999",
+    "timestamp": "2026-07-29T21:21:16.005Z",
+    "input": "The mitochondria is the powerhouse of the cell.",
+    "direction": "standard-to-alpha",
+    "promptVersion": "v3",
+    "rating": "up",
+    "result": {
+      "translation": "Mitochondria low-key run the cell’s whole power grid.",
+      "explanations": [
+        {
+          "original": "is the powerhouse of the cell",
+          "translated": "low-key run the cell’s whole power grid",
+          "reason": "Recasts the scientific metaphor in internet vernacular while preserving that mitochondria supply the cell’s energy."
+        }
+      ]
+    }
+  },
+  {
+    "id": "469f72d4-5bbd-489a-85e6-c87f534f6b38",
+    "timestamp": "2026-07-29T21:21:24.480Z",
+    "input": "The mitochondria is the powerhouse of the cell.",
+    "direction": "standard-to-alpha",
+    "promptVersion": "v3",
+    "rating": "up",
+    "result": {
+      "translation": "Mitochondria low-key run the cell’s whole power grid.",
+      "explanations": [
+        {
+          "original": "the powerhouse of the cell",
+          "translated": "run the cell’s whole power grid",
+          "reason": "Recasts the metaphor in current internet vernacular while preserving the scientific idea that mitochondria provide cellular energy."
+        },
+        {
+          "original": "low-key",
+          "translated": "low-key",
+          "reason": "Signals an understated but real role, fitting the informal target register."
+        }
+      ]
+    }
+  },
+  {
+    "id": "20593bec-4224-49aa-b148-6faeabf97665",
+    "timestamp": "2026-07-29T21:21:59.338Z",
+    "input": "I know we haven't talked much lately, but I wanted to reach out because I've been thinking about our conversation last week. I don't expect an immediate answer—I just wanted you to know I'm here if you want to talk.",
+    "direction": "standard-to-alpha",
+    "promptVersion": "v3",
+    "rating": "up",
+    "result": {
+      "translation": "I know we’ve been kinda off the chat grid lately, but I wanted to tap in ’cause I’ve been replaying our convo from last week. No pressure to respond right away—I just wanted you to know I’m here if you wanna talk.",
+      "explanations": [
+        {
+          "original": "haven't talked much lately",
+          "translated": "been kinda off the chat grid lately",
+          "reason": "Recasts reduced contact as being absent from each other’s messages while keeping the gentle tone."
+        },
+        {
+          "original": "reach out",
+          "translated": "tap in",
+          "reason": "A current informal phrase for contacting or checking in with someone."
+        },
+        {
+          "original": "thinking about our conversation",
+          "translated": "replaying our convo",
+          "reason": "Suggests the speaker has been reflecting on the earlier discussion."
+        }
+      ]
+    }
+  },
+  {
+    "id": "d948aac7-9b5b-4273-8d34-691eae25209e",
+    "timestamp": "2026-07-29T21:22:18.247Z",
+    "input": "I know we haven't talked much lately, but I wanted to reach out because I've been thinking about our conversation last week. I don't expect an immediate answer—I just wanted you to know I'm here if you want to talk.",
+    "direction": "standard-to-alpha",
+    "promptVersion": "v3",
+    "rating": "up",
+    "result": {
+      "translation": "I know we haven’t really been in each other’s DMs lately, but I wanted to tap in ’cause I’ve been replaying our convo from last week. No pressure to hit me back right away—I just wanted you to know I’m here if you wanna talk.",
+      "explanations": [
+        {
+          "original": "haven't talked much lately",
+          "translated": "haven’t really been in each other’s DMs lately",
+          "reason": "“In each other’s DMs” naturally frames recent communication in an online-youth register."
+        },
+        {
+          "original": "reach out",
+          "translated": "tap in",
+          "reason": "“Tap in” means to make contact or check in."
+        },
+        {
+          "original": "thinking about our conversation",
+          "translated": "replaying our convo",
+          "reason": "“Replaying” conveys continuing to think over what was said."
+        },
+        {
+          "original": "I don't expect an immediate answer",
+          "translated": "No pressure to hit me back right away",
+          "reason": "This keeps the reassurance that a quick reply is not required."
+        }
+      ]
+    }
+  },
+  {
+    "id": "bb1dbc72-81d8-4fa9-b71b-d766be987ef4",
+    "timestamp": "2026-07-29T21:34:55.213Z",
+    "input": "I know we haven’t really been in each other’s DMs lately, but I wanted to tap in ’cause I’ve been replaying our convo from last week. No pressure to hit me back right away—I just wanted you to know I’m here if you wanna talk.",
+    "direction": "alpha-to-standard",
+    "promptVersion": "v3",
+    "rating": "up",
+    "result": {
+      "translation": "I know we haven’t really been messaging each other lately, but I wanted to reach out because I’ve been thinking about our conversation from last week. No pressure to reply right away—I just wanted you to know I’m here if you want to talk.",
+      "explanations": [
+        {
+          "original": "in each other’s DMs",
+          "translated": "messaging each other",
+          "reason": "“DMs” means private direct messages."
+        },
+        {
+          "original": "tap in",
+          "translated": "reach out",
+          "reason": "Here, it means making contact or checking in with someone."
+        },
+        {
+          "original": "hit me back",
+          "translated": "reply",
+          "reason": "This means respond to my message."
+        }
+      ]
+    }
+  },
+  {
+    "id": "07ee7de7-9bac-4138-b438-3a7b3e1a3653",
+    "timestamp": "2026-07-29T21:35:32.125Z",
+    "input": "I'm excited, but I'm also nervous.",
+    "direction": "standard-to-alpha",
+    "promptVersion": "v3",
+    "rating": "up",
+    "result": {
+      "translation": "I’m hype, but low-key stressed too.",
+      "explanations": [
+        {
+          "original": "excited",
+          "translated": "hype",
+          "reason": "A common youth-internet term for feeling excited."
+        },
+        {
+          "original": "nervous",
+          "translated": "low-key stressed",
+          "reason": "Keeps the uneasy feeling in a natural online-register phrasing."
+        }
+      ]
+    }
+  },
+  {
+    "id": "74ca6df8-f73c-49c6-aa90-9c52bb51122c",
+    "timestamp": "2026-07-29T21:35:41.272Z",
+    "input": "I'm excited, but I'm also nervous.",
+    "direction": "standard-to-alpha",
+    "promptVersion": "v3",
+    "rating": "up",
+    "result": {
+      "translation": "I’m hyped, but low-key stressed too.",
+      "explanations": [
+        {
+          "original": "excited",
+          "translated": "hyped",
+          "reason": "“Hyped” means very excited or eager."
+        },
+        {
+          "original": "nervous",
+          "translated": "low-key stressed",
+          "reason": "This conveys nervousness in a softer, current online-youth phrasing."
+        }
+      ]
+    }
+  },
+  {
+    "id": "e362f5c0-5d15-4a3b-b2e7-68edbb0673d4",
+    "timestamp": "2026-07-29T21:36:02.758Z",
+    "input": "I'm happy for you, even though I'm a little jealous.",
+    "direction": "standard-to-alpha",
+    "promptVersion": "v3",
+    "rating": "up",
+    "result": {
+      "translation": "I’m hyped for you, even if I’m low-key jealous.",
+      "explanations": [
+        {
+          "original": "happy for you",
+          "translated": "hyped for you",
+          "reason": "“Hyped” keeps the supportive excitement in a more youth-internet register."
+        },
+        {
+          "original": "a little jealous",
+          "translated": "low-key jealous",
+          "reason": "“Low-key” conveys that the jealousy is mild or understated."
+        }
+      ]
+    }
+  },
+  {
+    "id": "f609564a-25a6-41c5-b8f1-534f2a6ec1fc",
+    "timestamp": "2026-07-29T21:36:16.455Z",
+    "input": "I’m hyped for you, even if I’m low-key jealous.",
+    "direction": "alpha-to-standard",
+    "promptVersion": "v3",
+    "rating": "up",
+    "result": {
+      "translation": "I'm really excited for you, even though I'm a little jealous.",
+      "explanations": [
+        {
+          "original": "hyped for you",
+          "translated": "really excited for you",
+          "reason": "Expresses strong enthusiasm or happiness on someone else's behalf."
+        },
+        {
+          "original": "low-key jealous",
+          "translated": "a little jealous",
+          "reason": "Softens the admission of jealousy, often making it sound less intense or more casual."
+        }
+      ]
+    }
+  },
+  {
+    "id": "8958efb3-838a-4c2f-801a-83a9e290ba2c",
+    "timestamp": "2026-07-29T21:36:30.387Z",
+    "input": "I'm really excited for you, even though I'm a little jealous.\n\n",
+    "direction": "standard-to-alpha",
+    "promptVersion": "v3",
+    "rating": "up",
+    "result": {
+      "translation": "I’m actually so hype for you, even if I’m low-key jealous.",
+      "explanations": [
+        {
+          "original": "really excited",
+          "translated": "actually so hype",
+          "reason": "“Hype” expresses strong excitement in current youth-internet vernacular."
+        },
+        {
+          "original": "a little jealous",
+          "translated": "low-key jealous",
+          "reason": "“Low-key” keeps the jealousy mild and understated."
+        }
+      ]
+    }
+  },
+  {
+    "id": "d18a2658-12e2-4b53-9d8c-68d146263094",
+    "timestamp": "2026-07-29T21:36:48.237Z",
+    "input": "I know you're trying to help.\n",
+    "direction": "standard-to-alpha",
+    "promptVersion": "v3",
+    "rating": "up",
+    "result": {
+      "translation": "I know you’re tryna help, fr.",
+      "explanations": [
+        {
+          "original": "trying to help",
+          "translated": "tryna help, fr",
+          "reason": "“Tryna” is a compressed youth-register form of “trying to,” and “fr” reinforces that the speaker genuinely recognizes the effort."
+        }
+      ]
+    }
+  },
+  {
+    "id": "24b95557-5d79-47b8-89df-69059c7d811a",
+    "timestamp": "2026-07-29T21:36:58.708Z",
+    "input": "I know you're trying to help.\n",
+    "direction": "standard-to-alpha",
+    "promptVersion": "v3",
+    "rating": "up",
+    "result": {
+      "translation": "I know you’re tryna help, for real.",
+      "explanations": [
+        {
+          "original": "trying to help",
+          "translated": "tryna help, for real",
+          "reason": "“Tryna” compresses “trying to,” while “for real” keeps the speaker’s sincere acknowledgment."
+        }
+      ]
+    }
+  },
+  {
+    "id": "322c1d3f-4218-42e1-af9f-e8485ef1d7af",
+    "timestamp": "2026-07-29T21:37:33.624Z",
+    "input": "I know you’re tryna help, for real.\n\n",
+    "direction": "alpha-to-standard",
+    "promptVersion": "v3",
+    "rating": "up",
+    "result": {
+      "translation": "I know you're trying to help, honestly.",
+      "explanations": [
+        {
+          "original": "tryna",
+          "translated": "trying to",
+          "reason": "A casual shortened form of “trying to.”"
+        },
+        {
+          "original": "for real",
+          "translated": "honestly",
+          "reason": "Emphasizes that the speaker means this sincerely."
+        }
+      ]
+    }
+  },
+  {
+    "id": "c0e61efa-c3cc-4a9d-9e5a-784d5ef0dc1e",
+    "timestamp": "2026-07-29T21:38:02.624Z",
+    "input": "The database migration completed successfully.\n",
+    "direction": "standard-to-alpha",
+    "promptVersion": "v3",
+    "rating": "up",
+    "result": {
+      "translation": "The database migration just dropped, clean and successful.",
+      "explanations": [
+        {
+          "original": "completed successfully",
+          "translated": "just dropped, clean and successful",
+          "reason": "“Just dropped” gives the completion a current, internet-native feel; “clean” keeps the sense that it succeeded without issues."
+        }
+      ]
+    }
+  },
+  {
+    "id": "bfc34296-5a16-4ac6-9277-91b9134977a2",
+    "timestamp": "2026-07-29T21:38:14.757Z",
+    "input": "The database migration completed successfully.\n",
+    "direction": "standard-to-alpha",
+    "promptVersion": "v3",
+    "rating": "up",
+    "result": {
+      "translation": "The database migration just dropped and it cleared.",
+      "explanations": [
+        {
+          "original": "completed successfully",
+          "translated": "just dropped and it cleared",
+          "reason": "“Just dropped” frames the completion as newly arrived, while “cleared” means it finished without problems."
+        }
+      ]
+    }
+  },
+  {
+    "id": "ac228333-0ea8-48ad-8bf9-ef73df24da43",
+    "timestamp": "2026-07-29T21:39:18.656Z",
+    "input": "The database migration just dropped and it cleared.\n\n",
+    "direction": "alpha-to-standard",
+    "promptVersion": "v3",
+    "rating": "down",
+    "result": {
+      "translation": "The database migration just got released, and it worked out.",
+      "explanations": [
+        {
+          "original": "dropped",
+          "translated": "got released",
+          "reason": "Here, “dropped” means became available or was released."
+        },
+        {
+          "original": "cleared",
+          "translated": "worked out",
+          "reason": "“Cleared” can mean it succeeded or went smoothly; the exact sense depends on context."
+        }
+      ]
+    }
+  },
+  {
+    "id": "5d3dd88d-862b-4741-840c-88cd699848b8",
+    "timestamp": "2026-07-29T21:39:25.236Z",
+    "input": "The database migration just dropped and it cleared.\n\n",
+    "direction": "alpha-to-standard",
+    "promptVersion": "v3",
+    "rating": "up",
+    "result": {
+      "translation": "The database migration just launched, and it went smoothly.",
+      "explanations": [
+        {
+          "original": "just dropped",
+          "translated": "just launched",
+          "reason": "“Dropped” means newly released or made available."
+        },
+        {
+          "original": "it cleared",
+          "translated": "it went smoothly",
+          "reason": "“Cleared” likely means it succeeded or passed without problems; the exact context could affect the nuance."
+        }
+      ]
+    }
+  },
+  {
+    "id": "ad36d129-7399-4926-abda-ec5887c76db2",
+    "timestamp": "2026-07-29T21:39:52.182Z",
+    "input": "We need to leave in ten minutes.\n",
+    "direction": "standard-to-alpha",
+    "promptVersion": "v3",
+    "rating": "up",
+    "result": {
+      "translation": "We gotta dip in ten.",
+      "explanations": [
+        {
+          "original": "leave",
+          "translated": "dip",
+          "reason": "“Dip” is youth/internet slang for leaving."
+        }
+      ]
+    }
+  },
+  {
+    "id": "53bef5d3-55f3-43e1-b23e-adea6df8069c",
+    "timestamp": "2026-07-29T21:40:07.186Z",
+    "input": "We gotta dip in ten.\n\n",
+    "direction": "alpha-to-standard",
+    "promptVersion": "v3",
+    "rating": "up",
+    "result": {
+      "translation": "We have to leave in ten minutes.",
+      "explanations": [
+        {
+          "original": "dip",
+          "translated": "leave",
+          "reason": "“Dip” casually means to go or leave."
+        }
+      ]
+    }
+  },
+  {
+    "id": "7b81a2ce-0f33-48b7-8220-f50311a0a0a7",
+    "timestamp": "2026-07-29T21:40:24.019Z",
+    "input": "Don't forget your backpack.\n",
+    "direction": "standard-to-alpha",
+    "promptVersion": "v3",
+    "rating": "up",
+    "result": {
+      "translation": "Don’t leave your backpack on read.",
+      "explanations": [
+        {
+          "original": "Don't forget your backpack.",
+          "translated": "Don’t leave your backpack on read.",
+          "reason": "“Leave on read” is recast here to mean overlooking or failing to take something with you."
+        }
+      ]
+    }
+  },
+  {
+    "id": "b5105fa3-3f29-46e7-94e9-c9c8b542e37c",
+    "timestamp": "2026-07-29T21:40:33.735Z",
+    "input": "Don't forget your backpack.\n",
+    "direction": "standard-to-alpha",
+    "promptVersion": "v3",
+    "rating": "up",
+    "result": {
+      "translation": "Don’t leave your backpack in the void.",
+      "explanations": [
+        {
+          "original": "Don't forget your backpack.",
+          "translated": "Don’t leave your backpack in the void.",
+          "reason": "“In the void” playfully frames forgetting it as leaving it behind somewhere, while keeping the reminder intact."
+        }
+      ]
+    }
+  },
+  {
+    "id": "2594b7e0-08cd-46e7-b0bd-88776cc1ddf4",
+    "timestamp": "2026-07-29T21:40:48.423Z",
+    "input": "Don’t leave your backpack in the void.",
+    "direction": "alpha-to-standard",
+    "promptVersion": "v3",
+    "rating": "down",
+    "result": {
+      "translation": "Don’t leave your backpack in the void.",
+      "explanations": []
+    }
+  },
+  {
+    "id": "cc664948-c482-4f93-baaf-ebe58a497e30",
+    "timestamp": "2026-07-29T21:41:06.110Z",
+    "input": "Don’t leave your backpack in the void.",
+    "direction": "alpha-to-standard",
+    "promptVersion": "v3",
+    "rating": "up",
+    "result": {
+      "translation": "Don’t leave your backpack in the void.",
+      "explanations": [
+        {
+          "original": "the void",
+          "translated": "the void",
+          "reason": "This can literally mean an empty or unknown place, or jokingly mean somewhere it will disappear or be forgotten; context does not specify which."
+        }
+      ]
+    }
+  }
+]

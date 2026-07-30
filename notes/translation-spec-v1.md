@@ -1,6 +1,6 @@
 # Translation Behavioral Specification v1
 
-**Status:** Canonical
+**Status:** Superseded by `translation-spec-v2.md`
 
 **Last updated:** 2026-07-28
 **Applies to:** Standard English ↔ Gen Alpha translation
