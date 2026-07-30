@@ -1,4 +1,4 @@
-export const promptVersions = ["v1", "v2"] as const;
+export const promptVersions = ["v1", "v2", "v3", "v4", "v5", "v5.1"] as const;
 
 export type PromptVersion = (typeof promptVersions)[number];
 

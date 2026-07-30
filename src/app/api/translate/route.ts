@@ -89,11 +89,15 @@ export async function POST(request: Request) {
     const prompt = getTranslationPrompt(
       parsedRequest.data.promptVersion ?? defaultPromptVersion,
     );
+    const promptInput = {
+      direction: parsedRequest.data.direction,
+      intensity: parsedRequest.data.intensity ?? "cooked",
+    } as const;
     const response = await getOpenAI().responses.parse({
       model: getModel(),
       reasoning: { effort: "none" },
       max_output_tokens: 1_200,
-      instructions: prompt.buildInstructions(parsedRequest.data),
+      instructions: prompt.buildInstructions(promptInput),
       input: parsedRequest.data.text,
       text: {
         format: zodTextFormat(

@@ -11,7 +11,7 @@ export const translationRequestSchema = z.object({
     .min(1, "Enter something to translate.")
     .max(MAX_INPUT_LENGTH, `Keep it under ${MAX_INPUT_LENGTH} characters.`),
   direction: z.enum(["standard-to-alpha", "alpha-to-standard"]),
-  intensity: z.enum(["mild", "cooked", "ohio-max"]),
+  intensity: z.enum(["mild", "cooked", "ohio-max"]).optional(),
   promptVersion: z.enum(promptVersions).optional(),
 });
 

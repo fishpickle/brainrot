@@ -1,6 +1,6 @@
 "use client";
 
-import { type FormEvent, useState } from "react";
+import { type FormEvent, useEffect, useState } from "react";
 
 import {
   MAX_INPUT_LENGTH,
@@ -8,28 +8,65 @@ import {
   type TranslationResponse,
   translationResponseSchema,
 } from "@/lib/translation";
+import {
+  clearLocalFeedback,
+  exportLocalFeedback,
+  type FeedbackRating,
+  localFeedbackEnabled,
+  readLocalFeedback,
+  saveLocalFeedback,
+} from "@/lib/local-feedback";
 
 const directions = [
   { value: "standard-to-alpha", label: "Standard → Gen Alpha" },
   { value: "alpha-to-standard", label: "Gen Alpha → Standard" },
 ] as const;
 
-const intensities = [
-  { value: "mild", label: "Mild" },
-  { value: "cooked", label: "Cooked" },
-  { value: "ohio-max", label: "Ohio Max" },
-] as const;
+type CompletedTranslation = {
+  id: string;
+  input: string;
+  direction: TranslationRequest["direction"];
+  promptVersion: string;
+  data: TranslationResponse;
+};
+
+function ThumbIcon({ direction }: { direction: FeedbackRating }) {
+  return (
+    <svg
+      aria-hidden="true"
+      viewBox="0 0 24 24"
+      className="size-5"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.8"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      {direction === "up" ? (
+        <path d="M7 10v10H4V10h3Zm0 9h10.2a2 2 0 0 0 1.96-1.61l1.2-6A2 2 0 0 0 18.4 9H14l.7-3.2A2.3 2.3 0 0 0 10.3 4L7 10v9Z" />
+      ) : (
+        <path d="M7 14V4H4v10h3Zm0-9h10.2a2 2 0 0 1 1.96 1.61l1.2 6A2 2 0 0 1 18.4 15H14l.7 3.2a2.3 2.3 0 0 1-4.4 1.8L7 14V5Z" />
+      )}
+    </svg>
+  );
+}
 
 export function Translator() {
   const [text, setText] = useState("");
   const [direction, setDirection] =
     useState<TranslationRequest["direction"]>("standard-to-alpha");
-  const [intensity, setIntensity] =
-    useState<TranslationRequest["intensity"]>("mild");
-  const [result, setResult] = useState<TranslationResponse | null>(null);
+  const [result, setResult] = useState<CompletedTranslation | null>(null);
   const [error, setError] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [copied, setCopied] = useState(false);
+  const [rating, setRating] = useState<FeedbackRating | null>(null);
+  const [feedbackCount, setFeedbackCount] = useState(0);
+
+  useEffect(() => {
+    if (localFeedbackEnabled) {
+      setFeedbackCount(readLocalFeedback().length);
+    }
+  }, []);
 
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -39,12 +76,13 @@ export function Translator() {
     setIsLoading(true);
     setError("");
     setCopied(false);
+    setRating(null);
 
     try {
       const response = await fetch("/api/translate", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ text, direction, intensity }),
+        body: JSON.stringify({ text, direction }),
       });
       const body: unknown = await response.json();
 
@@ -65,7 +103,13 @@ export function Translator() {
         throw new Error("The translation came back in an unexpected format.");
       }
 
-      setResult(parsed.data);
+      setResult({
+        id: window.crypto.randomUUID(),
+        input: text,
+        direction,
+        promptVersion: response.headers.get("X-Prompt-Version") ?? "unknown",
+        data: parsed.data,
+      });
     } catch (caughtError) {
       setError(
         caughtError instanceof Error
@@ -81,13 +125,47 @@ export function Translator() {
     if (!result) return;
 
     try {
-      await navigator.clipboard.writeText(result.translation);
+      await navigator.clipboard.writeText(result.data.translation);
       setCopied(true);
       window.setTimeout(() => setCopied(false), 2_000);
     } catch {
       setError("Copy failed. Select the translation and copy it manually.");
     }
   }
+
+  function rateTranslation(nextRating: FeedbackRating) {
+    if (!result) return;
+
+    try {
+      const count = saveLocalFeedback({
+        id: result.id,
+        timestamp: new Date().toISOString(),
+        input: result.input,
+        direction: result.direction,
+        promptVersion: result.promptVersion,
+        rating: nextRating,
+        result: result.data,
+      });
+
+      setRating(nextRating);
+      setFeedbackCount(count);
+    } catch {
+      setError("Feedback couldn't be saved in this browser.");
+    }
+  }
+
+  function clearFeedback() {
+    if (!window.confirm("Clear all locally saved translation feedback?")) return;
+
+    clearLocalFeedback();
+    setFeedbackCount(0);
+    setRating(null);
+  }
+
+  const actionLabel =
+    direction === "standard-to-alpha" ? "Cook it" : "Uncook it";
+  const loadingLabel =
+    direction === "standard-to-alpha" ? "Cooking…" : "Uncooking…";
 
   return (
     <div className="grid gap-4 lg:grid-cols-2">
@@ -136,33 +214,12 @@ export function Translator() {
           />
         </div>
 
-        <fieldset className="mt-5">
-          <legend className="mb-2 text-sm font-semibold">Intensity</legend>
-          <div className="grid grid-cols-3 gap-2">
-            {intensities.map((option) => (
-              <label key={option.value} className="cursor-pointer">
-                <input
-                  type="radio"
-                  name="intensity"
-                  value={option.value}
-                  checked={intensity === option.value}
-                  onChange={() => setIntensity(option.value)}
-                  className="peer sr-only"
-                />
-                <span className="flex min-h-11 items-center justify-center rounded-xl border border-border px-2 text-sm font-semibold text-muted transition peer-checked:border-accent peer-checked:bg-accent-soft peer-checked:text-accent-strong peer-focus-visible:outline-3 peer-focus-visible:outline-accent">
-                  {option.label}
-                </span>
-              </label>
-            ))}
-          </div>
-        </fieldset>
-
         <button
           type="submit"
           disabled={!text.trim() || isLoading}
-          className="mt-6 flex min-h-12 w-full items-center justify-center rounded-xl bg-accent px-5 font-semibold text-white transition hover:bg-accent-strong disabled:cursor-not-allowed disabled:opacity-50 dark:text-background"
+          className="mt-5 flex min-h-12 w-full items-center justify-center rounded-xl bg-accent px-5 font-semibold text-white transition hover:bg-accent-strong disabled:cursor-not-allowed disabled:opacity-50 dark:text-background"
         >
-          {isLoading ? "Translating…" : "Translate"}
+          {isLoading ? loadingLabel : actionLabel}
         </button>
 
         <p aria-live="polite" className="mt-3 min-h-5 text-sm text-danger">
@@ -173,7 +230,7 @@ export function Translator() {
       <section
         aria-live="polite"
         aria-busy={isLoading}
-        className="min-h-80 rounded-3xl border border-border bg-surface p-4 shadow-[0_18px_60px_rgba(20,18,12,0.06)] sm:p-6"
+        className="flex min-h-80 flex-col rounded-3xl border border-border bg-surface p-4 shadow-[0_18px_60px_rgba(20,18,12,0.06)] sm:p-6"
       >
         <div className="flex items-center justify-between gap-4">
           <h2 className="text-sm font-semibold">Translation</h2>
@@ -189,22 +246,22 @@ export function Translator() {
         </div>
 
         {isLoading ? (
-          <div className="mt-6 space-y-3" role="status">
+          <div className="mt-6 flex-1 space-y-3" role="status">
             <span className="sr-only">Translating your text</span>
             <div className="h-4 w-full animate-pulse rounded bg-accent-soft" />
             <div className="h-4 w-5/6 animate-pulse rounded bg-accent-soft" />
             <div className="h-4 w-2/3 animate-pulse rounded bg-accent-soft" />
           </div>
         ) : result ? (
-          <>
+          <div className="flex flex-1 flex-col">
             <p className="mt-5 whitespace-pre-wrap text-lg leading-8">
-              {result.translation}
+              {result.data.translation}
             </p>
-            {result.explanations.length > 0 && (
+            {result.data.explanations.length > 0 && (
               <div className="mt-8 border-t border-border pt-6">
                 <h3 className="text-lg font-bold">Why these changes</h3>
                 <ul className="mt-4 space-y-4">
-                  {result.explanations.map((item, index) => (
+                  {result.data.explanations.map((item, index) => (
                     <li key={`${item.original}-${index}`}>
                       <p className="font-semibold">
                         “{item.original}” → “{item.translated}”
@@ -217,9 +274,60 @@ export function Translator() {
                 </ul>
               </div>
             )}
-          </>
+            {localFeedbackEnabled && (
+              <div className="mt-auto flex flex-wrap items-end justify-between gap-4 border-t border-border pt-6">
+                <div className="flex items-center gap-3 text-xs text-muted">
+                  <span>{feedbackCount} saved locally</span>
+                  <button
+                    type="button"
+                    onClick={exportLocalFeedback}
+                    disabled={feedbackCount === 0}
+                    className="font-semibold underline-offset-4 hover:underline disabled:cursor-not-allowed disabled:opacity-50"
+                  >
+                    Export
+                  </button>
+                  <button
+                    type="button"
+                    onClick={clearFeedback}
+                    disabled={feedbackCount === 0}
+                    className="font-semibold underline-offset-4 hover:underline disabled:cursor-not-allowed disabled:opacity-50"
+                  >
+                    Clear
+                  </button>
+                </div>
+                <div className="text-right">
+                  <p className="mb-2 text-xs text-muted">
+                    {rating ? "Saved locally" : "Rate this translation"}
+                  </p>
+                  <div className="flex justify-end gap-2">
+                    {(["up", "down"] as const).map((option) => (
+                      <button
+                        key={option}
+                        type="button"
+                        aria-label={
+                          option === "up"
+                            ? "Rate translation positively"
+                            : "Rate translation negatively"
+                        }
+                        aria-pressed={rating === option}
+                        title={option === "up" ? "Thumbs up" : "Thumbs down"}
+                        onClick={() => rateTranslation(option)}
+                        className={`flex size-10 items-center justify-center rounded-lg border transition ${
+                          rating === option
+                            ? "border-accent bg-accent-soft text-accent-strong"
+                            : "border-border text-muted hover:bg-background hover:text-foreground"
+                        }`}
+                      >
+                        <ThumbIcon direction={option} />
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            )}
+          </div>
         ) : (
-          <div className="flex min-h-64 items-center justify-center text-center">
+          <div className="flex min-h-64 flex-1 items-center justify-center text-center">
             <p className="max-w-xs text-sm leading-6 text-muted">
               Your translation and a quick explanation of the key changes will
               appear here.
