@@ -1,0 +1,395 @@
+[
+  {
+    "timestamp": "2026-07-30T23:40:38.364Z",
+    "model": "unknown",
+    "direction": "standard-to-alpha",
+    "inputId": "A1",
+    "input": "The ball is in your court now.",
+    "runNumber": 1,
+    "promptVersion": "v6-semantic-revision",
+    "responsePromptVersion": "v6",
+    "status": 200,
+    "result": {
+      "translation": "Your move’s queued up now.",
+      "explanations": [
+        {
+          "original": "The ball is in your court now.",
+          "translated": "Your move’s queued up now.",
+          "reason": "The sports idiom means it is now the other person’s turn or responsibility to act; the translation recasts it as a game-turn prompt."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-07-30T23:40:40.203Z",
+    "model": "unknown",
+    "direction": "standard-to-alpha",
+    "inputId": "A1",
+    "input": "The ball is in your court now.",
+    "runNumber": 2,
+    "promptVersion": "v6-semantic-revision",
+    "responsePromptVersion": "v6",
+    "status": 200,
+    "result": {
+      "translation": "Your move now—you got the controller.",
+      "explanations": [
+        {
+          "original": "The ball is in your court now.",
+          "translated": "Your move now—you got the controller.",
+          "reason": "The sports idiom means it is now the other person's turn or responsibility to act; the translation recasts that as having control in a game."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-07-30T23:40:42.552Z",
+    "model": "unknown",
+    "direction": "standard-to-alpha",
+    "inputId": "A1",
+    "input": "The ball is in your court now.",
+    "runNumber": 3,
+    "promptVersion": "v6-semantic-revision",
+    "responsePromptVersion": "v6",
+    "status": 200,
+    "result": {
+      "translation": "It’s your move now—your serve’s live.",
+      "explanations": [
+        {
+          "original": "The ball is in your court now.",
+          "translated": "It’s your move now—your serve’s live.",
+          "reason": "The sports idiom means responsibility for the next action has shifted to the other person; the translation recasts that as an active game turn."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-07-30T23:40:44.330Z",
+    "model": "unknown",
+    "direction": "standard-to-alpha",
+    "inputId": "A2",
+    "input": "We’re not out of the woods yet.",
+    "runNumber": 1,
+    "promptVersion": "v6-semantic-revision",
+    "responsePromptVersion": "v6",
+    "status": 200,
+    "result": {
+      "translation": "We haven’t forest-escaped yet.",
+      "explanations": [
+        {
+          "original": "We’re not out of the woods yet.",
+          "translated": "We haven’t forest-escaped yet.",
+          "reason": "The idiom means the danger or difficulty is not over; the recast keeps that meaning with a game-like escape verb."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-07-30T23:40:46.363Z",
+    "model": "unknown",
+    "direction": "standard-to-alpha",
+    "inputId": "A2",
+    "input": "We’re not out of the woods yet.",
+    "runNumber": 2,
+    "promptVersion": "v6-semantic-revision",
+    "responsePromptVersion": "v6",
+    "status": 200,
+    "result": {
+      "translation": "We haven’t respawned out the danger biome yet.",
+      "explanations": [
+        {
+          "original": "not out of the woods yet",
+          "translated": "haven’t respawned out the danger biome yet",
+          "reason": "The idiom means the danger or difficulty is not over; the translation recasts it as still being in a hazardous game area."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-07-30T23:40:48.148Z",
+    "model": "unknown",
+    "direction": "standard-to-alpha",
+    "inputId": "A2",
+    "input": "We’re not out of the woods yet.",
+    "runNumber": 3,
+    "promptVersion": "v6-semantic-revision",
+    "responsePromptVersion": "v6",
+    "status": 200,
+    "result": {
+      "translation": "We haven’t cleared the danger biome yet.",
+      "explanations": [
+        {
+          "original": "not out of the woods yet",
+          "translated": "haven’t cleared the danger biome yet",
+          "reason": "The idiom means the situation is still risky or unresolved, recast with a gaming-world image."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-07-30T23:40:49.884Z",
+    "model": "unknown",
+    "direction": "standard-to-alpha",
+    "inputId": "B2",
+    "input": "Save me a seat near the window.",
+    "runNumber": 1,
+    "promptVersion": "v6-semantic-revision",
+    "responsePromptVersion": "v6",
+    "status": 200,
+    "result": {
+      "translation": "Window-side seat, lock it in for me.",
+      "explanations": [
+        {
+          "original": "Save me a seat near the window.",
+          "translated": "Window-side seat, lock it in for me.",
+          "reason": "Recasts reserving a seat as locking it in, while keeping the request for a seat near the window."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-07-30T23:40:51.476Z",
+    "model": "unknown",
+    "direction": "standard-to-alpha",
+    "inputId": "B2",
+    "input": "Save me a seat near the window.",
+    "runNumber": 2,
+    "promptVersion": "v6-semantic-revision",
+    "responsePromptVersion": "v6",
+    "status": 200,
+    "result": {
+      "translation": "Window-side seat, lock it in for me.",
+      "explanations": [
+        {
+          "original": "Save me a seat near the window.",
+          "translated": "Window-side seat, lock it in for me.",
+          "reason": "Recasts the request as reserving a seat, using a booking-style phrase that keeps the same request and location."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-07-30T23:40:53.106Z",
+    "model": "unknown",
+    "direction": "standard-to-alpha",
+    "inputId": "B2",
+    "input": "Save me a seat near the window.",
+    "runNumber": 3,
+    "promptVersion": "v6-semantic-revision",
+    "responsePromptVersion": "v6",
+    "status": 200,
+    "result": {
+      "translation": "Window-side seat? Save that slot for me.",
+      "explanations": [
+        {
+          "original": "Save me a seat near the window.",
+          "translated": "Window-side seat? Save that slot for me.",
+          "reason": "Recasts the request with a recognizable reservation/slot metaphor while keeping the request for a seat near the window."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-07-30T23:40:54.940Z",
+    "model": "unknown",
+    "direction": "standard-to-alpha",
+    "inputId": "B3",
+    "input": "The package arrived two days earlier than expected.",
+    "runNumber": 1,
+    "promptVersion": "v6-semantic-revision",
+    "responsePromptVersion": "v6",
+    "status": 200,
+    "result": {
+      "translation": "The package pulled up a whole two days early.",
+      "explanations": [
+        {
+          "original": "arrived two days earlier than expected",
+          "translated": "pulled up a whole two days early",
+          "reason": "Recasts the delivery as the package “pulling up,” while preserving that it arrived exactly two days ahead of schedule."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-07-30T23:40:56.702Z",
+    "model": "unknown",
+    "direction": "standard-to-alpha",
+    "inputId": "B3",
+    "input": "The package arrived two days earlier than expected.",
+    "runNumber": 2,
+    "promptVersion": "v6-semantic-revision",
+    "responsePromptVersion": "v6",
+    "status": 200,
+    "result": {
+      "translation": "The package pulled up two days ahead of its ETA.",
+      "explanations": [
+        {
+          "original": "arrived two days earlier than expected",
+          "translated": "pulled up two days ahead of its ETA",
+          "reason": "Recasts an early delivery using a delivery-tracking/status phrase while preserving the two-day difference."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-07-30T23:40:58.626Z",
+    "model": "unknown",
+    "direction": "standard-to-alpha",
+    "inputId": "B3",
+    "input": "The package arrived two days earlier than expected.",
+    "runNumber": 3,
+    "promptVersion": "v6-semantic-revision",
+    "responsePromptVersion": "v6",
+    "status": 200,
+    "result": {
+      "translation": "The package pulled up two days early, lowkey beating the ETA.",
+      "explanations": [
+        {
+          "original": "arrived two days earlier than expected",
+          "translated": "pulled up two days early, lowkey beating the ETA",
+          "reason": "Recasts the early arrival with delivery-tracking language; “ETA” preserves what was expected."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-07-30T23:41:00.120Z",
+    "model": "unknown",
+    "direction": "standard-to-alpha",
+    "inputId": "C3",
+    "input": "The museum acquired the painting from a private collection in 1987.",
+    "runNumber": 1,
+    "promptVersion": "v6-semantic-revision",
+    "responsePromptVersion": "v6",
+    "status": 200,
+    "result": {
+      "translation": "The museum low-key secured the painting from a private collection in 1987.",
+      "explanations": [
+        {
+          "original": "acquired",
+          "translated": "low-key secured",
+          "reason": "Recasts the formal acquisition verb in a recognizable internet-register phrase while preserving that the museum obtained the painting."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-07-30T23:41:01.487Z",
+    "model": "unknown",
+    "direction": "standard-to-alpha",
+    "inputId": "C3",
+    "input": "The museum acquired the painting from a private collection in 1987.",
+    "runNumber": 2,
+    "promptVersion": "v6-semantic-revision",
+    "responsePromptVersion": "v6",
+    "status": 200,
+    "result": {
+      "translation": "The museum snatched the painting from a private collection in 1987.",
+      "explanations": [
+        {
+          "original": "acquired",
+          "translated": "snatched",
+          "reason": "Recasts the formal acquisition verb in a more internet-native, performative register while preserving that the museum obtained the painting."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-07-30T23:41:03.094Z",
+    "model": "unknown",
+    "direction": "standard-to-alpha",
+    "inputId": "C3",
+    "input": "The museum acquired the painting from a private collection in 1987.",
+    "runNumber": 3,
+    "promptVersion": "v6-semantic-revision",
+    "responsePromptVersion": "v6",
+    "status": 200,
+    "result": {
+      "translation": "The museum copped the painting from a private collection in 1987.",
+      "explanations": [
+        {
+          "original": "acquired",
+          "translated": "copped",
+          "reason": "“Copped” is a register-marked verb meaning obtained or acquired; it preserves the museum as the buyer or recipient."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-07-30T23:41:05.186Z",
+    "model": "unknown",
+    "direction": "standard-to-alpha",
+    "inputId": "D1",
+    "input": "I appreciate the invitation, but I need some time to think about it.",
+    "runNumber": 1,
+    "promptVersion": "v6-semantic-revision",
+    "responsePromptVersion": "v6",
+    "status": 200,
+    "result": {
+      "translation": "The invite is giving honored, but I need a lil think-buffer before I lock in.",
+      "explanations": [
+        {
+          "original": "I appreciate the invitation",
+          "translated": "The invite is giving honored",
+          "reason": "Recasts gratitude as a positive reaction to the invitation without accepting it."
+        },
+        {
+          "original": "I need some time to think about it",
+          "translated": "I need a lil think-buffer before I lock in",
+          "reason": "Uses a digital-style “buffer” for time to consider, and “lock in” for making a decision."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-07-30T23:41:06.923Z",
+    "model": "unknown",
+    "direction": "standard-to-alpha",
+    "inputId": "D1",
+    "input": "I appreciate the invitation, but I need some time to think about it.",
+    "runNumber": 2,
+    "promptVersion": "v6-semantic-revision",
+    "responsePromptVersion": "v6",
+    "status": 200,
+    "result": {
+      "translation": "Lowkey appreciate the invite, but I need a minute to let it marinate.",
+      "explanations": [
+        {
+          "original": "I appreciate the invitation",
+          "translated": "Lowkey appreciate the invite",
+          "reason": "“Lowkey” keeps the polite appreciation understated, and “invite” is the casual register equivalent."
+        },
+        {
+          "original": "I need some time to think about it",
+          "translated": "I need a minute to let it marinate",
+          "reason": "“Let it marinate” transparently recasts taking time to consider a decision."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-07-30T23:41:09.379Z",
+    "model": "unknown",
+    "direction": "standard-to-alpha",
+    "inputId": "D1",
+    "input": "I appreciate the invitation, but I need some time to think about it.",
+    "runNumber": 3,
+    "promptVersion": "v6-semantic-revision",
+    "responsePromptVersion": "v6",
+    "status": 200,
+    "result": {
+      "translation": "Big appreciate for the invite, but I need a lil think-buffer before I lock in.",
+      "explanations": [
+        {
+          "original": "I appreciate the invitation",
+          "translated": "Big appreciate for the invite",
+          "reason": "Keeps the polite gratitude while using a more emphatic, internet-native phrasing."
+        },
+        {
+          "original": "I need some time to think about it",
+          "translated": "I need a lil think-buffer before I lock in",
+          "reason": "Recasts needing time to decide as a short mental buffer before committing."
+        }
+      ]
+    }
+  }
+]

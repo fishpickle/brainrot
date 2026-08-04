@@ -1,0 +1,2005 @@
+[
+  {
+    "timestamp": "2026-07-30T20:40:41.013Z",
+    "model": "gpt-5.6-terra",
+    "direction": "standard-to-alpha",
+    "inputId": "A1",
+    "input": "The ball is in your court now.",
+    "runNumber": 1,
+    "promptVersion": "v5.1",
+    "responsePromptVersion": "v5.1",
+    "result": {
+      "translation": "Your move now—it's in your hands.",
+      "explanations": [
+        {
+          "original": "The ball is in your court now.",
+          "translated": "Your move now—it's in your hands.",
+          "reason": "Recasts the sports idiom into a direct, current phrasing that means the next decision or action is theirs."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-07-30T20:40:42.063Z",
+    "model": "gpt-5.6-terra",
+    "direction": "standard-to-alpha",
+    "inputId": "A1",
+    "input": "The ball is in your court now.",
+    "runNumber": 1,
+    "promptVersion": "v6",
+    "responsePromptVersion": "v6",
+    "result": {
+      "translation": "The ball just got yeeted into your court—your move now.",
+      "explanations": [
+        {
+          "original": "is in your court now",
+          "translated": "just got yeeted into your court—your move now",
+          "reason": "Recasts the idiom as the responsibility or next action being passed to the listener, using a playful online-motion verb."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-07-30T20:40:41.001Z",
+    "model": "gpt-5.6-terra",
+    "direction": "standard-to-alpha",
+    "inputId": "A1",
+    "input": "The ball is in your court now.",
+    "runNumber": 2,
+    "promptVersion": "v5.1",
+    "responsePromptVersion": "v5.1",
+    "result": {
+      "translation": "Your move now.",
+      "explanations": [
+        {
+          "original": "The ball is in your court now.",
+          "translated": "Your move now.",
+          "reason": "Recasts the sports idiom as a concise internet-style prompt meaning it is now the other person's turn to act."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-07-30T20:40:41.368Z",
+    "model": "gpt-5.6-terra",
+    "direction": "standard-to-alpha",
+    "inputId": "A1",
+    "input": "The ball is in your court now.",
+    "runNumber": 2,
+    "promptVersion": "v6",
+    "responsePromptVersion": "v6",
+    "result": {
+      "translation": "Your turn got the ball, no cap.",
+      "explanations": [
+        {
+          "original": "The ball is in your court now.",
+          "translated": "Your turn got the ball, no cap.",
+          "reason": "Recasts the idiom as responsibility or the next move being with the listener; “no cap” emphasizes that this is genuinely the listener’s turn."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-07-30T20:40:43.791Z",
+    "model": "gpt-5.6-terra",
+    "direction": "standard-to-alpha",
+    "inputId": "A1",
+    "input": "The ball is in your court now.",
+    "runNumber": 3,
+    "promptVersion": "v5.1",
+    "responsePromptVersion": "v5.1",
+    "result": {
+      "translation": "Your move now.",
+      "explanations": [
+        {
+          "original": "The ball is in your court now.",
+          "translated": "Your move now.",
+          "reason": "Recasts the sports idiom as a concise internet-style prompt meaning the other person must act next."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-07-30T20:40:44.025Z",
+    "model": "gpt-5.6-terra",
+    "direction": "standard-to-alpha",
+    "inputId": "A1",
+    "input": "The ball is in your court now.",
+    "runNumber": 3,
+    "promptVersion": "v6",
+    "responsePromptVersion": "v6",
+    "result": {
+      "translation": "The ball is in your court now—your move, no cap.",
+      "explanations": [
+        {
+          "original": "The ball is in your court now.",
+          "translated": "The ball is in your court now—your move, no cap.",
+          "reason": "Keeps the idiom’s meaning that responsibility for the next action now belongs to the listener; “no cap” adds emphatic sincerity."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-07-30T20:40:44.054Z",
+    "model": "gpt-5.6-terra",
+    "direction": "standard-to-alpha",
+    "inputId": "A2",
+    "input": "We’re not out of the woods yet.",
+    "runNumber": 1,
+    "promptVersion": "v5.1",
+    "responsePromptVersion": "v5.1",
+    "result": {
+      "translation": "We ain’t out the woods yet, fr.",
+      "explanations": [
+        {
+          "original": "We’re not out of the woods yet.",
+          "translated": "We ain’t out the woods yet, fr.",
+          "reason": "“Fr” reinforces that the situation is still genuinely unresolved, while keeping the original warning intact."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-07-30T20:40:47.461Z",
+    "model": "gpt-5.6-terra",
+    "direction": "standard-to-alpha",
+    "inputId": "A2",
+    "input": "We’re not out of the woods yet.",
+    "runNumber": 1,
+    "promptVersion": "v6",
+    "responsePromptVersion": "v6",
+    "result": {
+      "translation": "We’re not forest-exited yet.",
+      "explanations": [
+        {
+          "original": "out of the woods",
+          "translated": "forest-exited",
+          "reason": "Recasts the idiom as a transparent status-style compound while preserving that the danger or difficulty is not over."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-07-30T20:40:49.850Z",
+    "model": "gpt-5.6-terra",
+    "direction": "standard-to-alpha",
+    "inputId": "A2",
+    "input": "We’re not out of the woods yet.",
+    "runNumber": 2,
+    "promptVersion": "v5.1",
+    "responsePromptVersion": "v5.1",
+    "result": {
+      "translation": "We haven’t cleared the danger zone yet.",
+      "explanations": [
+        {
+          "original": "not out of the woods yet",
+          "translated": "haven’t cleared the danger zone yet",
+          "reason": "Recasts the idiom as a direct, internet-natural metaphor meaning the situation is still risky."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-07-30T20:40:49.520Z",
+    "model": "gpt-5.6-terra",
+    "direction": "standard-to-alpha",
+    "inputId": "A2",
+    "input": "We’re not out of the woods yet.",
+    "runNumber": 2,
+    "promptVersion": "v6",
+    "responsePromptVersion": "v6",
+    "result": {
+      "translation": "We haven’t cleared the forest boss fight yet.",
+      "explanations": [
+        {
+          "original": "not out of the woods yet",
+          "translated": "haven’t cleared the forest boss fight yet",
+          "reason": "Recasts the idiom as a gaming objective while preserving that the danger or difficulty is not over."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-07-30T20:40:49.520Z",
+    "model": "gpt-5.6-terra",
+    "direction": "standard-to-alpha",
+    "inputId": "A2",
+    "input": "We’re not out of the woods yet.",
+    "runNumber": 3,
+    "promptVersion": "v5.1",
+    "responsePromptVersion": "v5.1",
+    "result": {
+      "translation": "We’re not in the clear yet.",
+      "explanations": [
+        {
+          "original": "out of the woods",
+          "translated": "in the clear",
+          "reason": "Recasts the idiom for being past danger into a natural, concise internet-era phrase."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-07-30T20:40:49.519Z",
+    "model": "gpt-5.6-terra",
+    "direction": "standard-to-alpha",
+    "inputId": "A2",
+    "input": "We’re not out of the woods yet.",
+    "runNumber": 3,
+    "promptVersion": "v6",
+    "responsePromptVersion": "v6",
+    "result": {
+      "translation": "We haven’t respawned out the forest level yet.",
+      "explanations": [
+        {
+          "original": "not out of the woods yet",
+          "translated": "haven’t respawned out the forest level yet",
+          "reason": "Uses a gaming-level metaphor to preserve the meaning that the danger or difficulty has not fully passed."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-07-30T20:40:51.629Z",
+    "model": "gpt-5.6-terra",
+    "direction": "standard-to-alpha",
+    "inputId": "A3",
+    "input": "He threw me under the bus during the meeting.",
+    "runNumber": 1,
+    "promptVersion": "v5.1",
+    "responsePromptVersion": "v5.1",
+    "result": {
+      "translation": "He lowkey fed me to the wolves in that meeting.",
+      "explanations": [
+        {
+          "original": "threw me under the bus",
+          "translated": "fed me to the wolves",
+          "reason": "Recasts the idiom as betraying or sacrificing someone to avoid blame."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-07-30T20:40:52.274Z",
+    "model": "gpt-5.6-terra",
+    "direction": "standard-to-alpha",
+    "inputId": "A3",
+    "input": "He threw me under the bus during the meeting.",
+    "runNumber": 1,
+    "promptVersion": "v6",
+    "responsePromptVersion": "v6",
+    "result": {
+      "translation": "He bus-yeeted me in the meeting.",
+      "explanations": [
+        {
+          "original": "threw me under the bus",
+          "translated": "bus-yeeted me",
+          "reason": "Recasts the idiom as a compact internet-style verb meaning he publicly blamed or sacrificed me."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-07-30T20:40:51.479Z",
+    "model": "gpt-5.6-terra",
+    "direction": "standard-to-alpha",
+    "inputId": "A3",
+    "input": "He threw me under the bus during the meeting.",
+    "runNumber": 2,
+    "promptVersion": "v5.1",
+    "responsePromptVersion": "v5.1",
+    "result": {
+      "translation": "He sold me out in the meeting.",
+      "explanations": [
+        {
+          "original": "threw me under the bus",
+          "translated": "sold me out",
+          "reason": "Recasts the idiom as betraying or sacrificing someone to protect oneself."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-07-30T20:40:51.743Z",
+    "model": "gpt-5.6-terra",
+    "direction": "standard-to-alpha",
+    "inputId": "A3",
+    "input": "He threw me under the bus during the meeting.",
+    "runNumber": 2,
+    "promptVersion": "v6",
+    "responsePromptVersion": "v6",
+    "result": {
+      "translation": "He fully bus-yeeted me in the meeting.",
+      "explanations": [
+        {
+          "original": "threw me under the bus",
+          "translated": "bus-yeeted me",
+          "reason": "Recasts the idiom as a playful compound while preserving that he sacrificed or blamed the speaker in front of others."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-07-30T20:40:54.155Z",
+    "model": "gpt-5.6-terra",
+    "direction": "standard-to-alpha",
+    "inputId": "A3",
+    "input": "He threw me under the bus during the meeting.",
+    "runNumber": 3,
+    "promptVersion": "v5.1",
+    "responsePromptVersion": "v5.1",
+    "result": {
+      "translation": "He straight up fed me to the wolves in that meeting.",
+      "explanations": [
+        {
+          "original": "threw me under the bus",
+          "translated": "fed me to the wolves",
+          "reason": "Recasts the idiom as abandoning or sacrificing someone to take the blame or face criticism."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-07-30T20:40:54.380Z",
+    "model": "gpt-5.6-terra",
+    "direction": "standard-to-alpha",
+    "inputId": "A3",
+    "input": "He threw me under the bus during the meeting.",
+    "runNumber": 3,
+    "promptVersion": "v6",
+    "responsePromptVersion": "v6",
+    "result": {
+      "translation": "He straight-up bus-yeeted me in the meeting.",
+      "explanations": [
+        {
+          "original": "threw me under the bus",
+          "translated": "bus-yeeted me",
+          "reason": "Recasts the idiom as a vivid Gen Alpha-style compound while preserving that he publicly sacrificed or blamed the speaker."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-07-30T20:40:54.777Z",
+    "model": "gpt-5.6-terra",
+    "direction": "standard-to-alpha",
+    "inputId": "B1",
+    "input": "My phone died while I was waiting for the bus.",
+    "runNumber": 1,
+    "promptVersion": "v5.1",
+    "responsePromptVersion": "v5.1",
+    "result": {
+      "translation": "My phone went full flatline while I was posted up waiting on the bus.",
+      "explanations": [
+        {
+          "original": "died",
+          "translated": "went full flatline",
+          "reason": "Recasts the phone losing power as a familiar device-failure metaphor."
+        },
+        {
+          "original": "waiting for the bus",
+          "translated": "posted up waiting on the bus",
+          "reason": "“Posted up” means staying in a place for a while."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-07-30T20:40:54.325Z",
+    "model": "gpt-5.6-terra",
+    "direction": "standard-to-alpha",
+    "inputId": "B1",
+    "input": "My phone died while I was waiting for the bus.",
+    "runNumber": 1,
+    "promptVersion": "v6",
+    "responsePromptVersion": "v6",
+    "result": {
+      "translation": "My phone went full no-battery mode while I was bus-waiting.",
+      "explanations": [
+        {
+          "original": "died",
+          "translated": "went full no-battery mode",
+          "reason": "Recasts the phone losing power with a recognizable device-status framing."
+        },
+        {
+          "original": "waiting for the bus",
+          "translated": "bus-waiting",
+          "reason": "Compresses the activity into a playful, transparent compound without changing what was happening."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-07-30T20:40:56.956Z",
+    "model": "gpt-5.6-terra",
+    "direction": "standard-to-alpha",
+    "inputId": "B1",
+    "input": "My phone died while I was waiting for the bus.",
+    "runNumber": 2,
+    "promptVersion": "v5.1",
+    "responsePromptVersion": "v5.1",
+    "result": {
+      "translation": "My phone went ghost while I was stuck waiting on the bus.",
+      "explanations": [
+        {
+          "original": "died",
+          "translated": "went ghost",
+          "reason": "“Went ghost” idiomatically means the phone stopped working or became unavailable."
+        },
+        {
+          "original": "waiting for the bus",
+          "translated": "stuck waiting on the bus",
+          "reason": "“Stuck” conveys being held in an unwanted wait, while “waiting on” is a natural compressed phrasing."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-07-30T20:40:57.054Z",
+    "model": "gpt-5.6-terra",
+    "direction": "standard-to-alpha",
+    "inputId": "B1",
+    "input": "My phone died while I was waiting for the bus.",
+    "runNumber": 2,
+    "promptVersion": "v6",
+    "responsePromptVersion": "v6",
+    "result": {
+      "translation": "My phone full-on powered down while I was bus-stop buffering.",
+      "explanations": [
+        {
+          "original": "died",
+          "translated": "full-on powered down",
+          "reason": "Recasts the phone losing power with a recognizable device-status phrase."
+        },
+        {
+          "original": "waiting for the bus",
+          "translated": "bus-stop buffering",
+          "reason": "Uses a loading metaphor for waiting at the bus stop."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-07-30T20:40:57.014Z",
+    "model": "gpt-5.6-terra",
+    "direction": "standard-to-alpha",
+    "inputId": "B1",
+    "input": "My phone died while I was waiting for the bus.",
+    "runNumber": 3,
+    "promptVersion": "v5.1",
+    "responsePromptVersion": "v5.1",
+    "result": {
+      "translation": "My phone fully crashed out while I was posted up waiting on the bus.",
+      "explanations": [
+        {
+          "original": "died",
+          "translated": "fully crashed out",
+          "reason": "Recasts the phone losing power with a current, vivid device-failure expression."
+        },
+        {
+          "original": "was waiting for",
+          "translated": "was posted up waiting on",
+          "reason": "“Posted up” conveys being situated somewhere for a stretch while waiting."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-07-30T20:40:56.576Z",
+    "model": "gpt-5.6-terra",
+    "direction": "standard-to-alpha",
+    "inputId": "B1",
+    "input": "My phone died while I was waiting for the bus.",
+    "runNumber": 3,
+    "promptVersion": "v6",
+    "responsePromptVersion": "v6",
+    "result": {
+      "translation": "My phone fully despawned while I was bus-stop waiting.",
+      "explanations": [
+        {
+          "original": "died",
+          "translated": "fully despawned",
+          "reason": "“Despawned” uses gaming language for a phone losing power and becoming unavailable."
+        },
+        {
+          "original": "waiting for the bus",
+          "translated": "bus-stop waiting",
+          "reason": "This compact recast keeps the meaning of waiting at the bus stop."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-07-30T20:40:58.789Z",
+    "model": "gpt-5.6-terra",
+    "direction": "standard-to-alpha",
+    "inputId": "B2",
+    "input": "Save me a seat near the window.",
+    "runNumber": 1,
+    "promptVersion": "v5.1",
+    "responsePromptVersion": "v5.1",
+    "result": {
+      "translation": "Window-side seat? Save that spot for me.",
+      "explanations": [
+        {
+          "original": "Save me a seat near the window.",
+          "translated": "Window-side seat? Save that spot for me.",
+          "reason": "Recasts the request with a natural, conversational emphasis on the preferred location."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-07-30T20:40:59.092Z",
+    "model": "gpt-5.6-terra",
+    "direction": "standard-to-alpha",
+    "inputId": "B2",
+    "input": "Save me a seat near the window.",
+    "runNumber": 1,
+    "promptVersion": "v6",
+    "responsePromptVersion": "v6",
+    "result": {
+      "translation": "Window-side seat-save me, no cap.",
+      "explanations": [
+        {
+          "original": "Save me a seat near the window",
+          "translated": "Window-side seat-save me",
+          "reason": "Recasts the request with a compact, playful verb phrase while keeping the requested seat location."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-07-30T20:40:59.040Z",
+    "model": "gpt-5.6-terra",
+    "direction": "standard-to-alpha",
+    "inputId": "B2",
+    "input": "Save me a seat near the window.",
+    "runNumber": 2,
+    "promptVersion": "v5.1",
+    "responsePromptVersion": "v5.1",
+    "result": {
+      "translation": "Window-side seat, save it for me.",
+      "explanations": [
+        {
+          "original": "Save me a seat near the window.",
+          "translated": "Window-side seat, save it for me.",
+          "reason": "Recasts the request into a clipped, conversational phrasing while keeping the same request and location."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-07-30T20:40:58.771Z",
+    "model": "gpt-5.6-terra",
+    "direction": "standard-to-alpha",
+    "inputId": "B2",
+    "input": "Save me a seat near the window.",
+    "runNumber": 2,
+    "promptVersion": "v6",
+    "responsePromptVersion": "v6",
+    "result": {
+      "translation": "Window-side seat-save me.",
+      "explanations": [
+        {
+          "original": "Save me a seat near the window.",
+          "translated": "Window-side seat-save me.",
+          "reason": "Recasts the request with a compact, playful compound while keeping the request for a seat near the window."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-07-30T20:41:00.899Z",
+    "model": "gpt-5.6-terra",
+    "direction": "standard-to-alpha",
+    "inputId": "B2",
+    "input": "Save me a seat near the window.",
+    "runNumber": 3,
+    "promptVersion": "v5.1",
+    "responsePromptVersion": "v5.1",
+    "result": {
+      "translation": "Window-side seat—hold that for me.",
+      "explanations": [
+        {
+          "original": "Save me a seat near the window.",
+          "translated": "Window-side seat—hold that for me.",
+          "reason": "Recast as a compact, natural request using “hold” for reserving a spot."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-07-30T20:41:00.783Z",
+    "model": "gpt-5.6-terra",
+    "direction": "standard-to-alpha",
+    "inputId": "B2",
+    "input": "Save me a seat near the window.",
+    "runNumber": 3,
+    "promptVersion": "v6",
+    "responsePromptVersion": "v6",
+    "result": {
+      "translation": "Window-side seat, save that slot for me.",
+      "explanations": [
+        {
+          "original": "Save me a seat near the window.",
+          "translated": "Window-side seat, save that slot for me.",
+          "reason": "“Slot” recasts a seat as a reservable place while preserving the request and window location."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-07-30T20:41:00.713Z",
+    "model": "gpt-5.6-terra",
+    "direction": "standard-to-alpha",
+    "inputId": "B3",
+    "input": "The package arrived two days earlier than expected.",
+    "runNumber": 1,
+    "promptVersion": "v5.1",
+    "responsePromptVersion": "v5.1",
+    "result": {
+      "translation": "The package pulled up two days early.",
+      "explanations": [
+        {
+          "original": "arrived",
+          "translated": "pulled up",
+          "reason": "“Pulled up” is youth/internet vernacular for arriving."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-07-30T20:41:01.400Z",
+    "model": "gpt-5.6-terra",
+    "direction": "standard-to-alpha",
+    "inputId": "B3",
+    "input": "The package arrived two days earlier than expected.",
+    "runNumber": 1,
+    "promptVersion": "v6",
+    "responsePromptVersion": "v6",
+    "result": {
+      "translation": "The package pulled up two days early, no cap.",
+      "explanations": [
+        {
+          "original": "arrived",
+          "translated": "pulled up",
+          "reason": "“Pulled up” is a casual internet-style way to say something arrived."
+        },
+        {
+          "original": "earlier than expected",
+          "translated": "early, no cap",
+          "reason": "“No cap” reinforces that the earlier arrival is genuine, while preserving the timing claim."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-07-30T20:41:03.856Z",
+    "model": "gpt-5.6-terra",
+    "direction": "standard-to-alpha",
+    "inputId": "B3",
+    "input": "The package arrived two days earlier than expected.",
+    "runNumber": 2,
+    "promptVersion": "v5.1",
+    "responsePromptVersion": "v5.1",
+    "result": {
+      "translation": "The package pulled up two days early.",
+      "explanations": [
+        {
+          "original": "arrived",
+          "translated": "pulled up",
+          "reason": "“Pulled up” is a current casual idiom for arriving."
+        },
+        {
+          "original": "earlier than expected",
+          "translated": "early",
+          "reason": "“Early” keeps the timing meaning; “two days” supplies the exact amount."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-07-30T20:41:03.591Z",
+    "model": "gpt-5.6-terra",
+    "direction": "standard-to-alpha",
+    "inputId": "B3",
+    "input": "The package arrived two days earlier than expected.",
+    "runNumber": 2,
+    "promptVersion": "v6",
+    "responsePromptVersion": "v6",
+    "result": {
+      "translation": "The package pulled up two days before its ETA was even on-screen.",
+      "explanations": [
+        {
+          "original": "arrived two days earlier than expected",
+          "translated": "pulled up two days before its ETA was even on-screen",
+          "reason": "“Pulled up” recasts arrival in an internet-native way, while “ETA ... on-screen” keeps the expected delivery timing intact."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-07-30T20:41:03.253Z",
+    "model": "gpt-5.6-terra",
+    "direction": "standard-to-alpha",
+    "inputId": "B3",
+    "input": "The package arrived two days earlier than expected.",
+    "runNumber": 3,
+    "promptVersion": "v5.1",
+    "responsePromptVersion": "v5.1",
+    "result": {
+      "translation": "The package pulled up two days early.",
+      "explanations": [
+        {
+          "original": "arrived",
+          "translated": "pulled up",
+          "reason": "“Pulled up” is a current casual idiom for arriving."
+        },
+        {
+          "original": "earlier than expected",
+          "translated": "early",
+          "reason": "“Early” keeps the timing meaning; “two days” supplies the exact amount."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-07-30T20:41:03.887Z",
+    "model": "gpt-5.6-terra",
+    "direction": "standard-to-alpha",
+    "inputId": "B3",
+    "input": "The package arrived two days earlier than expected.",
+    "runNumber": 3,
+    "promptVersion": "v6",
+    "responsePromptVersion": "v6",
+    "result": {
+      "translation": "The package pulled up two days early-bird from the expected drop.",
+      "explanations": [
+        {
+          "original": "arrived two days earlier than expected",
+          "translated": "pulled up two days early-bird from the expected drop",
+          "reason": "“Pulled up” and “drop” recast delivery in an internet-native way, while “early-bird” preserves that it arrived two days ahead of schedule."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-07-30T20:41:06.924Z",
+    "model": "gpt-5.6-terra",
+    "direction": "standard-to-alpha",
+    "inputId": "C1",
+    "input": "The deployment was rolled back after the health checks failed.",
+    "runNumber": 1,
+    "promptVersion": "v5.1",
+    "responsePromptVersion": "v5.1",
+    "result": {
+      "translation": "The deploy got yeeted back after the health checks took an L.",
+      "explanations": [
+        {
+          "original": "was rolled back",
+          "translated": "got yeeted back",
+          "reason": "Recasts reverting the deployment in current internet vernacular."
+        },
+        {
+          "original": "failed",
+          "translated": "took an L",
+          "reason": "Idiomatic phrasing for failing."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-07-30T20:41:06.203Z",
+    "model": "gpt-5.6-terra",
+    "direction": "standard-to-alpha",
+    "inputId": "C1",
+    "input": "The deployment was rolled back after the health checks failed.",
+    "runNumber": 1,
+    "promptVersion": "v6",
+    "responsePromptVersion": "v6",
+    "result": {
+      "translation": "The deploy got yeeted back after the health checks took an L.",
+      "explanations": [
+        {
+          "original": "was rolled back",
+          "translated": "got yeeted back",
+          "reason": "Uses a recognizable internet-style verb for being sent back to the previous state."
+        },
+        {
+          "original": "failed",
+          "translated": "took an L",
+          "reason": "Uses a slang expression for failing while preserving that the health checks did not pass."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-07-30T20:41:06.275Z",
+    "model": "gpt-5.6-terra",
+    "direction": "standard-to-alpha",
+    "inputId": "C1",
+    "input": "The deployment was rolled back after the health checks failed.",
+    "runNumber": 2,
+    "promptVersion": "v5.1",
+    "responsePromptVersion": "v5.1",
+    "result": {
+      "translation": "The deploy got yeeted back after the health checks flopped.",
+      "explanations": [
+        {
+          "original": "was rolled back",
+          "translated": "got yeeted back",
+          "reason": "“Yeeted back” recasts reverting the deployment in contemporary internet vernacular."
+        },
+        {
+          "original": "failed",
+          "translated": "flopped",
+          "reason": "“Flopped” means it did not succeed or work as intended."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-07-30T20:41:06.206Z",
+    "model": "gpt-5.6-terra",
+    "direction": "standard-to-alpha",
+    "inputId": "C1",
+    "input": "The deployment was rolled back after the health checks failed.",
+    "runNumber": 2,
+    "promptVersion": "v6",
+    "responsePromptVersion": "v6",
+    "result": {
+      "translation": "The deployment got yeeted back after the health checks face-planted.",
+      "explanations": [
+        {
+          "original": "was rolled back",
+          "translated": "got yeeted back",
+          "reason": "“Yeeted back” is a Gen Alpha-style recast for forcibly reverting to an earlier version."
+        },
+        {
+          "original": "failed",
+          "translated": "face-planted",
+          "reason": "“Face-planted” vividly conveys that the checks failed without changing the outcome."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-07-30T20:41:08.926Z",
+    "model": "gpt-5.6-terra",
+    "direction": "standard-to-alpha",
+    "inputId": "C1",
+    "input": "The deployment was rolled back after the health checks failed.",
+    "runNumber": 3,
+    "promptVersion": "v5.1",
+    "responsePromptVersion": "v5.1",
+    "result": {
+      "translation": "The deploy got yeeted back after the health checks flopped.",
+      "explanations": [
+        {
+          "original": "was rolled back",
+          "translated": "got yeeted back",
+          "reason": "“Yeeted back” recasts reversing the deployment in internet vernacular."
+        },
+        {
+          "original": "failed",
+          "translated": "flopped",
+          "reason": "“Flopped” is a casual internet-style way to say the checks did not succeed."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-07-30T20:41:09.042Z",
+    "model": "gpt-5.6-terra",
+    "direction": "standard-to-alpha",
+    "inputId": "C1",
+    "input": "The deployment was rolled back after the health checks failed.",
+    "runNumber": 3,
+    "promptVersion": "v6",
+    "responsePromptVersion": "v6",
+    "result": {
+      "translation": "The deployment got yeeted back after the health checks took an L.",
+      "explanations": [
+        {
+          "original": "was rolled back",
+          "translated": "got yeeted back",
+          "reason": "“Yeeted back” is a playful internet-style recast for reverting the deployment."
+        },
+        {
+          "original": "failed",
+          "translated": "took an L",
+          "reason": "“Took an L” means failed or lost."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-07-30T20:41:09.050Z",
+    "model": "gpt-5.6-terra",
+    "direction": "standard-to-alpha",
+    "inputId": "C2",
+    "input": "A catalyst lowers the activation energy without being consumed.",
+    "runNumber": 1,
+    "promptVersion": "v5.1",
+    "responsePromptVersion": "v5.1",
+    "result": {
+      "translation": "A catalyst makes the activation-energy hurdle way lower without getting used up.",
+      "explanations": [
+        {
+          "original": "lowers the activation energy",
+          "translated": "makes the activation-energy hurdle way lower",
+          "reason": "Recasts activation energy as a lower hurdle while preserving the scientific concept."
+        },
+        {
+          "original": "without being consumed",
+          "translated": "without getting used up",
+          "reason": "Uses a more natural informal phrase for remaining unchanged during the reaction."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-07-30T20:41:09.690Z",
+    "model": "gpt-5.6-terra",
+    "direction": "standard-to-alpha",
+    "inputId": "C2",
+    "input": "A catalyst lowers the activation energy without being consumed.",
+    "runNumber": 1,
+    "promptVersion": "v6",
+    "responsePromptVersion": "v6",
+    "result": {
+      "translation": "A catalyst makes the activation-energy bar less sweaty without getting used up itself.",
+      "explanations": [
+        {
+          "original": "lowers the activation energy",
+          "translated": "makes the activation-energy bar less sweaty",
+          "reason": "Recasts the energy threshold as a “bar” that becomes easier to clear while preserving that it is lowered."
+        },
+        {
+          "original": "without being consumed",
+          "translated": "without getting used up itself",
+          "reason": "Uses a more conversational phrasing while preserving that the catalyst is not consumed."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-07-30T20:41:11.672Z",
+    "model": "gpt-5.6-terra",
+    "direction": "standard-to-alpha",
+    "inputId": "C2",
+    "input": "A catalyst lowers the activation energy without being consumed.",
+    "runNumber": 2,
+    "promptVersion": "v5.1",
+    "responsePromptVersion": "v5.1",
+    "result": {
+      "translation": "A catalyst makes the activation-energy hurdle way lower without getting used up.",
+      "explanations": [
+        {
+          "original": "lowers the activation energy",
+          "translated": "makes the activation-energy hurdle way lower",
+          "reason": "Recasts activation energy as a hurdle while preserving that the catalyst reduces it."
+        },
+        {
+          "original": "without being consumed",
+          "translated": "without getting used up",
+          "reason": "Uses a more conversational phrasing for remaining unconsumed."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-07-30T20:41:11.791Z",
+    "model": "gpt-5.6-terra",
+    "direction": "standard-to-alpha",
+    "inputId": "C2",
+    "input": "A catalyst lowers the activation energy without being consumed.",
+    "runNumber": 2,
+    "promptVersion": "v6",
+    "responsePromptVersion": "v6",
+    "result": {
+      "translation": "A catalyst drops the activation-energy barrier without getting used up in the process.",
+      "explanations": [
+        {
+          "original": "lowers the activation energy",
+          "translated": "drops the activation-energy barrier",
+          "reason": "“Drops” gives the technical reduction a more contemporary, punchy verb while preserving the idea of lowering the energy threshold."
+        },
+        {
+          "original": "without being consumed",
+          "translated": "without getting used up in the process",
+          "reason": "This keeps the chemical fact that the catalyst is not depleted, using a more conversational recast."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-07-30T20:41:11.975Z",
+    "model": "gpt-5.6-terra",
+    "direction": "standard-to-alpha",
+    "inputId": "C2",
+    "input": "A catalyst lowers the activation energy without being consumed.",
+    "runNumber": 3,
+    "promptVersion": "v5.1",
+    "responsePromptVersion": "v5.1",
+    "result": {
+      "translation": "A catalyst cuts the activation-energy grind without getting used up.",
+      "explanations": [
+        {
+          "original": "lowers the activation energy",
+          "translated": "cuts the activation-energy grind",
+          "reason": "“Cuts” gives a concise internet-register recast of reducing, while “grind” frames the energy barrier as the work needed to get the reaction going."
+        },
+        {
+          "original": "without being consumed",
+          "translated": "without getting used up",
+          "reason": "This preserves the scientific point that the catalyst is not depleted by the reaction."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-07-30T20:41:11.756Z",
+    "model": "gpt-5.6-terra",
+    "direction": "standard-to-alpha",
+    "inputId": "C2",
+    "input": "A catalyst lowers the activation energy without being consumed.",
+    "runNumber": 3,
+    "promptVersion": "v6",
+    "responsePromptVersion": "v6",
+    "result": {
+      "translation": "A catalyst yeets the activation-energy gate lower without getting used up in the process.",
+      "explanations": [
+        {
+          "original": "lowers the activation energy",
+          "translated": "yeets the activation-energy gate lower",
+          "reason": "Recasts lowering the energy barrier as moving a gate downward while preserving the catalyst’s effect."
+        },
+        {
+          "original": "without being consumed",
+          "translated": "without getting used up in the process",
+          "reason": "Keeps the fact that the catalyst is not depleted."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-07-30T20:41:14.215Z",
+    "model": "gpt-5.6-terra",
+    "direction": "standard-to-alpha",
+    "inputId": "C3",
+    "input": "The museum acquired the painting from a private collection in 1987.",
+    "runNumber": 1,
+    "promptVersion": "v5.1",
+    "responsePromptVersion": "v5.1",
+    "result": {
+      "translation": "The museum copped the painting from a private collection in 1987.",
+      "explanations": [
+        {
+          "original": "acquired",
+          "translated": "copped",
+          "reason": "“Copped” is youth slang for obtained or bought."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-07-30T20:41:14.138Z",
+    "model": "gpt-5.6-terra",
+    "direction": "standard-to-alpha",
+    "inputId": "C3",
+    "input": "The museum acquired the painting from a private collection in 1987.",
+    "runNumber": 1,
+    "promptVersion": "v6",
+    "responsePromptVersion": "v6",
+    "result": {
+      "translation": "The museum secured the painting from a private collection in 1987.",
+      "explanations": [
+        {
+          "original": "acquired",
+          "translated": "secured",
+          "reason": "“Secured” gives the acquisition a slightly more online, status-conscious cadence while preserving the museum’s act of obtaining the painting."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-07-30T20:41:13.759Z",
+    "model": "gpt-5.6-terra",
+    "direction": "standard-to-alpha",
+    "inputId": "C3",
+    "input": "The museum acquired the painting from a private collection in 1987.",
+    "runNumber": 2,
+    "promptVersion": "v5.1",
+    "responsePromptVersion": "v5.1",
+    "result": {
+      "translation": "The museum snagged the painting from a private collection in 1987.",
+      "explanations": [
+        {
+          "original": "acquired",
+          "translated": "snagged",
+          "reason": "“Snagged” is a casual, contemporary way to say obtained or acquired."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-07-30T20:41:13.482Z",
+    "model": "gpt-5.6-terra",
+    "direction": "standard-to-alpha",
+    "inputId": "C3",
+    "input": "The museum acquired the painting from a private collection in 1987.",
+    "runNumber": 2,
+    "promptVersion": "v6",
+    "responsePromptVersion": "v6",
+    "result": {
+      "translation": "The museum secured the painting from a private collection in 1987.",
+      "explanations": []
+    }
+  },
+  {
+    "timestamp": "2026-07-30T20:41:16.040Z",
+    "model": "gpt-5.6-terra",
+    "direction": "standard-to-alpha",
+    "inputId": "C3",
+    "input": "The museum acquired the painting from a private collection in 1987.",
+    "runNumber": 3,
+    "promptVersion": "v5.1",
+    "responsePromptVersion": "v5.1",
+    "result": {
+      "translation": "The museum snagged the painting from a private collection back in 1987.",
+      "explanations": [
+        {
+          "original": "acquired",
+          "translated": "snagged",
+          "reason": "“Snagged” is a casual, current way to say obtained or acquired."
+        },
+        {
+          "original": "in 1987",
+          "translated": "back in 1987",
+          "reason": "“Back in” frames the year as a more distant past event without changing the date."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-07-30T20:41:15.338Z",
+    "model": "gpt-5.6-terra",
+    "direction": "standard-to-alpha",
+    "inputId": "C3",
+    "input": "The museum acquired the painting from a private collection in 1987.",
+    "runNumber": 3,
+    "promptVersion": "v6",
+    "responsePromptVersion": "v6",
+    "result": {
+      "translation": "The museum secured the painting from a private collection in 1987.",
+      "explanations": []
+    }
+  },
+  {
+    "timestamp": "2026-07-30T20:41:16.162Z",
+    "model": "gpt-5.6-terra",
+    "direction": "standard-to-alpha",
+    "inputId": "D1",
+    "input": "I appreciate the invitation, but I need some time to think about it.",
+    "runNumber": 1,
+    "promptVersion": "v5.1",
+    "responsePromptVersion": "v5.1",
+    "result": {
+      "translation": "Appreciate the invite, but I gotta let it marinate for a minute.",
+      "explanations": [
+        {
+          "original": "I need some time to think about it",
+          "translated": "I gotta let it marinate for a minute",
+          "reason": "“Let it marinate” is a youth-internet idiom for taking time to consider something before deciding."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-07-30T20:41:16.756Z",
+    "model": "gpt-5.6-terra",
+    "direction": "standard-to-alpha",
+    "inputId": "D1",
+    "input": "I appreciate the invitation, but I need some time to think about it.",
+    "runNumber": 1,
+    "promptVersion": "v6",
+    "responsePromptVersion": "v6",
+    "result": {
+      "translation": "The invite is giving gratitude, but I need a little think-buffer before I lock in.",
+      "explanations": [
+        {
+          "original": "I appreciate the invitation",
+          "translated": "The invite is giving gratitude",
+          "reason": "Uses “is giving” as a performative register recast to express appreciation for the invitation."
+        },
+        {
+          "original": "I need some time to think about it",
+          "translated": "I need a little think-buffer before I lock in",
+          "reason": "“Think-buffer” transparently means time to consider, and “lock in” means make a decision or commitment."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-07-30T20:41:19.417Z",
+    "model": "gpt-5.6-terra",
+    "direction": "standard-to-alpha",
+    "inputId": "D1",
+    "input": "I appreciate the invitation, but I need some time to think about it.",
+    "runNumber": 2,
+    "promptVersion": "v5.1",
+    "responsePromptVersion": "v5.1",
+    "result": {
+      "translation": "Invite’s appreciated, but I gotta let it marinate first.",
+      "explanations": [
+        {
+          "original": "I need some time to think about it",
+          "translated": "I gotta let it marinate first",
+          "reason": "“Let it marinate” is a youth/internet idiom for taking time to consider something before deciding."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-07-30T20:41:19.782Z",
+    "model": "gpt-5.6-terra",
+    "direction": "standard-to-alpha",
+    "inputId": "D1",
+    "input": "I appreciate the invitation, but I need some time to think about it.",
+    "runNumber": 2,
+    "promptVersion": "v6",
+    "responsePromptVersion": "v6",
+    "result": {
+      "translation": "The invite is giving wholesome, but I need a lil think-buffer before I lock in.",
+      "explanations": [
+        {
+          "original": "I appreciate the invitation",
+          "translated": "The invite is giving wholesome",
+          "reason": "Recasts appreciation as a positive vibe evaluation while keeping the invitation as the subject."
+        },
+        {
+          "original": "I need some time to think about it",
+          "translated": "I need a lil think-buffer before I lock in",
+          "reason": "Uses a processing-buffer metaphor for needing time to consider the invitation before making a decision."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-07-30T20:41:20.806Z",
+    "model": "gpt-5.6-terra",
+    "direction": "standard-to-alpha",
+    "inputId": "D1",
+    "input": "I appreciate the invitation, but I need some time to think about it.",
+    "runNumber": 3,
+    "promptVersion": "v5.1",
+    "responsePromptVersion": "v5.1",
+    "result": {
+      "translation": "Invite’s a W, but lemme sit with it for a minute.",
+      "explanations": [
+        {
+          "original": "I appreciate the invitation",
+          "translated": "Invite’s a W",
+          "reason": "“A W” frames the invitation as something positive and appreciated."
+        },
+        {
+          "original": "I need some time to think about it",
+          "translated": "lemme sit with it for a minute",
+          "reason": "“Sit with it” means to take time to consider something before deciding."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-07-30T20:41:20.546Z",
+    "model": "gpt-5.6-terra",
+    "direction": "standard-to-alpha",
+    "inputId": "D1",
+    "input": "I appreciate the invitation, but I need some time to think about it.",
+    "runNumber": 3,
+    "promptVersion": "v6",
+    "responsePromptVersion": "v6",
+    "result": {
+      "translation": "The invite is low-key a W, but I need a sec to let it marinate.",
+      "explanations": [
+        {
+          "original": "I appreciate the invitation",
+          "translated": "The invite is low-key a W",
+          "reason": "Frames appreciation as a positive reaction using a common online approval term."
+        },
+        {
+          "original": "I need some time to think about it",
+          "translated": "I need a sec to let it marinate",
+          "reason": "Uses a food-prep metaphor for needing time to consider something."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-07-30T20:41:23.194Z",
+    "model": "gpt-5.6-terra",
+    "direction": "standard-to-alpha",
+    "inputId": "D2",
+    "input": "I’m frustrated that you changed the plan without telling me.",
+    "runNumber": 1,
+    "promptVersion": "v5.1",
+    "responsePromptVersion": "v5.1",
+    "result": {
+      "translation": "Kinda heated you switched up the plan and left me out of the loop.",
+      "explanations": [
+        {
+          "original": "I’m frustrated",
+          "translated": "Kinda heated",
+          "reason": "Recasts frustration as a natural youth-internet expression of being upset."
+        },
+        {
+          "original": "changed the plan without telling me",
+          "translated": "switched up the plan and left me out of the loop",
+          "reason": "Uses idiomatic phrasing for altering the plan without informing the speaker."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-07-30T20:41:23.043Z",
+    "model": "gpt-5.6-terra",
+    "direction": "standard-to-alpha",
+    "inputId": "D2",
+    "input": "I’m frustrated that you changed the plan without telling me.",
+    "runNumber": 1,
+    "promptVersion": "v6",
+    "responsePromptVersion": "v6",
+    "result": {
+      "translation": "I’m low-key crashout-coded that you plan-swapped without pinging me.",
+      "explanations": [
+        {
+          "original": "frustrated",
+          "translated": "low-key crashout-coded",
+          "reason": "Recasts frustration as being on the verge of an emotional crashout, softened by “low-key” to preserve the original level of complaint."
+        },
+        {
+          "original": "changed the plan without telling me",
+          "translated": "plan-swapped without pinging me",
+          "reason": "Uses concise internet-style verbs for changing the plan and failing to notify the speaker."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-07-30T20:41:23.469Z",
+    "model": "gpt-5.6-terra",
+    "direction": "standard-to-alpha",
+    "inputId": "D2",
+    "input": "I’m frustrated that you changed the plan without telling me.",
+    "runNumber": 2,
+    "promptVersion": "v5.1",
+    "responsePromptVersion": "v5.1",
+    "result": {
+      "translation": "I’m low-key heated you switched up the plan and didn’t even put me on.",
+      "explanations": [
+        {
+          "original": "I’m frustrated",
+          "translated": "I’m low-key heated",
+          "reason": "Recasts frustration as a controlled but real level of anger."
+        },
+        {
+          "original": "changed the plan without telling me",
+          "translated": "switched up the plan and didn’t even put me on",
+          "reason": "“Switched up” means changed unexpectedly, and “put me on” means informed me."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-07-30T20:41:29.522Z",
+    "model": "gpt-5.6-terra",
+    "direction": "standard-to-alpha",
+    "inputId": "D2",
+    "input": "I’m frustrated that you changed the plan without telling me.",
+    "runNumber": 2,
+    "promptVersion": "v6",
+    "responsePromptVersion": "v6",
+    "result": {
+      "translation": "I’m low-key tilt that you patch-noted the plan with zero heads-up.",
+      "explanations": [
+        {
+          "original": "frustrated",
+          "translated": "low-key tilt",
+          "reason": "“Tilt” is gaming-derived language for frustration or irritation; “low-key” keeps the complaint measured."
+        },
+        {
+          "original": "changed the plan without telling me",
+          "translated": "patch-noted the plan with zero heads-up",
+          "reason": "Uses a software-update metaphor: the plan was changed like a patch, and no advance notice was given."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-07-30T20:41:32.528Z",
+    "model": "gpt-5.6-terra",
+    "direction": "standard-to-alpha",
+    "inputId": "D2",
+    "input": "I’m frustrated that you changed the plan without telling me.",
+    "runNumber": 3,
+    "promptVersion": "v5.1",
+    "responsePromptVersion": "v5.1",
+    "result": {
+      "translation": "Low-key pressed you switched the plan up and left me out of the loop.",
+      "explanations": [
+        {
+          "original": "I’m frustrated",
+          "translated": "Low-key pressed",
+          "reason": "“Pressed” is youth-internet vernacular for feeling annoyed or frustrated; “low-key” keeps the frustration measured rather than escalating it."
+        },
+        {
+          "original": "without telling me",
+          "translated": "left me out of the loop",
+          "reason": "This idiom means not being informed about a change that affects the speaker."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-07-30T20:41:32.520Z",
+    "model": "gpt-5.6-terra",
+    "direction": "standard-to-alpha",
+    "inputId": "D2",
+    "input": "I’m frustrated that you changed the plan without telling me.",
+    "runNumber": 3,
+    "promptVersion": "v6",
+    "responsePromptVersion": "v6",
+    "result": {
+      "translation": "I’m low-key crashout that you rerouted the plan with zero ping to me.",
+      "explanations": [
+        {
+          "original": "frustrated",
+          "translated": "low-key crashout",
+          "reason": "Uses a Gen Alpha-style emotional label for being upset while keeping the complaint directed at the change."
+        },
+        {
+          "original": "changed the plan without telling me",
+          "translated": "rerouted the plan with zero ping to me",
+          "reason": "Recasts changing the plan and failing to notify the speaker through navigation and notification language."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-07-30T20:41:34.522Z",
+    "model": "gpt-5.6-terra",
+    "direction": "standard-to-alpha",
+    "inputId": "D3",
+    "input": "This fucking printer stopped working again.",
+    "runNumber": 1,
+    "promptVersion": "v5.1",
+    "responsePromptVersion": "v5.1",
+    "result": {
+      "translation": "This printer is cooked again.",
+      "explanations": [
+        {
+          "original": "This fucking printer stopped working again.",
+          "translated": "This printer is cooked again.",
+          "reason": "“Cooked” is current internet slang for something that is unusable or no longer functioning; the frustrated tone is carried by the blunt recast."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-07-30T20:41:31.643Z",
+    "model": "gpt-5.6-terra",
+    "direction": "standard-to-alpha",
+    "inputId": "D3",
+    "input": "This fucking printer stopped working again.",
+    "runNumber": 1,
+    "promptVersion": "v6",
+    "responsePromptVersion": "v6",
+    "result": {
+      "translation": "This f- printer just crash-quit on me again.",
+      "explanations": [
+        {
+          "original": "f- printer",
+          "translated": "f- printer",
+          "reason": "The profanity is redacted as required while preserving the speaker’s frustration."
+        },
+        {
+          "original": "stopped working",
+          "translated": "crash-quit on me",
+          "reason": "Uses a familiar tech/game-style failure phrase to convey that the printer stopped functioning, with the same frustrated impact."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-07-30T20:41:36.363Z",
+    "model": "gpt-5.6-terra",
+    "direction": "standard-to-alpha",
+    "inputId": "D3",
+    "input": "This fucking printer stopped working again.",
+    "runNumber": 2,
+    "promptVersion": "v5.1",
+    "responsePromptVersion": "v5.1",
+    "result": {
+      "translation": "This printer is cooked again.",
+      "explanations": [
+        {
+          "original": "stopped working again",
+          "translated": "is cooked again",
+          "reason": "“Cooked” is current slang for something being unusable or broken."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-07-30T20:41:36.303Z",
+    "model": "gpt-5.6-terra",
+    "direction": "standard-to-alpha",
+    "inputId": "D3",
+    "input": "This fucking printer stopped working again.",
+    "runNumber": 2,
+    "promptVersion": "v6",
+    "responsePromptVersion": "v6",
+    "result": {
+      "translation": "This f- printer just rage-quit again.",
+      "explanations": [
+        {
+          "original": "f-",
+          "translated": "f-",
+          "reason": "The profanity is sanitized while preserving the speaker’s frustration."
+        },
+        {
+          "original": "stopped working",
+          "translated": "rage-quit",
+          "reason": "Gaming-style wording conveys that the printer abruptly stopped functioning again."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-07-30T20:41:36.302Z",
+    "model": "gpt-5.6-terra",
+    "direction": "standard-to-alpha",
+    "inputId": "D3",
+    "input": "This fucking printer stopped working again.",
+    "runNumber": 3,
+    "promptVersion": "v5.1",
+    "responsePromptVersion": "v5.1",
+    "result": {
+      "translation": "This printer is cooked again.",
+      "explanations": [
+        {
+          "original": "stopped working again",
+          "translated": "is cooked again",
+          "reason": "“Cooked” is current slang for something that is broken or no longer functional."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-07-30T20:41:39.120Z",
+    "model": "gpt-5.6-terra",
+    "direction": "standard-to-alpha",
+    "inputId": "D3",
+    "input": "This fucking printer stopped working again.",
+    "runNumber": 3,
+    "promptVersion": "v6",
+    "responsePromptVersion": "v6",
+    "result": {
+      "translation": "This f- printer just hard-DC’d again.",
+      "explanations": [
+        {
+          "original": "f-",
+          "translated": "f-",
+          "reason": "The profanity is sanitized while keeping the speaker’s frustration."
+        },
+        {
+          "original": "stopped working",
+          "translated": "hard-DC’d",
+          "reason": "“DC’d” uses a device-disconnect metaphor to mean it stopped functioning; “hard” preserves the abrupt failure."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-07-30T20:41:40.936Z",
+    "model": "gpt-5.6-terra",
+    "direction": "standard-to-alpha",
+    "inputId": "E1",
+    "input": "The tiny balcony has an unexpectedly impressive view.",
+    "runNumber": 1,
+    "promptVersion": "v5.1",
+    "responsePromptVersion": "v5.1",
+    "result": {
+      "translation": "That tiny balcony is lowkey serving a crazy view.",
+      "explanations": [
+        {
+          "original": "has an unexpectedly impressive view",
+          "translated": "is lowkey serving a crazy view",
+          "reason": "“Lowkey” conveys the unexpected quality, while “serving” frames the balcony as presenting an impressively good view in current internet vernacular."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-07-30T20:41:41.114Z",
+    "model": "gpt-5.6-terra",
+    "direction": "standard-to-alpha",
+    "inputId": "E1",
+    "input": "The tiny balcony has an unexpectedly impressive view.",
+    "runNumber": 1,
+    "promptVersion": "v6",
+    "responsePromptVersion": "v6",
+    "result": {
+      "translation": "The tiny balcony low-key viewmaxxes way harder than you’d expect.",
+      "explanations": [
+        {
+          "original": "has an unexpectedly impressive view",
+          "translated": "low-key viewmaxxes way harder than you’d expect",
+          "reason": "Recasts the surprisingly strong view as the balcony outperforming expectations, while keeping the positive evaluation and surprise."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-07-30T20:41:41.108Z",
+    "model": "gpt-5.6-terra",
+    "direction": "standard-to-alpha",
+    "inputId": "E1",
+    "input": "The tiny balcony has an unexpectedly impressive view.",
+    "runNumber": 2,
+    "promptVersion": "v5.1",
+    "responsePromptVersion": "v5.1",
+    "result": {
+      "translation": "That tiny balcony is low-key serving a crazy view.",
+      "explanations": [
+        {
+          "original": "has an unexpectedly impressive view",
+          "translated": "is low-key serving a crazy view",
+          "reason": "“Low-key serving” frames the view as surprisingly delivering more than expected; “crazy” intensifies how impressive it is."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-07-30T20:41:41.196Z",
+    "model": "gpt-5.6-terra",
+    "direction": "standard-to-alpha",
+    "inputId": "E1",
+    "input": "The tiny balcony has an unexpectedly impressive view.",
+    "runNumber": 2,
+    "promptVersion": "v6",
+    "responsePromptVersion": "v6",
+    "result": {
+      "translation": "The tiny balcony low-key has a view that goes giga.",
+      "explanations": [
+        {
+          "original": "has an unexpectedly impressive view",
+          "translated": "low-key has a view that goes giga",
+          "reason": "“Low-key” marks the unexpected quality, while “goes giga” recasts the view as surprisingly impressive."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-07-30T20:41:44.510Z",
+    "model": "gpt-5.6-terra",
+    "direction": "standard-to-alpha",
+    "inputId": "E1",
+    "input": "The tiny balcony has an unexpectedly impressive view.",
+    "runNumber": 3,
+    "promptVersion": "v5.1",
+    "responsePromptVersion": "v5.1",
+    "result": {
+      "translation": "That tiny balcony low-key has a view that goes crazy.",
+      "explanations": [
+        {
+          "original": "has an unexpectedly impressive view",
+          "translated": "low-key has a view that goes crazy",
+          "reason": "“Low-key” conveys the unexpected quality, while “goes crazy” means it is strikingly impressive."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-07-30T20:41:42.873Z",
+    "model": "gpt-5.6-terra",
+    "direction": "standard-to-alpha",
+    "inputId": "E1",
+    "input": "The tiny balcony has an unexpectedly impressive view.",
+    "runNumber": 3,
+    "promptVersion": "v6",
+    "responsePromptVersion": "v6",
+    "result": {
+      "translation": "The tiny balcony got a low-key view flex.",
+      "explanations": [
+        {
+          "original": "has an unexpectedly impressive view",
+          "translated": "got a low-key view flex",
+          "reason": "“View flex” recasts an impressively good view as something that shows off, while “low-key” preserves the sense that it is unexpected."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-07-30T20:41:45.529Z",
+    "model": "gpt-5.6-terra",
+    "direction": "standard-to-alpha",
+    "inputId": "E2",
+    "input": "Our spreadsheet has become so complicated that nobody understands it anymore.",
+    "runNumber": 1,
+    "promptVersion": "v5.1",
+    "responsePromptVersion": "v5.1",
+    "result": {
+      "translation": "Our spreadsheet’s gotten so cursed that nobody can even read what it’s doing anymore.",
+      "explanations": [
+        {
+          "original": "has become so complicated",
+          "translated": "’s gotten so cursed",
+          "reason": "“Cursed” is internet vernacular for something that has become confusing and dysfunctional in a hard-to-follow way."
+        },
+        {
+          "original": "nobody understands it anymore",
+          "translated": "nobody can even read what it’s doing anymore",
+          "reason": "Recasts understanding the spreadsheet as being able to follow its logic, while preserving that nobody can do so now."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-07-30T20:41:43.450Z",
+    "model": "gpt-5.6-terra",
+    "direction": "standard-to-alpha",
+    "inputId": "E2",
+    "input": "Our spreadsheet has become so complicated that nobody understands it anymore.",
+    "runNumber": 1,
+    "promptVersion": "v6",
+    "responsePromptVersion": "v6",
+    "result": {
+      "translation": "Our spreadsheet has full-on lore now; nobody can parse the whole build anymore.",
+      "explanations": [
+        {
+          "original": "has become so complicated",
+          "translated": "has full-on lore now",
+          "reason": "Recasts accumulated complexity as having extensive backstory or internal canon."
+        },
+        {
+          "original": "nobody understands it anymore",
+          "translated": "nobody can parse the whole build anymore",
+          "reason": "Uses tech/gaming language for being unable to make sense of the complete spreadsheet structure."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-07-30T20:41:47.570Z",
+    "model": "gpt-5.6-terra",
+    "direction": "standard-to-alpha",
+    "inputId": "E2",
+    "input": "Our spreadsheet has become so complicated that nobody understands it anymore.",
+    "runNumber": 2,
+    "promptVersion": "v5.1",
+    "responsePromptVersion": "v5.1",
+    "result": {
+      "translation": "Our spreadsheet got so cooked that nobody can even read it anymore.",
+      "explanations": [
+        {
+          "original": "has become so complicated",
+          "translated": "got so cooked",
+          "reason": "“Cooked” recasts something as being in such a bad, overcomplicated state that it is no longer manageable."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-07-30T20:41:47.572Z",
+    "model": "gpt-5.6-terra",
+    "direction": "standard-to-alpha",
+    "inputId": "E2",
+    "input": "Our spreadsheet has become so complicated that nobody understands it anymore.",
+    "runNumber": 2,
+    "promptVersion": "v6",
+    "responsePromptVersion": "v6",
+    "result": {
+      "translation": "Our spreadsheet has become such a spreadsheet boss fight that nobody can read the meta anymore.",
+      "explanations": [
+        {
+          "original": "so complicated",
+          "translated": "such a spreadsheet boss fight",
+          "reason": "Recasts overwhelming complexity as a difficult game challenge."
+        },
+        {
+          "original": "understands it anymore",
+          "translated": "can read the meta anymore",
+          "reason": "Uses gaming slang for grasping how a complicated system works."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-07-30T20:41:47.982Z",
+    "model": "gpt-5.6-terra",
+    "direction": "standard-to-alpha",
+    "inputId": "E2",
+    "input": "Our spreadsheet has become so complicated that nobody understands it anymore.",
+    "runNumber": 3,
+    "promptVersion": "v5.1",
+    "responsePromptVersion": "v5.1",
+    "result": {
+      "translation": "Our spreadsheet got so cooked that nobody can even read it anymore.",
+      "explanations": [
+        {
+          "original": "has become so complicated",
+          "translated": "got so cooked",
+          "reason": "“Cooked” recasts something as being in an overly complex, unworkable state."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-07-30T20:41:51.060Z",
+    "model": "gpt-5.6-terra",
+    "direction": "standard-to-alpha",
+    "inputId": "E2",
+    "input": "Our spreadsheet has become so complicated that nobody understands it anymore.",
+    "runNumber": 3,
+    "promptVersion": "v6",
+    "responsePromptVersion": "v6",
+    "result": {
+      "translation": "Our spreadsheet has become such a giga spreadsheet maze that nobody can read the map anymore.",
+      "explanations": [
+        {
+          "original": "so complicated",
+          "translated": "such a giga spreadsheet maze",
+          "reason": "Recasts overwhelming complexity as a huge, hard-to-navigate maze while keeping the spreadsheet as the subject."
+        },
+        {
+          "original": "understands it",
+          "translated": "can read the map",
+          "reason": "Uses the maze metaphor to mean making sense of the spreadsheet."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-07-30T20:41:58.902Z",
+    "model": "gpt-5.6-terra",
+    "direction": "standard-to-alpha",
+    "inputId": "E3",
+    "input": "He organized every cable, charger, and adapter into labeled compartments.",
+    "runNumber": 1,
+    "promptVersion": "v5.1",
+    "responsePromptVersion": "v5.1",
+    "result": {
+      "translation": "He had every cable, charger, and adapter sorted into labeled little zones.",
+      "explanations": [
+        {
+          "original": "organized",
+          "translated": "had ... sorted",
+          "reason": "Recasts the action in a more natural, compressed internet-style phrasing while keeping the completed organization clear."
+        },
+        {
+          "original": "labeled compartments",
+          "translated": "labeled little zones",
+          "reason": "Uses a casual, immediately understandable term for separate storage sections."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-07-30T20:41:53.168Z",
+    "model": "gpt-5.6-terra",
+    "direction": "standard-to-alpha",
+    "inputId": "E3",
+    "input": "He organized every cable, charger, and adapter into labeled compartments.",
+    "runNumber": 1,
+    "promptVersion": "v6",
+    "responsePromptVersion": "v6",
+    "result": {
+      "translation": "He hard-sorted every cable, charger, and adapter into labeled lil compartments.",
+      "explanations": [
+        {
+          "original": "organized",
+          "translated": "hard-sorted",
+          "reason": "Recasts thorough organization as an emphatic sorting action while preserving the task."
+        },
+        {
+          "original": "compartments",
+          "translated": "lil compartments",
+          "reason": "Uses a playful diminutive for the compartments without changing their function."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-07-30T20:41:53.099Z",
+    "model": "gpt-5.6-terra",
+    "direction": "standard-to-alpha",
+    "inputId": "E3",
+    "input": "He organized every cable, charger, and adapter into labeled compartments.",
+    "runNumber": 2,
+    "promptVersion": "v5.1",
+    "responsePromptVersion": "v5.1",
+    "result": {
+      "translation": "He had every cable, charger, and adapter sorted into labeled little zones.",
+      "explanations": [
+        {
+          "original": "organized every cable, charger, and adapter into labeled compartments",
+          "translated": "had every cable, charger, and adapter sorted into labeled little zones",
+          "reason": "Recasts the formal organizing description into a more natural, compressed internet-style phrasing while preserving the labeled separation."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-07-30T20:41:53.469Z",
+    "model": "gpt-5.6-terra",
+    "direction": "standard-to-alpha",
+    "inputId": "E3",
+    "input": "He organized every cable, charger, and adapter into labeled compartments.",
+    "runNumber": 2,
+    "promptVersion": "v6",
+    "responsePromptVersion": "v6",
+    "result": {
+      "translation": "He cable-maxxed every cable, charger, and adapter into labeled lil compartments.",
+      "explanations": [
+        {
+          "original": "organized",
+          "translated": "cable-maxxed",
+          "reason": "Uses a Gen Alpha-style “-maxxed” coinage to mean thoroughly optimizing and arranging cable-related items."
+        },
+        {
+          "original": "labeled compartments",
+          "translated": "labeled lil compartments",
+          "reason": "“Lil” gives the compartments a casual, playful register without changing their meaning."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-07-30T20:42:01.807Z",
+    "model": "gpt-5.6-terra",
+    "direction": "standard-to-alpha",
+    "inputId": "E3",
+    "input": "He organized every cable, charger, and adapter into labeled compartments.",
+    "runNumber": 3,
+    "promptVersion": "v5.1",
+    "responsePromptVersion": "v5.1",
+    "result": {
+      "translation": "He got every cable, charger, and adapter sorted into labeled little zones.",
+      "explanations": [
+        {
+          "original": "organized",
+          "translated": "got ... sorted",
+          "reason": "Recasts the organizing action in a more natural, compressed youth-register phrasing."
+        },
+        {
+          "original": "labeled compartments",
+          "translated": "labeled little zones",
+          "reason": "“Little zones” is a casual, internet-native way to describe separated storage sections."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-07-30T20:42:00.899Z",
+    "model": "gpt-5.6-terra",
+    "direction": "standard-to-alpha",
+    "inputId": "E3",
+    "input": "He organized every cable, charger, and adapter into labeled compartments.",
+    "runNumber": 3,
+    "promptVersion": "v6",
+    "responsePromptVersion": "v6",
+    "result": {
+      "translation": "He cable-Tetris’d every cable, charger, and adapter into labeled compartments.",
+      "explanations": [
+        {
+          "original": "organized",
+          "translated": "cable-Tetris’d",
+          "reason": "Recasts careful arrangement as fitting cable-related items neatly into an organized grid, like the game Tetris."
+        }
+      ]
+    }
+  }
+]

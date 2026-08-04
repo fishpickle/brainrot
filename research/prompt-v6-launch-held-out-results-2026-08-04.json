@@ -1,0 +1,2041 @@
+[
+  {
+    "timestamp": "2026-08-04T14:57:30.355Z",
+    "direction": "standard-to-alpha",
+    "inputId": "A1",
+    "input": "I don’t want to count my chickens before they hatch.",
+    "runNumber": 1,
+    "promptVersion": "v5.1",
+    "responsePromptVersion": "v5.1",
+    "status": 200,
+    "result": {
+      "translation": "I’m not tryna pop off before the win even lands.",
+      "explanations": [
+        {
+          "original": "count my chickens before they hatch",
+          "translated": "pop off before the win even lands",
+          "reason": "Recasts the idiom as celebrating or assuming success before it has actually happened."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-08-04T14:57:33.214Z",
+    "direction": "standard-to-alpha",
+    "inputId": "A1",
+    "input": "I don’t want to count my chickens before they hatch.",
+    "runNumber": 1,
+    "promptVersion": "v6",
+    "responsePromptVersion": "v6",
+    "status": 200,
+    "result": {
+      "translation": "I’m not tryna pre-celebrate the win before it actually unlocks.",
+      "explanations": [
+        {
+          "original": "count my chickens before they hatch",
+          "translated": "pre-celebrate the win before it actually unlocks",
+          "reason": "The idiom means assuming success too early; the translation recasts it as celebrating a game reward before it becomes available."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-08-04T14:57:35.263Z",
+    "direction": "standard-to-alpha",
+    "inputId": "A1",
+    "input": "I don’t want to count my chickens before they hatch.",
+    "runNumber": 2,
+    "promptVersion": "v5.1",
+    "responsePromptVersion": "v5.1",
+    "status": 200,
+    "result": {
+      "translation": "I’m not tryna count my chickens before they hatch.",
+      "explanations": []
+    }
+  },
+  {
+    "timestamp": "2026-08-04T14:57:38.555Z",
+    "direction": "standard-to-alpha",
+    "inputId": "A1",
+    "input": "I don’t want to count my chickens before they hatch.",
+    "runNumber": 2,
+    "promptVersion": "v6",
+    "responsePromptVersion": "v6",
+    "status": 200,
+    "result": {
+      "translation": "I don’t wanna start celebrating a W that hasn’t spawned yet.",
+      "explanations": [
+        {
+          "original": "count my chickens before they hatch",
+          "translated": "start celebrating a W that hasn’t spawned yet",
+          "reason": "Recasts the idiom’s figurative meaning: avoiding confidence or celebration before an outcome is certain."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-08-04T14:57:40.993Z",
+    "direction": "standard-to-alpha",
+    "inputId": "A1",
+    "input": "I don’t want to count my chickens before they hatch.",
+    "runNumber": 3,
+    "promptVersion": "v5.1",
+    "responsePromptVersion": "v5.1",
+    "status": 200,
+    "result": {
+      "translation": "I’m not tryna start celebrating before it’s a done deal.",
+      "explanations": [
+        {
+          "original": "count my chickens before they hatch",
+          "translated": "start celebrating before it’s a done deal",
+          "reason": "Recasts the idiom as not celebrating an outcome before it is certain."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-08-04T14:57:44.067Z",
+    "direction": "standard-to-alpha",
+    "inputId": "A1",
+    "input": "I don’t want to count my chickens before they hatch.",
+    "runNumber": 3,
+    "promptVersion": "v6",
+    "responsePromptVersion": "v6",
+    "status": 200,
+    "result": {
+      "translation": "I’m not tryna pre-celebrate the W before it actually unlocks.",
+      "explanations": [
+        {
+          "original": "count my chickens before they hatch",
+          "translated": "pre-celebrate the W before it actually unlocks",
+          "reason": "Recasts the idiom’s figurative meaning: avoiding confidence or celebration before success is certain."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-08-04T14:57:46.372Z",
+    "direction": "standard-to-alpha",
+    "inputId": "A2",
+    "input": "She opened a can of worms by mentioning the budget.",
+    "runNumber": 1,
+    "promptVersion": "v5.1",
+    "responsePromptVersion": "v5.1",
+    "status": 200,
+    "result": {
+      "translation": "Bringing up the budget had her cracking open a whole mess of drama.",
+      "explanations": [
+        {
+          "original": "opened a can of worms",
+          "translated": "cracking open a whole mess of drama",
+          "reason": "Recasts the idiom as triggering a complicated, troublesome situation."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-08-04T14:57:48.797Z",
+    "direction": "standard-to-alpha",
+    "inputId": "A2",
+    "input": "She opened a can of worms by mentioning the budget.",
+    "runNumber": 1,
+    "promptVersion": "v6",
+    "responsePromptVersion": "v6",
+    "status": 200,
+    "result": {
+      "translation": "She spawned a whole chaos side quest by bringing up the budget.",
+      "explanations": [
+        {
+          "original": "opened a can of worms",
+          "translated": "spawned a whole chaos side quest",
+          "reason": "The idiom means she started a complicated, troublesome situation; the translation recasts it as triggering an unwanted game-like chain of problems."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-08-04T14:57:50.889Z",
+    "direction": "standard-to-alpha",
+    "inputId": "A2",
+    "input": "She opened a can of worms by mentioning the budget.",
+    "runNumber": 2,
+    "promptVersion": "v5.1",
+    "responsePromptVersion": "v5.1",
+    "status": 200,
+    "result": {
+      "translation": "She cracked open a whole can of worms bringing up the budget.",
+      "explanations": [
+        {
+          "original": "opened a can of worms",
+          "translated": "cracked open a whole can of worms",
+          "reason": "Keeps the idiom for starting a complicated, problematic discussion, with a more punchy internet-style phrasing."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-08-04T14:57:52.661Z",
+    "direction": "standard-to-alpha",
+    "inputId": "A2",
+    "input": "She opened a can of worms by mentioning the budget.",
+    "runNumber": 2,
+    "promptVersion": "v6",
+    "responsePromptVersion": "v6",
+    "status": 200,
+    "result": {
+      "translation": "She budget-mentioned and spawned a whole drama DLC.",
+      "explanations": [
+        {
+          "original": "opened a can of worms",
+          "translated": "spawned a whole drama DLC",
+          "reason": "The idiom means she triggered a complicated set of problems or controversy, not that she literally opened anything."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-08-04T14:57:55.111Z",
+    "direction": "standard-to-alpha",
+    "inputId": "A2",
+    "input": "She opened a can of worms by mentioning the budget.",
+    "runNumber": 3,
+    "promptVersion": "v5.1",
+    "responsePromptVersion": "v5.1",
+    "status": 200,
+    "result": {
+      "translation": "She cracked open a whole mess by bringing up the budget.",
+      "explanations": [
+        {
+          "original": "opened a can of worms",
+          "translated": "cracked open a whole mess",
+          "reason": "Recasts the idiom as triggering a complicated, troublesome situation."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-08-04T14:57:57.290Z",
+    "direction": "standard-to-alpha",
+    "inputId": "A2",
+    "input": "She opened a can of worms by mentioning the budget.",
+    "runNumber": 3,
+    "promptVersion": "v6",
+    "responsePromptVersion": "v6",
+    "status": 200,
+    "result": {
+      "translation": "She started a whole drama spawn by mentioning the budget.",
+      "explanations": [
+        {
+          "original": "opened a can of worms",
+          "translated": "started a whole drama spawn",
+          "reason": "The idiom means she triggered a complicated set of problems or disputes, not that she literally opened a container."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-08-04T14:57:59.504Z",
+    "direction": "standard-to-alpha",
+    "inputId": "A3",
+    "input": "We need to read the room before we bring that up.",
+    "runNumber": 1,
+    "promptVersion": "v5.1",
+    "responsePromptVersion": "v5.1",
+    "status": 200,
+    "result": {
+      "translation": "We gotta vibe-check the room before we bring that up.",
+      "explanations": [
+        {
+          "original": "read the room",
+          "translated": "vibe-check the room",
+          "reason": "Recasts gauging the group’s mood and receptiveness in current internet vernacular."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-08-04T14:58:07.326Z",
+    "direction": "standard-to-alpha",
+    "inputId": "A3",
+    "input": "We need to read the room before we bring that up.",
+    "runNumber": 1,
+    "promptVersion": "v6",
+    "responsePromptVersion": "v6",
+    "status": 200,
+    "result": {
+      "translation": "We need to vibe-check the room before we spawn that topic.",
+      "explanations": [
+        {
+          "original": "read the room",
+          "translated": "vibe-check the room",
+          "reason": "Recasts the idiom for gauging the group's mood and receptiveness in a Gen Alpha-style expression."
+        },
+        {
+          "original": "bring that up",
+          "translated": "spawn that topic",
+          "reason": "Uses a gaming-inspired verb for introducing a subject into the conversation."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-08-04T14:58:12.314Z",
+    "direction": "standard-to-alpha",
+    "inputId": "A3",
+    "input": "We need to read the room before we bring that up.",
+    "runNumber": 2,
+    "promptVersion": "v5.1",
+    "responsePromptVersion": "v5.1",
+    "status": 200,
+    "result": {
+      "translation": "We gotta vibe-check the room before we drop that.",
+      "explanations": [
+        {
+          "original": "read the room",
+          "translated": "vibe-check the room",
+          "reason": "Recasts gauging the group’s mood and receptiveness in current internet vernacular."
+        },
+        {
+          "original": "bring that up",
+          "translated": "drop that",
+          "reason": "Uses “drop” for introducing a topic into a conversation."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-08-04T14:58:14.508Z",
+    "direction": "standard-to-alpha",
+    "inputId": "A3",
+    "input": "We need to read the room before we bring that up.",
+    "runNumber": 2,
+    "promptVersion": "v6",
+    "responsePromptVersion": "v6",
+    "status": 200,
+    "result": {
+      "translation": "We need to vibe-check the room before we spawn that topic.",
+      "explanations": [
+        {
+          "original": "read the room",
+          "translated": "vibe-check the room",
+          "reason": "Recasts judging the group’s mood and social context before speaking."
+        },
+        {
+          "original": "bring that up",
+          "translated": "spawn that topic",
+          "reason": "Uses a gaming-style verb for introducing the subject into the conversation."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-08-04T14:58:18.405Z",
+    "direction": "standard-to-alpha",
+    "inputId": "A3",
+    "input": "We need to read the room before we bring that up.",
+    "runNumber": 3,
+    "promptVersion": "v5.1",
+    "responsePromptVersion": "v5.1",
+    "status": 200,
+    "result": {
+      "translation": "We gotta vibe-check the room before we pull that topic out.",
+      "explanations": [
+        {
+          "original": "read the room",
+          "translated": "vibe-check the room",
+          "reason": "Recasts gauging the group’s mood and receptiveness in current internet vernacular."
+        },
+        {
+          "original": "bring that up",
+          "translated": "pull that topic out",
+          "reason": "Keeps the meaning of introducing a subject into the conversation with a more informal idiom."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-08-04T14:58:20.842Z",
+    "direction": "standard-to-alpha",
+    "inputId": "A3",
+    "input": "We need to read the room before we bring that up.",
+    "runNumber": 3,
+    "promptVersion": "v6",
+    "responsePromptVersion": "v6",
+    "status": 200,
+    "result": {
+      "translation": "We gotta vibe-check the room before we drop that DLC.",
+      "explanations": [
+        {
+          "original": "read the room",
+          "translated": "vibe-check the room",
+          "reason": "Recasts judging the group’s mood and receptiveness in a recognizable internet-register phrase."
+        },
+        {
+          "original": "bring that up",
+          "translated": "drop that DLC",
+          "reason": "Frames introducing the topic as releasing additional content, while keeping the idea of raising it for discussion."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-08-04T14:58:23.583Z",
+    "direction": "standard-to-alpha",
+    "inputId": "B1",
+    "input": "Thanks for checking on me, but I’d rather be alone tonight.",
+    "runNumber": 1,
+    "promptVersion": "v5.1",
+    "responsePromptVersion": "v5.1",
+    "status": 200,
+    "result": {
+      "translation": "Appreciate you checking in, but I’m tryna solo tonight.",
+      "explanations": [
+        {
+          "original": "Thanks for checking on me",
+          "translated": "Appreciate you checking in",
+          "reason": "“Checking in” is a natural, current shorthand for asking how someone is doing."
+        },
+        {
+          "original": "I’d rather be alone tonight",
+          "translated": "I’m tryna solo tonight",
+          "reason": "“Solo” idiomatically means spending the evening alone, while keeping the boundary gentle."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-08-04T14:58:26.309Z",
+    "direction": "standard-to-alpha",
+    "inputId": "B1",
+    "input": "Thanks for checking on me, but I’d rather be alone tonight.",
+    "runNumber": 1,
+    "promptVersion": "v6",
+    "responsePromptVersion": "v6",
+    "status": 200,
+    "result": {
+      "translation": "Appreciate you checking my vibe, but I’m tryna solo-queue tonight.",
+      "explanations": [
+        {
+          "original": "checking on me",
+          "translated": "checking my vibe",
+          "reason": "Recasts concern for the speaker’s well-being in a recognizable online-register phrase."
+        },
+        {
+          "original": "I’d rather be alone tonight",
+          "translated": "I’m tryna solo-queue tonight",
+          "reason": "Uses a gaming metaphor for choosing to spend the evening alone while preserving the preference and timing."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-08-04T14:58:28.334Z",
+    "direction": "standard-to-alpha",
+    "inputId": "B1",
+    "input": "Thanks for checking on me, but I’d rather be alone tonight.",
+    "runNumber": 2,
+    "promptVersion": "v5.1",
+    "responsePromptVersion": "v5.1",
+    "status": 200,
+    "result": {
+      "translation": "Appreciate you checking in, but I’m tryna have solo mode tonight.",
+      "explanations": [
+        {
+          "original": "I’d rather be alone tonight",
+          "translated": "I’m tryna have solo mode tonight",
+          "reason": "“Solo mode” naturally recasts wanting to spend the evening alone without changing the boundary."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-08-04T14:58:30.588Z",
+    "direction": "standard-to-alpha",
+    "inputId": "B1",
+    "input": "Thanks for checking on me, but I’d rather be alone tonight.",
+    "runNumber": 2,
+    "promptVersion": "v6",
+    "responsePromptVersion": "v6",
+    "status": 200,
+    "result": {
+      "translation": "Appreciate you tapping my status, but I’m tryna solo-queue tonight.",
+      "explanations": [
+        {
+          "original": "Thanks for checking on me",
+          "translated": "Appreciate you tapping my status",
+          "reason": "Recasts checking on someone as viewing their status while preserving the gratitude."
+        },
+        {
+          "original": "I’d rather be alone tonight",
+          "translated": "I’m tryna solo-queue tonight",
+          "reason": "Uses a gaming metaphor for choosing to spend the evening alone."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-08-04T14:58:32.828Z",
+    "direction": "standard-to-alpha",
+    "inputId": "B1",
+    "input": "Thanks for checking on me, but I’d rather be alone tonight.",
+    "runNumber": 3,
+    "promptVersion": "v5.1",
+    "responsePromptVersion": "v5.1",
+    "status": 200,
+    "result": {
+      "translation": "Good looks for checking on me, but I’m tryna be solo tonight.",
+      "explanations": [
+        {
+          "original": "Thanks for checking on me",
+          "translated": "Good looks for checking on me",
+          "reason": "“Good looks” is a youth-internet way to acknowledge and thank someone for a considerate action."
+        },
+        {
+          "original": "I’d rather be alone tonight",
+          "translated": "I’m tryna be solo tonight",
+          "reason": "“Be solo” naturally recasts wanting to spend the night alone while keeping the boundary gentle."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-08-04T14:58:38.383Z",
+    "direction": "standard-to-alpha",
+    "inputId": "B1",
+    "input": "Thanks for checking on me, but I’d rather be alone tonight.",
+    "runNumber": 3,
+    "promptVersion": "v6",
+    "responsePromptVersion": "v6",
+    "status": 200,
+    "result": {
+      "translation": "Appreciate you doing a me-check, but I’m tryna solo-queue tonight.",
+      "explanations": [
+        {
+          "original": "checking on me",
+          "translated": "doing a me-check",
+          "reason": "Recasts asking after the speaker’s well-being as a recognizable, playful status check."
+        },
+        {
+          "original": "I’d rather be alone tonight",
+          "translated": "I’m tryna solo-queue tonight",
+          "reason": "Uses a gaming metaphor for choosing to spend the evening alone while preserving the preference and timing."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-08-04T14:58:40.694Z",
+    "direction": "standard-to-alpha",
+    "inputId": "B2",
+    "input": "Could you lower the music while I finish this call?",
+    "runNumber": 1,
+    "promptVersion": "v5.1",
+    "responsePromptVersion": "v5.1",
+    "status": 200,
+    "result": {
+      "translation": "Can you turn the music down a notch while I wrap this call?",
+      "explanations": [
+        {
+          "original": "finish this call",
+          "translated": "wrap this call",
+          "reason": "“Wrap” is a concise, natural way to mean finish a phone call."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-08-04T14:58:42.787Z",
+    "direction": "standard-to-alpha",
+    "inputId": "B2",
+    "input": "Could you lower the music while I finish this call?",
+    "runNumber": 1,
+    "promptVersion": "v6",
+    "responsePromptVersion": "v6",
+    "status": 200,
+    "result": {
+      "translation": "Can you nerf the music while I clutch this call?",
+      "explanations": [
+        {
+          "original": "lower the music",
+          "translated": "nerf the music",
+          "reason": "“Nerf” uses gaming language for turning something down or making it less intense."
+        },
+        {
+          "original": "finish this call",
+          "translated": "clutch this call",
+          "reason": "“Clutch” recasts successfully getting through the call as completing an important task under pressure."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-08-04T14:58:44.431Z",
+    "direction": "standard-to-alpha",
+    "inputId": "B2",
+    "input": "Could you lower the music while I finish this call?",
+    "runNumber": 2,
+    "promptVersion": "v5.1",
+    "responsePromptVersion": "v5.1",
+    "status": 200,
+    "result": {
+      "translation": "Can you turn the music down while I wrap up this call?",
+      "explanations": [
+        {
+          "original": "finish this call",
+          "translated": "wrap up this call",
+          "reason": "“Wrap up” is a natural, concise way to say finish a call."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-08-04T14:58:46.499Z",
+    "direction": "standard-to-alpha",
+    "inputId": "B2",
+    "input": "Could you lower the music while I finish this call?",
+    "runNumber": 2,
+    "promptVersion": "v6",
+    "responsePromptVersion": "v6",
+    "status": 200,
+    "result": {
+      "translation": "Can you nerf the music a bit while I clutch this call?",
+      "explanations": [
+        {
+          "original": "lower the music",
+          "translated": "nerf the music a bit",
+          "reason": "“Nerf” uses a gaming term for reducing something’s level or strength."
+        },
+        {
+          "original": "finish this call",
+          "translated": "clutch this call",
+          "reason": "“Clutch” frames successfully getting through the call as completing an important task."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-08-04T14:58:48.292Z",
+    "direction": "standard-to-alpha",
+    "inputId": "B2",
+    "input": "Could you lower the music while I finish this call?",
+    "runNumber": 3,
+    "promptVersion": "v5.1",
+    "responsePromptVersion": "v5.1",
+    "status": 200,
+    "result": {
+      "translation": "Can you turn the music down while I wrap this call?",
+      "explanations": [
+        {
+          "original": "finish this call",
+          "translated": "wrap this call",
+          "reason": "“Wrap” is a concise, natural way to say finish a phone call."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-08-04T14:58:49.991Z",
+    "direction": "standard-to-alpha",
+    "inputId": "B2",
+    "input": "Could you lower the music while I finish this call?",
+    "runNumber": 3,
+    "promptVersion": "v6",
+    "responsePromptVersion": "v6",
+    "status": 200,
+    "result": {
+      "translation": "Can you turn the music down a notch while I clutch-finish this call?",
+      "explanations": [
+        {
+          "original": "finish this call",
+          "translated": "clutch-finish this call",
+          "reason": "“Clutch” frames completing the call as a focused, important final stretch without changing the request."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-08-04T14:58:54.812Z",
+    "direction": "standard-to-alpha",
+    "inputId": "B3",
+    "input": "I’m sorry I missed your message; I wasn’t ignoring you.",
+    "runNumber": 1,
+    "promptVersion": "v5.1",
+    "responsePromptVersion": "v5.1",
+    "status": 200,
+    "result": {
+      "translation": "My bad I missed your message—I wasn’t leaving you on read.",
+      "explanations": [
+        {
+          "original": "I’m sorry I missed your message",
+          "translated": "My bad I missed your message",
+          "reason": "“My bad” is a concise youth-register apology that takes responsibility."
+        },
+        {
+          "original": "I wasn’t ignoring you",
+          "translated": "I wasn’t leaving you on read",
+          "reason": "“Leaving you on read” specifically means seeing a message without responding, conveying the same reassurance in texting slang."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-08-04T14:58:56.757Z",
+    "direction": "standard-to-alpha",
+    "inputId": "B3",
+    "input": "I’m sorry I missed your message; I wasn’t ignoring you.",
+    "runNumber": 1,
+    "promptVersion": "v6",
+    "responsePromptVersion": "v6",
+    "status": 200,
+    "result": {
+      "translation": "My bad, I missed your message—I wasn’t ghost-mode ignoring you.",
+      "explanations": [
+        {
+          "original": "I’m sorry",
+          "translated": "My bad",
+          "reason": "A casual apology with the same admission of fault."
+        },
+        {
+          "original": "I wasn’t ignoring you",
+          "translated": "I wasn’t ghost-mode ignoring you",
+          "reason": "“Ghost-mode” recasts deliberate nonresponse in an online-status metaphor while preserving the denial."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-08-04T14:58:58.800Z",
+    "direction": "standard-to-alpha",
+    "inputId": "B3",
+    "input": "I’m sorry I missed your message; I wasn’t ignoring you.",
+    "runNumber": 2,
+    "promptVersion": "v5.1",
+    "responsePromptVersion": "v5.1",
+    "status": 200,
+    "result": {
+      "translation": "My bad, I missed your message—I wasn’t tryna leave you on read.",
+      "explanations": [
+        {
+          "original": "I’m sorry",
+          "translated": "My bad",
+          "reason": "A concise, natural apology in youth internet vernacular."
+        },
+        {
+          "original": "I wasn’t ignoring you",
+          "translated": "I wasn’t tryna leave you on read",
+          "reason": "“Leave you on read” means seeing a message and not responding; “wasn’t tryna” preserves the denial of intent."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-08-04T14:59:02.048Z",
+    "direction": "standard-to-alpha",
+    "inputId": "B3",
+    "input": "I’m sorry I missed your message; I wasn’t ignoring you.",
+    "runNumber": 2,
+    "promptVersion": "v6",
+    "responsePromptVersion": "v6",
+    "status": 200,
+    "result": {
+      "translation": "My bad, your message got past my notification radar; I wasn’t ghosting you.",
+      "explanations": [
+        {
+          "original": "I’m sorry I missed your message",
+          "translated": "My bad, your message got past my notification radar",
+          "reason": "Recasts the missed message as slipping past notifications while preserving the apology and lack of intent."
+        },
+        {
+          "original": "I wasn’t ignoring you",
+          "translated": "I wasn’t ghosting you",
+          "reason": "Uses online social language for deliberately failing to respond."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-08-04T14:59:06.451Z",
+    "direction": "standard-to-alpha",
+    "inputId": "B3",
+    "input": "I’m sorry I missed your message; I wasn’t ignoring you.",
+    "runNumber": 3,
+    "promptVersion": "v5.1",
+    "responsePromptVersion": "v5.1",
+    "status": 200,
+    "result": {
+      "translation": "My bad, I missed your message—I wasn’t leaving you on read.",
+      "explanations": [
+        {
+          "original": "I’m sorry I missed your message",
+          "translated": "My bad, I missed your message",
+          "reason": "“My bad” is a concise, natural apology for an unintentional mistake."
+        },
+        {
+          "original": "I wasn’t ignoring you",
+          "translated": "I wasn’t leaving you on read",
+          "reason": "“Leaving you on read” is internet vernacular for seeing a message without replying, conveying that the lack of response was not deliberate."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-08-04T14:59:11.371Z",
+    "direction": "standard-to-alpha",
+    "inputId": "B3",
+    "input": "I’m sorry I missed your message; I wasn’t ignoring you.",
+    "runNumber": 3,
+    "promptVersion": "v6",
+    "responsePromptVersion": "v6",
+    "status": 200,
+    "result": {
+      "translation": "My bad I whiffed your message—I wasn’t ghost-mode ignoring you.",
+      "explanations": [
+        {
+          "original": "I’m sorry I missed your message",
+          "translated": "My bad I whiffed your message",
+          "reason": "“Whiffed” recasts accidentally missing the message as missing a shot or cue."
+        },
+        {
+          "original": "I wasn’t ignoring you",
+          "translated": "I wasn’t ghost-mode ignoring you",
+          "reason": "“Ghost-mode” emphasizes that the speaker was not deliberately going silent or avoiding the recipient."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-08-04T14:59:14.575Z",
+    "direction": "standard-to-alpha",
+    "inputId": "C1",
+    "input": "The library will close at 6 p.m. on Friday for electrical repairs.",
+    "runNumber": 1,
+    "promptVersion": "v5.1",
+    "responsePromptVersion": "v5.1",
+    "status": 200,
+    "result": {
+      "translation": "The library’s gonna shut down at 6 p.m. Friday so they can fix the electrical stuff.",
+      "explanations": [
+        {
+          "original": "will close",
+          "translated": "’s gonna shut down",
+          "reason": "Recasts the scheduled closure in a more natural youth-register phrasing."
+        },
+        {
+          "original": "for electrical repairs",
+          "translated": "so they can fix the electrical stuff",
+          "reason": "Keeps the reason for closing while using a more conversational, immediately clear phrasing."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-08-04T14:59:17.198Z",
+    "direction": "standard-to-alpha",
+    "inputId": "C1",
+    "input": "The library will close at 6 p.m. on Friday for electrical repairs.",
+    "runNumber": 1,
+    "promptVersion": "v6",
+    "responsePromptVersion": "v6",
+    "status": 200,
+    "result": {
+      "translation": "The library’s gonna hard-close at 6 p.m. Friday so the electrical repairs can get patched in.",
+      "explanations": [
+        {
+          "original": "will close",
+          "translated": "gonna hard-close",
+          "reason": "Recasts the scheduled closure as a firm shutdown while preserving the library as the subject and the planned timing."
+        },
+        {
+          "original": "for electrical repairs",
+          "translated": "so the electrical repairs can get patched in",
+          "reason": "Uses a tech-flavored repair image while keeping the reason for the closure unchanged."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-08-04T14:59:19.591Z",
+    "direction": "standard-to-alpha",
+    "inputId": "C1",
+    "input": "The library will close at 6 p.m. on Friday for electrical repairs.",
+    "runNumber": 2,
+    "promptVersion": "v5.1",
+    "responsePromptVersion": "v5.1",
+    "status": 200,
+    "result": {
+      "translation": "The library’s clocking out at 6 p.m. Friday so they can fix the electrical stuff.",
+      "explanations": [
+        {
+          "original": "will close",
+          "translated": "’s clocking out",
+          "reason": "Recasts closing for the day as a casual, personified internet-style phrase."
+        },
+        {
+          "original": "for electrical repairs",
+          "translated": "so they can fix the electrical stuff",
+          "reason": "Uses a more conversational phrasing while preserving the reason for the closure."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-08-04T14:59:25.723Z",
+    "direction": "standard-to-alpha",
+    "inputId": "C1",
+    "input": "The library will close at 6 p.m. on Friday for electrical repairs.",
+    "runNumber": 2,
+    "promptVersion": "v6",
+    "responsePromptVersion": "v6",
+    "status": 200,
+    "result": {
+      "translation": "The library’s gonna hard-log out at 6 p.m. Friday for electrical repairs.",
+      "explanations": [
+        {
+          "original": "will close",
+          "translated": "gonna hard-log out",
+          "reason": "Recasts the library closing as a full system shutdown while preserving the scheduled closure."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-08-04T14:59:27.816Z",
+    "direction": "standard-to-alpha",
+    "inputId": "C1",
+    "input": "The library will close at 6 p.m. on Friday for electrical repairs.",
+    "runNumber": 3,
+    "promptVersion": "v5.1",
+    "responsePromptVersion": "v5.1",
+    "status": 200,
+    "result": {
+      "translation": "The library’s gonna be closed Friday at 6 p.m. ’cause the electrical repairs are getting handled.",
+      "explanations": [
+        {
+          "original": "will close at 6 p.m. on Friday for electrical repairs",
+          "translated": "gonna be closed Friday at 6 p.m. ’cause the electrical repairs are getting handled",
+          "reason": "Recasts the closure notice into a more conversational, youth-register announcement while preserving the time, day, and reason."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-08-04T14:59:29.892Z",
+    "direction": "standard-to-alpha",
+    "inputId": "C1",
+    "input": "The library will close at 6 p.m. on Friday for electrical repairs.",
+    "runNumber": 3,
+    "promptVersion": "v6",
+    "responsePromptVersion": "v6",
+    "status": 200,
+    "result": {
+      "translation": "The library’s gonna hard-logout at 6 p.m. Friday for electrical repairs.",
+      "explanations": [
+        {
+          "original": "will close",
+          "translated": "gonna hard-logout",
+          "reason": "Recasts the planned closure as a system shutdown while keeping the library as the thing that closes."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-08-04T14:59:32.007Z",
+    "direction": "standard-to-alpha",
+    "inputId": "C2",
+    "input": "Water expands when it freezes, which can crack sealed containers.",
+    "runNumber": 1,
+    "promptVersion": "v5.1",
+    "responsePromptVersion": "v5.1",
+    "status": 200,
+    "result": {
+      "translation": "Water gets bigger when it freezes, so sealed containers can get cracked.",
+      "explanations": [
+        {
+          "original": "expands",
+          "translated": "gets bigger",
+          "reason": "Uses a simpler, youth-friendly phrasing while preserving the physical meaning."
+        },
+        {
+          "original": "which can crack sealed containers",
+          "translated": "so sealed containers can get cracked",
+          "reason": "Recasts the consequence more directly while keeping the possibility and cause intact."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-08-04T14:59:34.559Z",
+    "direction": "standard-to-alpha",
+    "inputId": "C2",
+    "input": "Water expands when it freezes, which can crack sealed containers.",
+    "runNumber": 1,
+    "promptVersion": "v6",
+    "responsePromptVersion": "v6",
+    "status": 200,
+    "result": {
+      "translation": "Water gets bigger when it freeze-locks, so sealed containers can get crack-popped.",
+      "explanations": [
+        {
+          "original": "expands when it freezes",
+          "translated": "gets bigger when it freeze-locks",
+          "reason": "Recasts freezing as a lock-in while preserving that water increases in volume."
+        },
+        {
+          "original": "can crack sealed containers",
+          "translated": "sealed containers can get crack-popped",
+          "reason": "Uses a playful impact-style verb while keeping the possibility that sealed containers crack."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-08-04T14:59:37.453Z",
+    "direction": "standard-to-alpha",
+    "inputId": "C2",
+    "input": "Water expands when it freezes, which can crack sealed containers.",
+    "runNumber": 2,
+    "promptVersion": "v5.1",
+    "responsePromptVersion": "v5.1",
+    "status": 200,
+    "result": {
+      "translation": "When water freezes, it puffs up, so sealed containers can get cracked.",
+      "explanations": [
+        {
+          "original": "expands",
+          "translated": "puffs up",
+          "reason": "Uses a vivid, informal phrase for increasing in volume while preserving the physical meaning."
+        },
+        {
+          "original": "which can crack sealed containers",
+          "translated": "so sealed containers can get cracked",
+          "reason": "Recasts the causal result in a more conversational internet-style flow without changing the possibility or outcome."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-08-04T14:59:39.970Z",
+    "direction": "standard-to-alpha",
+    "inputId": "C2",
+    "input": "Water expands when it freezes, which can crack sealed containers.",
+    "runNumber": 2,
+    "promptVersion": "v6",
+    "responsePromptVersion": "v6",
+    "status": 200,
+    "result": {
+      "translation": "Water gets bigger when it freeze-locks, and that can crack sealed containers open.",
+      "explanations": [
+        {
+          "original": "expands when it freezes",
+          "translated": "gets bigger when it freeze-locks",
+          "reason": "“Freeze-locks” is a register-styled recast of becoming frozen while preserving the expansion mechanism."
+        },
+        {
+          "original": "can crack sealed containers",
+          "translated": "can crack sealed containers open",
+          "reason": "The phrasing keeps the possibility and the fact that the containers are sealed, while making the result more explicit."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-08-04T14:59:42.327Z",
+    "direction": "standard-to-alpha",
+    "inputId": "C2",
+    "input": "Water expands when it freezes, which can crack sealed containers.",
+    "runNumber": 3,
+    "promptVersion": "v5.1",
+    "responsePromptVersion": "v5.1",
+    "status": 200,
+    "result": {
+      "translation": "Water puffs up when it freezes, so sealed containers can straight-up crack.",
+      "explanations": [
+        {
+          "original": "expands",
+          "translated": "puffs up",
+          "reason": "Uses a natural informal image for increasing in volume while preserving the physical meaning."
+        },
+        {
+          "original": "which can crack sealed containers",
+          "translated": "so sealed containers can straight-up crack",
+          "reason": "Recasts the causal result in a more conversational internet-register structure; “straight-up” emphasizes that cracking is a real possible outcome."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-08-04T14:59:47.679Z",
+    "direction": "standard-to-alpha",
+    "inputId": "C2",
+    "input": "Water expands when it freezes, which can crack sealed containers.",
+    "runNumber": 3,
+    "promptVersion": "v6",
+    "responsePromptVersion": "v6",
+    "status": 200,
+    "result": {
+      "translation": "When water hits freeze mode, it expands, so sealed containers can get crack-popped.",
+      "explanations": [
+        {
+          "original": "freezes",
+          "translated": "hits freeze mode",
+          "reason": "Recasts freezing as entering a device-like state while preserving the physical change."
+        },
+        {
+          "original": "can crack sealed containers",
+          "translated": "sealed containers can get crack-popped",
+          "reason": "Uses a transparent playful verb for cracking without changing the possibility or the containers' sealed status."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-08-04T14:59:49.837Z",
+    "direction": "standard-to-alpha",
+    "inputId": "C3",
+    "input": "The committee approved the proposal by a vote of seven to three.",
+    "runNumber": 1,
+    "promptVersion": "v5.1",
+    "responsePromptVersion": "v5.1",
+    "status": 200,
+    "result": {
+      "translation": "The committee greenlit the proposal, 7–3.",
+      "explanations": [
+        {
+          "original": "approved",
+          "translated": "greenlit",
+          "reason": "“Greenlit” is a concise internet-friendly way to say formally approved."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-08-04T14:59:54.463Z",
+    "direction": "standard-to-alpha",
+    "inputId": "C3",
+    "input": "The committee approved the proposal by a vote of seven to three.",
+    "runNumber": 1,
+    "promptVersion": "v6",
+    "responsePromptVersion": "v6",
+    "status": 200,
+    "result": {
+      "translation": "The committee greenlit the proposal, 7–3 on the scoreboard.",
+      "explanations": [
+        {
+          "original": "approved the proposal by a vote of seven to three",
+          "translated": "greenlit the proposal, 7–3 on the scoreboard",
+          "reason": "“Greenlit” recasts formal approval in an internet-native way, while the scoreboard image preserves the exact vote tally."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-08-04T14:59:56.275Z",
+    "direction": "standard-to-alpha",
+    "inputId": "C3",
+    "input": "The committee approved the proposal by a vote of seven to three.",
+    "runNumber": 2,
+    "promptVersion": "v5.1",
+    "responsePromptVersion": "v5.1",
+    "status": 200,
+    "result": {
+      "translation": "The committee greenlit the proposal, 7–3.",
+      "explanations": [
+        {
+          "original": "approved",
+          "translated": "greenlit",
+          "reason": "“Greenlit” is a concise internet-era verb meaning formally approved."
+        },
+        {
+          "original": "by a vote of seven to three",
+          "translated": "7–3",
+          "reason": "The vote tally is compressed into standard score-style notation without changing the result."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-08-04T14:59:58.376Z",
+    "direction": "standard-to-alpha",
+    "inputId": "C3",
+    "input": "The committee approved the proposal by a vote of seven to three.",
+    "runNumber": 2,
+    "promptVersion": "v6",
+    "responsePromptVersion": "v6",
+    "status": 200,
+    "result": {
+      "translation": "The committee greenlit the proposal, 7–3 on the vote scoreboard.",
+      "explanations": [
+        {
+          "original": "approved the proposal by a vote of seven to three",
+          "translated": "greenlit the proposal, 7–3 on the vote scoreboard",
+          "reason": "“Greenlit” gives the approval a recognizable online-register framing, while “vote scoreboard” preserves the exact seven-to-three tally."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-08-04T15:00:00.105Z",
+    "direction": "standard-to-alpha",
+    "inputId": "C3",
+    "input": "The committee approved the proposal by a vote of seven to three.",
+    "runNumber": 3,
+    "promptVersion": "v5.1",
+    "responsePromptVersion": "v5.1",
+    "status": 200,
+    "result": {
+      "translation": "The committee greenlit the proposal, 7–3.",
+      "explanations": [
+        {
+          "original": "approved",
+          "translated": "greenlit",
+          "reason": "“Greenlit” is a concise internet-influenced way to say formally approved."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-08-04T15:00:02.978Z",
+    "direction": "standard-to-alpha",
+    "inputId": "C3",
+    "input": "The committee approved the proposal by a vote of seven to three.",
+    "runNumber": 3,
+    "promptVersion": "v6",
+    "responsePromptVersion": "v6",
+    "status": 200,
+    "result": {
+      "translation": "The committee greenlit the proposal, 7–3 on the scoreboard.",
+      "explanations": [
+        {
+          "original": "approved the proposal",
+          "translated": "greenlit the proposal",
+          "reason": "“Greenlit” recasts formal approval as giving a go signal while preserving the committee’s action."
+        },
+        {
+          "original": "by a vote of seven to three",
+          "translated": "7–3 on the scoreboard",
+          "reason": "The score-display metaphor preserves the exact vote split without implying a different outcome."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-08-04T15:00:05.059Z",
+    "direction": "standard-to-alpha",
+    "inputId": "D1",
+    "input": "My headphones disappeared five minutes before the train arrived.",
+    "runNumber": 1,
+    "promptVersion": "v5.1",
+    "responsePromptVersion": "v5.1",
+    "status": 200,
+    "result": {
+      "translation": "My headphones straight-up ghosted five minutes before the train pulled in.",
+      "explanations": [
+        {
+          "original": "disappeared",
+          "translated": "straight-up ghosted",
+          "reason": "Uses an internet-style idiom for something unexpectedly vanishing."
+        },
+        {
+          "original": "arrived",
+          "translated": "pulled in",
+          "reason": "Natural phrasing for a train arriving at a station."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-08-04T15:00:07.300Z",
+    "direction": "standard-to-alpha",
+    "inputId": "D1",
+    "input": "My headphones disappeared five minutes before the train arrived.",
+    "runNumber": 1,
+    "promptVersion": "v6",
+    "responsePromptVersion": "v6",
+    "status": 200,
+    "result": {
+      "translation": "My headphones went full vanish-mode five minutes before the train pulled up.",
+      "explanations": [
+        {
+          "original": "disappeared",
+          "translated": "went full vanish-mode",
+          "reason": "Recasts the headphones' disappearance as a recognizable playful status change without implying a cause."
+        },
+        {
+          "original": "the train arrived",
+          "translated": "the train pulled up",
+          "reason": "Uses a natural transit-specific phrasing while preserving the train's arrival."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-08-04T15:00:09.576Z",
+    "direction": "standard-to-alpha",
+    "inputId": "D1",
+    "input": "My headphones disappeared five minutes before the train arrived.",
+    "runNumber": 2,
+    "promptVersion": "v5.1",
+    "responsePromptVersion": "v5.1",
+    "status": 200,
+    "result": {
+      "translation": "My headphones went MIA like five minutes before the train pulled up.",
+      "explanations": [
+        {
+          "original": "disappeared",
+          "translated": "went MIA",
+          "reason": "“Went MIA” is a casual internet-style way to say something vanished or could not be found."
+        },
+        {
+          "original": "the train arrived",
+          "translated": "the train pulled up",
+          "reason": "“Pulled up” naturally recasts a train arriving at a station."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-08-04T15:00:11.847Z",
+    "direction": "standard-to-alpha",
+    "inputId": "D1",
+    "input": "My headphones disappeared five minutes before the train arrived.",
+    "runNumber": 2,
+    "promptVersion": "v6",
+    "responsePromptVersion": "v6",
+    "status": 200,
+    "result": {
+      "translation": "My headphones went full vanish-mode five minutes before the train pulled up.",
+      "explanations": [
+        {
+          "original": "disappeared",
+          "translated": "went full vanish-mode",
+          "reason": "Recasts the sudden disappearance in a recognizable online/game-like register while preserving that the headphones were no longer there."
+        },
+        {
+          "original": "the train arrived",
+          "translated": "the train pulled up",
+          "reason": "Uses a more performative transit phrasing without changing the train’s arrival."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-08-04T15:00:13.866Z",
+    "direction": "standard-to-alpha",
+    "inputId": "D1",
+    "input": "My headphones disappeared five minutes before the train arrived.",
+    "runNumber": 3,
+    "promptVersion": "v5.1",
+    "responsePromptVersion": "v5.1",
+    "status": 200,
+    "result": {
+      "translation": "My headphones dipped five minutes before the train pulled up.",
+      "explanations": [
+        {
+          "original": "disappeared",
+          "translated": "dipped",
+          "reason": "“Dipped” is internet vernacular for leaving or vanishing."
+        },
+        {
+          "original": "arrived",
+          "translated": "pulled up",
+          "reason": "“Pulled up” naturally describes a train arriving at a stop."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-08-04T15:00:16.529Z",
+    "direction": "standard-to-alpha",
+    "inputId": "D1",
+    "input": "My headphones disappeared five minutes before the train arrived.",
+    "runNumber": 3,
+    "promptVersion": "v6",
+    "responsePromptVersion": "v6",
+    "status": 200,
+    "result": {
+      "translation": "My headphones straight-up despawned five minutes before the train pulled in.",
+      "explanations": [
+        {
+          "original": "disappeared",
+          "translated": "straight-up despawned",
+          "reason": "Uses a gaming-style verb for suddenly vanishing while keeping the same event and certainty."
+        },
+        {
+          "original": "arrived",
+          "translated": "pulled in",
+          "reason": "Naturally describes a train arriving at its stop."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-08-04T15:00:24.260Z",
+    "direction": "standard-to-alpha",
+    "inputId": "D2",
+    "input": "That tiny café makes surprisingly good pancakes.",
+    "runNumber": 1,
+    "promptVersion": "v5.1",
+    "responsePromptVersion": "v5.1",
+    "status": 200,
+    "result": {
+      "translation": "That lil café's pancakes low-key slap.",
+      "explanations": [
+        {
+          "original": "makes surprisingly good pancakes",
+          "translated": "pancakes low-key slap",
+          "reason": "“Low-key slap” means the pancakes are unexpectedly very good."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-08-04T15:00:26.413Z",
+    "direction": "standard-to-alpha",
+    "inputId": "D2",
+    "input": "That tiny café makes surprisingly good pancakes.",
+    "runNumber": 1,
+    "promptVersion": "v6",
+    "responsePromptVersion": "v6",
+    "status": 200,
+    "result": {
+      "translation": "That tiny café low-key pancake-mogs expectations.",
+      "explanations": [
+        {
+          "original": "makes surprisingly good pancakes",
+          "translated": "low-key pancake-mogs expectations",
+          "reason": "Recasts the unexpected quality as the café’s pancakes outperforming what people would expect."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-08-04T15:00:28.273Z",
+    "direction": "standard-to-alpha",
+    "inputId": "D2",
+    "input": "That tiny café makes surprisingly good pancakes.",
+    "runNumber": 2,
+    "promptVersion": "v5.1",
+    "responsePromptVersion": "v5.1",
+    "status": 200,
+    "result": {
+      "translation": "That lil café low-key makes pancakes that slap.",
+      "explanations": [
+        {
+          "original": "makes surprisingly good pancakes",
+          "translated": "makes pancakes that slap",
+          "reason": "“That slap” means they are unexpectedly excellent; “low-key” carries the understated surprise."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-08-04T15:00:30.281Z",
+    "direction": "standard-to-alpha",
+    "inputId": "D2",
+    "input": "That tiny café makes surprisingly good pancakes.",
+    "runNumber": 2,
+    "promptVersion": "v6",
+    "responsePromptVersion": "v6",
+    "status": 200,
+    "result": {
+      "translation": "That tiny café low-key pancake-mogs.",
+      "explanations": [
+        {
+          "original": "makes surprisingly good pancakes",
+          "translated": "low-key pancake-mogs",
+          "reason": "Recasts the café as unexpectedly outperforming expectations at making pancakes; “low-key” carries the surprise and “mogs” signals standout superiority."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-08-04T15:00:32.335Z",
+    "direction": "standard-to-alpha",
+    "inputId": "D2",
+    "input": "That tiny café makes surprisingly good pancakes.",
+    "runNumber": 3,
+    "promptVersion": "v5.1",
+    "responsePromptVersion": "v5.1",
+    "status": 200,
+    "result": {
+      "translation": "That lil café's pancakes low-key go crazy.",
+      "explanations": [
+        {
+          "original": "makes surprisingly good pancakes",
+          "translated": "pancakes low-key go crazy",
+          "reason": "“Low-key go crazy” means they are unexpectedly excellent, preserving the positive surprise."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-08-04T15:00:34.757Z",
+    "direction": "standard-to-alpha",
+    "inputId": "D2",
+    "input": "That tiny café makes surprisingly good pancakes.",
+    "runNumber": 3,
+    "promptVersion": "v6",
+    "responsePromptVersion": "v6",
+    "status": 200,
+    "result": {
+      "translation": "That tiny café low-key pancake-maxxes way harder than you'd expect.",
+      "explanations": [
+        {
+          "original": "makes surprisingly good pancakes",
+          "translated": "low-key pancake-maxxes way harder than you'd expect",
+          "reason": "Recasts unexpectedly high pancake quality as the café excelling beyond expectations; “low-key” signals the surprise is understated."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-08-04T15:00:37.405Z",
+    "direction": "standard-to-alpha",
+    "inputId": "D3",
+    "input": "Please remind me to charge the camera before sunrise.",
+    "runNumber": 1,
+    "promptVersion": "v5.1",
+    "responsePromptVersion": "v5.1",
+    "status": 200,
+    "result": {
+      "translation": "Before sunrise, ping me to get the camera charging.",
+      "explanations": [
+        {
+          "original": "Please remind me",
+          "translated": "ping me",
+          "reason": "“Ping me” is a concise online-native way to ask for a reminder or notification."
+        },
+        {
+          "original": "charge the camera",
+          "translated": "get the camera charging",
+          "reason": "This recasts the action in a more conversational, current rhythm while preserving the required task."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-08-04T15:00:39.678Z",
+    "direction": "standard-to-alpha",
+    "inputId": "D3",
+    "input": "Please remind me to charge the camera before sunrise.",
+    "runNumber": 1,
+    "promptVersion": "v6",
+    "responsePromptVersion": "v6",
+    "status": 200,
+    "result": {
+      "translation": "Please hit me with a reminder to get the camera charged before sunrise.",
+      "explanations": [
+        {
+          "original": "remind me",
+          "translated": "hit me with a reminder",
+          "reason": "Recasts the request in an internet-native, performative phrasing while keeping the request for a reminder."
+        },
+        {
+          "original": "charge the camera",
+          "translated": "get the camera charged",
+          "reason": "Uses a slightly more conversational structure while preserving the requirement that the camera be charged."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-08-04T15:00:42.189Z",
+    "direction": "standard-to-alpha",
+    "inputId": "D3",
+    "input": "Please remind me to charge the camera before sunrise.",
+    "runNumber": 2,
+    "promptVersion": "v5.1",
+    "responsePromptVersion": "v5.1",
+    "status": 200,
+    "result": {
+      "translation": "Don’t let the camera pull up dead before sunrise—plug it in.",
+      "explanations": [
+        {
+          "original": "Please remind me to charge the camera before sunrise.",
+          "translated": "Don’t let the camera pull up dead before sunrise—plug it in.",
+          "reason": "Recasts the reminder as a vivid, youth-internet-style instruction while preserving the need to charge the camera before sunrise."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-08-04T15:00:44.688Z",
+    "direction": "standard-to-alpha",
+    "inputId": "D3",
+    "input": "Please remind me to charge the camera before sunrise.",
+    "runNumber": 2,
+    "promptVersion": "v6",
+    "responsePromptVersion": "v6",
+    "status": 200,
+    "result": {
+      "translation": "Please ping me to juice up the camera before sunrise.",
+      "explanations": [
+        {
+          "original": "remind me to charge the camera",
+          "translated": "ping me to juice up the camera",
+          "reason": "“Ping” recasts a reminder as a notification, and “juice up” is a playful, clear way to mean charge a device."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-08-04T15:00:50.072Z",
+    "direction": "standard-to-alpha",
+    "inputId": "D3",
+    "input": "Please remind me to charge the camera before sunrise.",
+    "runNumber": 3,
+    "promptVersion": "v5.1",
+    "responsePromptVersion": "v5.1",
+    "status": 200,
+    "result": {
+      "translation": "Don’t let me fumble it—remind me to get the camera charging before sunrise.",
+      "explanations": [
+        {
+          "original": "Please remind me",
+          "translated": "Don’t let me fumble it—remind me",
+          "reason": "Recasts the request as a natural, light internet-style reminder without changing the requested action."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-08-04T15:00:52.573Z",
+    "direction": "standard-to-alpha",
+    "inputId": "D3",
+    "input": "Please remind me to charge the camera before sunrise.",
+    "runNumber": 3,
+    "promptVersion": "v6",
+    "responsePromptVersion": "v6",
+    "status": 200,
+    "result": {
+      "translation": "Please ping me to juice up the camera before sunrise.",
+      "explanations": [
+        {
+          "original": "remind me to charge",
+          "translated": "ping me to juice up",
+          "reason": "Recasts the reminder and battery-charging action in a recognizable device-and-notification register."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-08-04T15:00:54.688Z",
+    "direction": "standard-to-alpha",
+    "inputId": "E1",
+    "input": "The shared calendar is so confusing that nobody knows which meeting is real.",
+    "runNumber": 1,
+    "promptVersion": "v5.1",
+    "responsePromptVersion": "v5.1",
+    "status": 200,
+    "result": {
+      "translation": "That shared calendar’s such a mess, nobody knows which meeting’s actually happening.",
+      "explanations": [
+        {
+          "original": "is so confusing",
+          "translated": "’s such a mess",
+          "reason": "Recasts confusion as a disorganized situation in a natural youth-internet register."
+        },
+        {
+          "original": "is real",
+          "translated": "’s actually happening",
+          "reason": "Clarifies that “real” means the meeting is genuinely scheduled to occur."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-08-04T15:00:57.591Z",
+    "direction": "standard-to-alpha",
+    "inputId": "E1",
+    "input": "The shared calendar is so confusing that nobody knows which meeting is real.",
+    "runNumber": 1,
+    "promptVersion": "v6",
+    "responsePromptVersion": "v6",
+    "status": 200,
+    "result": {
+      "translation": "The shared calendar is such a chaos-core maze that nobody knows which meeting is actually locked in.",
+      "explanations": [
+        {
+          "original": "so confusing",
+          "translated": "such a chaos-core maze",
+          "reason": "Recasts the calendar’s confusion as a navigational mess while keeping the negative evaluation."
+        },
+        {
+          "original": "which meeting is real",
+          "translated": "which meeting is actually locked in",
+          "reason": "“Locked in” means confirmed or genuinely happening in this context."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-08-04T15:01:00.295Z",
+    "direction": "standard-to-alpha",
+    "inputId": "E1",
+    "input": "The shared calendar is so confusing that nobody knows which meeting is real.",
+    "runNumber": 2,
+    "promptVersion": "v5.1",
+    "responsePromptVersion": "v5.1",
+    "status": 200,
+    "result": {
+      "translation": "That shared calendar is such a mess, nobody knows which meeting’s actually happening.",
+      "explanations": [
+        {
+          "original": "so confusing",
+          "translated": "such a mess",
+          "reason": "Recasts the calendar’s confusing state as an easily understood internet-casual metaphor."
+        },
+        {
+          "original": "which meeting is real",
+          "translated": "which meeting’s actually happening",
+          "reason": "Makes “real” concrete in the scheduling context: the meeting that will truly take place."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-08-04T15:01:02.441Z",
+    "direction": "standard-to-alpha",
+    "inputId": "E1",
+    "input": "The shared calendar is so confusing that nobody knows which meeting is real.",
+    "runNumber": 2,
+    "promptVersion": "v6",
+    "responsePromptVersion": "v6",
+    "status": 200,
+    "result": {
+      "translation": "The shared calendar is such a schedule maze that nobody knows which meeting is the actual spawn.",
+      "explanations": [
+        {
+          "original": "so confusing",
+          "translated": "such a schedule maze",
+          "reason": "Recasts the calendar’s confusion as a maze while keeping the meaning that it is hard to navigate."
+        },
+        {
+          "original": "which meeting is real",
+          "translated": "which meeting is the actual spawn",
+          "reason": "Uses a gaming-style term for the meeting that genuinely exists or is the one people should attend."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-08-04T15:01:05.553Z",
+    "direction": "standard-to-alpha",
+    "inputId": "E1",
+    "input": "The shared calendar is so confusing that nobody knows which meeting is real.",
+    "runNumber": 3,
+    "promptVersion": "v5.1",
+    "responsePromptVersion": "v5.1",
+    "status": 200,
+    "result": {
+      "translation": "The shared calendar’s such a maze that nobody knows which meeting’s actually happening.",
+      "explanations": [
+        {
+          "original": "so confusing",
+          "translated": "such a maze",
+          "reason": "Recasts confusing scheduling information as a navigational mess while preserving the meaning."
+        },
+        {
+          "original": "which meeting is real",
+          "translated": "which meeting’s actually happening",
+          "reason": "Uses a more natural online-register way to distinguish a valid meeting from a misleading calendar entry."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-08-04T15:01:07.760Z",
+    "direction": "standard-to-alpha",
+    "inputId": "E1",
+    "input": "The shared calendar is so confusing that nobody knows which meeting is real.",
+    "runNumber": 3,
+    "promptVersion": "v6",
+    "responsePromptVersion": "v6",
+    "status": 200,
+    "result": {
+      "translation": "The shared calendar is such a lore maze that nobody knows which meeting is the actual one.",
+      "explanations": [
+        {
+          "original": "so confusing",
+          "translated": "such a lore maze",
+          "reason": "Recasts the calendar as a confusing tangle of information while preserving the complaint."
+        },
+        {
+          "original": "which meeting is real",
+          "translated": "which meeting is the actual one",
+          "reason": "Makes clear that the uncertainty is about which listed meeting is genuinely scheduled."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-08-04T15:01:09.877Z",
+    "direction": "standard-to-alpha",
+    "inputId": "E2",
+    "input": "Her suitcase is small, but somehow it holds everything she needs.",
+    "runNumber": 1,
+    "promptVersion": "v5.1",
+    "responsePromptVersion": "v5.1",
+    "status": 200,
+    "result": {
+      "translation": "Her suitcase is tiny, but it’s got whole inventory space for everything she needs.",
+      "explanations": [
+        {
+          "original": "somehow it holds everything she needs",
+          "translated": "it’s got whole inventory space for everything she needs",
+          "reason": "Recasts surprising capacity using a gaming-style “inventory space” metaphor while preserving that it fits all her necessities."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-08-04T15:01:12.373Z",
+    "direction": "standard-to-alpha",
+    "inputId": "E2",
+    "input": "Her suitcase is small, but somehow it holds everything she needs.",
+    "runNumber": 1,
+    "promptVersion": "v6",
+    "responsePromptVersion": "v6",
+    "status": 200,
+    "result": {
+      "translation": "Her suitcase is tiny, but it’s got full inventory space for everything she needs.",
+      "explanations": [
+        {
+          "original": "somehow it holds everything she needs",
+          "translated": "it’s got full inventory space for everything she needs",
+          "reason": "Uses a gaming-style inventory metaphor to preserve the surprising amount the small suitcase can contain."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-08-04T15:01:14.706Z",
+    "direction": "standard-to-alpha",
+    "inputId": "E2",
+    "input": "Her suitcase is small, but somehow it holds everything she needs.",
+    "runNumber": 2,
+    "promptVersion": "v5.1",
+    "responsePromptVersion": "v5.1",
+    "status": 200,
+    "result": {
+      "translation": "Her suitcase is tiny, but it’s got that infinite-inventory glitch—everything she needs fits in there.",
+      "explanations": [
+        {
+          "original": "somehow it holds everything she needs",
+          "translated": "it’s got that infinite-inventory glitch—everything she needs fits in there",
+          "reason": "Recasts the surprising capacity as a familiar gaming-style “infinite inventory” glitch while preserving the idea that it contains all her necessities."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-08-04T15:01:23.946Z",
+    "direction": "standard-to-alpha",
+    "inputId": "E2",
+    "input": "Her suitcase is small, but somehow it holds everything she needs.",
+    "runNumber": 2,
+    "promptVersion": "v6",
+    "responsePromptVersion": "v6",
+    "status": 200,
+    "result": {
+      "translation": "Her suitcase is low-key tiny, but it’s got TARDIS inventory—everything she needs is in there.",
+      "explanations": [
+        {
+          "original": "small, but somehow it holds everything she needs",
+          "translated": "low-key tiny, but it’s got TARDIS inventory—everything she needs is in there",
+          "reason": "Uses a familiar pop-culture/container metaphor to convey that the suitcase is surprisingly spacious without changing what it contains."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-08-04T15:01:26.885Z",
+    "direction": "standard-to-alpha",
+    "inputId": "E2",
+    "input": "Her suitcase is small, but somehow it holds everything she needs.",
+    "runNumber": 3,
+    "promptVersion": "v5.1",
+    "responsePromptVersion": "v5.1",
+    "status": 200,
+    "result": {
+      "translation": "Her suitcase is tiny, but it’s got her whole life packed in there somehow.",
+      "explanations": [
+        {
+          "original": "it holds everything she needs",
+          "translated": "it’s got her whole life packed in there somehow",
+          "reason": "Uses a natural hyperbolic recast for fitting all her essentials into a small suitcase without changing the core meaning."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-08-04T15:01:29.008Z",
+    "direction": "standard-to-alpha",
+    "inputId": "E2",
+    "input": "Her suitcase is small, but somehow it holds everything she needs.",
+    "runNumber": 3,
+    "promptVersion": "v6",
+    "responsePromptVersion": "v6",
+    "status": 200,
+    "result": {
+      "translation": "Her suitcase is tiny, but it’s got whole inventory-space for everything she needs.",
+      "explanations": [
+        {
+          "original": "somehow it holds everything she needs",
+          "translated": "it’s got whole inventory-space for everything she needs",
+          "reason": "Recasts the suitcase’s surprising capacity through a recognizable game-inventory metaphor without changing what it contains."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-08-04T15:01:31.591Z",
+    "direction": "standard-to-alpha",
+    "inputId": "E3",
+    "input": "The presentation looked ordinary until the final slide changed the whole argument.",
+    "runNumber": 1,
+    "promptVersion": "v5.1",
+    "responsePromptVersion": "v5.1",
+    "status": 200,
+    "result": {
+      "translation": "The presentation was giving regular until that last slide flipped the whole argument.",
+      "explanations": [
+        {
+          "original": "looked ordinary",
+          "translated": "was giving regular",
+          "reason": "“Was giving regular” means it initially came across as ordinary or unremarkable."
+        },
+        {
+          "original": "changed the whole argument",
+          "translated": "flipped the whole argument",
+          "reason": "“Flipped” means it radically altered the argument’s direction or interpretation."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-08-04T15:01:34.118Z",
+    "direction": "standard-to-alpha",
+    "inputId": "E3",
+    "input": "The presentation looked ordinary until the final slide changed the whole argument.",
+    "runNumber": 1,
+    "promptVersion": "v6",
+    "responsePromptVersion": "v6",
+    "status": 200,
+    "result": {
+      "translation": "The presentation was giving default settings until the final slide lore-dropped and flipped the whole argument.",
+      "explanations": [
+        {
+          "original": "looked ordinary",
+          "translated": "was giving default settings",
+          "reason": "Recasts an unremarkable appearance as the standard, unchanged version of something."
+        },
+        {
+          "original": "changed the whole argument",
+          "translated": "lore-dropped and flipped the whole argument",
+          "reason": "Uses online storytelling language for a final reveal that reframed the presentation's reasoning."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-08-04T15:01:36.400Z",
+    "direction": "standard-to-alpha",
+    "inputId": "E3",
+    "input": "The presentation looked ordinary until the final slide changed the whole argument.",
+    "runNumber": 2,
+    "promptVersion": "v5.1",
+    "responsePromptVersion": "v5.1",
+    "status": 200,
+    "result": {
+      "translation": "The presentation was giving basic till that last slide flipped the whole argument.",
+      "explanations": [
+        {
+          "original": "looked ordinary",
+          "translated": "was giving basic",
+          "reason": "“Giving basic” means it came across as unremarkable or standard."
+        },
+        {
+          "original": "changed the whole argument",
+          "translated": "flipped the whole argument",
+          "reason": "“Flipped” conveys that the slide fundamentally reversed or reshaped the argument."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-08-04T15:01:41.861Z",
+    "direction": "standard-to-alpha",
+    "inputId": "E3",
+    "input": "The presentation looked ordinary until the final slide changed the whole argument.",
+    "runNumber": 2,
+    "promptVersion": "v6",
+    "responsePromptVersion": "v6",
+    "status": 200,
+    "result": {
+      "translation": "The presentation was giving default mode till the final slide hard-reset the whole argument.",
+      "explanations": [
+        {
+          "original": "looked ordinary",
+          "translated": "was giving default mode",
+          "reason": "Recasts an unremarkable appearance as a generic, default interface setting."
+        },
+        {
+          "original": "changed the whole argument",
+          "translated": "hard-reset the whole argument",
+          "reason": "Uses a tech metaphor for a final slide that fundamentally reframed the reasoning."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-08-04T15:01:43.877Z",
+    "direction": "standard-to-alpha",
+    "inputId": "E3",
+    "input": "The presentation looked ordinary until the final slide changed the whole argument.",
+    "runNumber": 3,
+    "promptVersion": "v5.1",
+    "responsePromptVersion": "v5.1",
+    "status": 200,
+    "result": {
+      "translation": "The presentation was giving basic till that final slide flipped the whole argument.",
+      "explanations": [
+        {
+          "original": "looked ordinary",
+          "translated": "was giving basic",
+          "reason": "“Was giving basic” conveys that it came across as unremarkable or standard."
+        },
+        {
+          "original": "changed the whole argument",
+          "translated": "flipped the whole argument",
+          "reason": "“Flipped” means it substantially reversed or transformed the argument’s direction."
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-08-04T15:01:47.261Z",
+    "direction": "standard-to-alpha",
+    "inputId": "E3",
+    "input": "The presentation looked ordinary until the final slide changed the whole argument.",
+    "runNumber": 3,
+    "promptVersion": "v6",
+    "responsePromptVersion": "v6",
+    "status": 200,
+    "result": {
+      "translation": "The presentation was giving default mode until the final slide plot-twisted the whole argument.",
+      "explanations": [
+        {
+          "original": "looked ordinary",
+          "translated": "was giving default mode",
+          "reason": "Recasts an unremarkable appearance as the presentation seeming like the standard, expected version."
+        },
+        {
+          "original": "changed the whole argument",
+          "translated": "plot-twisted the whole argument",
+          "reason": "Uses a narrative-style verb to show that the final slide unexpectedly reframed the argument."
+        }
+      ]
+    }
+  }
+]

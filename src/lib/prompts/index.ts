@@ -4,6 +4,7 @@ import { promptV3 } from "@/lib/prompts/v3";
 import { promptV4 } from "@/lib/prompts/v4";
 import { promptV5 } from "@/lib/prompts/v5";
 import { promptV51 } from "@/lib/prompts/v5-1";
+import { promptV6 } from "@/lib/prompts/v6";
 import type {
   PromptVersion,
   TranslationPrompt,
@@ -12,7 +13,7 @@ import type {
 export { promptVersions } from "@/lib/prompts/types";
 export type { PromptVersion } from "@/lib/prompts/types";
 
-export const defaultPromptVersion: PromptVersion = "v5.1";
+export const defaultPromptVersion: PromptVersion = "v6";
 
 const prompts = {
   v1: promptV1,
@@ -21,6 +22,7 @@ const prompts = {
   v4: promptV4,
   v5: promptV5,
   "v5.1": promptV51,
+  v6: promptV6,
 } satisfies Record<PromptVersion, TranslationPrompt>;
 
 export function getTranslationPrompt(version: PromptVersion) {

@@ -10,11 +10,17 @@ import {
 } from "@/lib/translation";
 import {
   clearLocalFeedback,
+  explanationFailureReasons,
   exportLocalFeedback,
-  type FeedbackRating,
+  getNextRunNumber,
+  type ExplanationFailureReason,
+  type ExplanationRating,
   localFeedbackEnabled,
   readLocalFeedback,
   saveLocalFeedback,
+  translationFailureReasons,
+  type TranslationFailureReason,
+  type TranslationRating,
 } from "@/lib/local-feedback";
 
 const directions = [
@@ -27,10 +33,11 @@ type CompletedTranslation = {
   input: string;
   direction: TranslationRequest["direction"];
   promptVersion: string;
+  runNumber: number;
   data: TranslationResponse;
 };
 
-function ThumbIcon({ direction }: { direction: FeedbackRating }) {
+function ThumbIcon({ direction }: { direction: TranslationRating }) {
   return (
     <svg
       aria-hidden="true"
@@ -59,7 +66,17 @@ export function Translator() {
   const [error, setError] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [copied, setCopied] = useState(false);
-  const [rating, setRating] = useState<FeedbackRating | null>(null);
+  const [translationRating, setTranslationRating] =
+    useState<TranslationRating | null>(null);
+  const [translationFailureReason, setTranslationFailureReason] = useState<
+    TranslationFailureReason | ""
+  >("");
+  const [explanationRating, setExplanationRating] =
+    useState<ExplanationRating | null>(null);
+  const [explanationFailureReason, setExplanationFailureReason] = useState<
+    ExplanationFailureReason | ""
+  >("");
+  const [feedbackSaved, setFeedbackSaved] = useState(false);
   const [feedbackCount, setFeedbackCount] = useState(0);
 
   useEffect(() => {
@@ -76,7 +93,11 @@ export function Translator() {
     setIsLoading(true);
     setError("");
     setCopied(false);
-    setRating(null);
+    setTranslationRating(null);
+    setTranslationFailureReason("");
+    setExplanationRating(null);
+    setExplanationFailureReason("");
+    setFeedbackSaved(false);
 
     try {
       const response = await fetch("/api/translate", {
@@ -103,12 +124,17 @@ export function Translator() {
         throw new Error("The translation came back in an unexpected format.");
       }
 
-      setResult({
+      const completedTranslation = {
         id: window.crypto.randomUUID(),
-        input: text,
+        input: text.trim(),
         direction,
         promptVersion: response.headers.get("X-Prompt-Version") ?? "unknown",
         data: parsed.data,
+      };
+
+      setResult({
+        ...completedTranslation,
+        runNumber: getNextRunNumber(completedTranslation),
       });
     } catch (caughtError) {
       setError(
@@ -133,8 +159,8 @@ export function Translator() {
     }
   }
 
-  function rateTranslation(nextRating: FeedbackRating) {
-    if (!result) return;
+  function saveEvaluation() {
+    if (!result || !translationRating || !explanationRating) return;
 
     try {
       const count = saveLocalFeedback({
@@ -143,11 +169,19 @@ export function Translator() {
         input: result.input,
         direction: result.direction,
         promptVersion: result.promptVersion,
-        rating: nextRating,
+        runNumber: result.runNumber,
+        translationRating,
+        ...(translationRating === "down" && translationFailureReason
+          ? { translationFailureReason }
+          : {}),
+        explanationRating,
+        ...(explanationRating === "misaligned" && explanationFailureReason
+          ? { explanationFailureReason }
+          : {}),
         result: result.data,
       });
 
-      setRating(nextRating);
+      setFeedbackSaved(true);
       setFeedbackCount(count);
     } catch {
       setError("Feedback couldn't be saved in this browser.");
@@ -159,7 +193,7 @@ export function Translator() {
 
     clearLocalFeedback();
     setFeedbackCount(0);
-    setRating(null);
+    setFeedbackSaved(false);
   }
 
   const actionLabel =
@@ -275,53 +309,149 @@ export function Translator() {
               </div>
             )}
             {localFeedbackEnabled && (
-              <div className="mt-auto flex flex-wrap items-end justify-between gap-4 border-t border-border pt-6">
-                <div className="flex items-center gap-3 text-xs text-muted">
-                  <span>{feedbackCount} saved locally</span>
-                  <button
-                    type="button"
-                    onClick={exportLocalFeedback}
-                    disabled={feedbackCount === 0}
-                    className="font-semibold underline-offset-4 hover:underline disabled:cursor-not-allowed disabled:opacity-50"
-                  >
-                    Export
-                  </button>
-                  <button
-                    type="button"
-                    onClick={clearFeedback}
-                    disabled={feedbackCount === 0}
-                    className="font-semibold underline-offset-4 hover:underline disabled:cursor-not-allowed disabled:opacity-50"
-                  >
-                    Clear
-                  </button>
+              <div className="mt-auto border-t border-border pt-6">
+                <div className="grid gap-5 sm:grid-cols-2">
+                  <fieldset>
+                    <legend className="text-sm font-semibold">
+                      Translation
+                    </legend>
+                    <p className="mt-1 text-xs text-muted">
+                      Is this translation ready to use?
+                    </p>
+                    <div className="mt-3 flex gap-2">
+                      {(["up", "down"] as const).map((option) => (
+                        <button
+                          key={option}
+                          type="button"
+                          aria-label={
+                            option === "up"
+                              ? "Rate translation positively"
+                              : "Rate translation negatively"
+                          }
+                          aria-pressed={translationRating === option}
+                          title={option === "up" ? "Thumbs up" : "Thumbs down"}
+                          onClick={() => {
+                            setTranslationRating(option);
+                            setTranslationFailureReason("");
+                            setFeedbackSaved(false);
+                          }}
+                          className={`flex size-10 items-center justify-center rounded-lg border transition ${
+                            translationRating === option
+                              ? "border-accent bg-accent-soft text-accent-strong"
+                              : "border-border text-muted hover:bg-background hover:text-foreground"
+                          }`}
+                        >
+                          <ThumbIcon direction={option} />
+                        </button>
+                      ))}
+                    </div>
+                    {translationRating === "down" && (
+                      <label className="mt-3 block text-xs font-semibold">
+                        Translation failure reason{" "}
+                        <span className="text-muted">(optional)</span>
+                        <select
+                          value={translationFailureReason}
+                          onChange={(event) => {
+                            setTranslationFailureReason(
+                              event.target.value as TranslationFailureReason | "",
+                            );
+                            setFeedbackSaved(false);
+                          }}
+                          className="mt-1 min-h-10 w-full rounded-lg border border-border bg-background px-3 font-normal text-foreground"
+                        >
+                          <option value="">Select a reason</option>
+                          {translationFailureReasons.map((reason) => (
+                            <option key={reason.value} value={reason.value}>
+                              {reason.label}
+                            </option>
+                          ))}
+                        </select>
+                      </label>
+                    )}
+                  </fieldset>
+
+                  <fieldset>
+                    <legend className="text-sm font-semibold">
+                      Explanation
+                    </legend>
+                    <p className="mt-1 text-xs text-muted">
+                      Do the explanation and spans align?
+                    </p>
+                    <div className="mt-3 flex gap-2">
+                      {(["aligned", "misaligned"] as const).map((option) => (
+                        <button
+                          key={option}
+                          type="button"
+                          aria-pressed={explanationRating === option}
+                          onClick={() => {
+                            setExplanationRating(option);
+                            setExplanationFailureReason("");
+                            setFeedbackSaved(false);
+                          }}
+                          className={`min-h-10 rounded-lg border px-3 text-xs font-semibold transition ${
+                            explanationRating === option
+                              ? "border-accent bg-accent-soft text-accent-strong"
+                              : "border-border text-muted hover:bg-background hover:text-foreground"
+                          }`}
+                        >
+                          {option === "aligned" ? "Aligned" : "Misaligned"}
+                        </button>
+                      ))}
+                    </div>
+                    {explanationRating === "misaligned" && (
+                      <label className="mt-3 block text-xs font-semibold">
+                        Explanation failure reason{" "}
+                        <span className="text-muted">(optional)</span>
+                        <select
+                          value={explanationFailureReason}
+                          onChange={(event) => {
+                            setExplanationFailureReason(
+                              event.target.value as ExplanationFailureReason | "",
+                            );
+                            setFeedbackSaved(false);
+                          }}
+                          className="mt-1 min-h-10 w-full rounded-lg border border-border bg-background px-3 font-normal text-foreground"
+                        >
+                          <option value="">Select a reason</option>
+                          {explanationFailureReasons.map((reason) => (
+                            <option key={reason.value} value={reason.value}>
+                              {reason.label}
+                            </option>
+                          ))}
+                        </select>
+                      </label>
+                    )}
+                  </fieldset>
                 </div>
-                <div className="text-right">
-                  <p className="mb-2 text-xs text-muted">
-                    {rating ? "Saved locally" : "Rate this translation"}
-                  </p>
-                  <div className="flex justify-end gap-2">
-                    {(["up", "down"] as const).map((option) => (
-                      <button
-                        key={option}
-                        type="button"
-                        aria-label={
-                          option === "up"
-                            ? "Rate translation positively"
-                            : "Rate translation negatively"
-                        }
-                        aria-pressed={rating === option}
-                        title={option === "up" ? "Thumbs up" : "Thumbs down"}
-                        onClick={() => rateTranslation(option)}
-                        className={`flex size-10 items-center justify-center rounded-lg border transition ${
-                          rating === option
-                            ? "border-accent bg-accent-soft text-accent-strong"
-                            : "border-border text-muted hover:bg-background hover:text-foreground"
-                        }`}
-                      >
-                        <ThumbIcon direction={option} />
-                      </button>
-                    ))}
+
+                <div className="mt-5 flex flex-wrap items-center justify-between gap-3">
+                  <div className="flex items-center gap-3 text-xs text-muted">
+                    <span>{feedbackCount} saved locally</span>
+                    <button
+                      type="button"
+                      onClick={exportLocalFeedback}
+                      disabled={feedbackCount === 0}
+                      className="font-semibold underline-offset-4 hover:underline disabled:cursor-not-allowed disabled:opacity-50"
+                    >
+                      Export
+                    </button>
+                    <button
+                      type="button"
+                      onClick={clearFeedback}
+                      disabled={feedbackCount === 0}
+                      className="font-semibold underline-offset-4 hover:underline disabled:cursor-not-allowed disabled:opacity-50"
+                    >
+                      Clear
+                    </button>
                   </div>
+                  <button
+                    type="button"
+                    onClick={saveEvaluation}
+                    disabled={!translationRating || !explanationRating}
+                    className="min-h-10 rounded-lg bg-accent px-4 text-sm font-semibold text-white transition hover:bg-accent-strong disabled:cursor-not-allowed disabled:opacity-50 dark:text-background"
+                  >
+                    {feedbackSaved ? "Saved locally" : "Save evaluation"}
+                  </button>
                 </div>
               </div>
             )}
