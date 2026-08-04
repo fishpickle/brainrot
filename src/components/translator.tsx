@@ -202,14 +202,14 @@ export function Translator() {
     direction === "standard-to-alpha" ? "Cooking…" : "Uncooking…";
 
   return (
-    <div className="grid gap-4 lg:grid-cols-2">
+    <div className="grid gap-3 lg:grid-cols-2">
       <form
         onSubmit={handleSubmit}
-        className="rounded-3xl border border-border bg-surface p-4 shadow-[0_18px_60px_rgba(20,18,12,0.06)] sm:p-6"
+        className="rounded-2xl border border-border bg-surface p-4 shadow-[0_14px_45px_rgba(68,45,25,0.07)] sm:p-6"
       >
         <fieldset>
           <legend className="mb-2 text-sm font-semibold">Direction</legend>
-          <div className="grid grid-cols-2 rounded-xl bg-background p-1">
+          <div className="grid grid-cols-2 rounded-lg border border-border bg-background p-1">
             {directions.map((option) => (
               <label key={option.value} className="cursor-pointer">
                 <input
@@ -220,7 +220,7 @@ export function Translator() {
                   onChange={() => setDirection(option.value)}
                   className="peer sr-only"
                 />
-                <span className="flex min-h-11 items-center justify-center rounded-lg px-2 text-center text-xs font-semibold text-muted transition peer-checked:bg-surface peer-checked:text-foreground peer-checked:shadow-sm peer-focus-visible:outline-3 peer-focus-visible:outline-accent sm:text-sm">
+                <span className="flex min-h-11 items-center justify-center rounded-md px-2 text-center text-xs font-semibold text-muted transition peer-checked:bg-surface peer-checked:text-accent-strong peer-checked:shadow-sm peer-focus-visible:outline-3 peer-focus-visible:outline-accent sm:text-sm">
                   {option.label}
                 </span>
               </label>
@@ -244,14 +244,14 @@ export function Translator() {
             maxLength={MAX_INPUT_LENGTH}
             rows={8}
             placeholder="Paste a sentence or paragraph…"
-            className="min-h-52 w-full resize-y rounded-2xl border border-border bg-background px-4 py-3 leading-7 placeholder:text-muted/70"
+            className="min-h-52 w-full resize-y rounded-xl border border-border bg-background px-4 py-3 leading-7 placeholder:text-muted/70"
           />
         </div>
 
         <button
           type="submit"
           disabled={!text.trim() || isLoading}
-          className="mt-5 flex min-h-12 w-full items-center justify-center rounded-xl bg-accent px-5 font-semibold text-white transition hover:bg-accent-strong disabled:cursor-not-allowed disabled:opacity-50 dark:text-background"
+          className="mt-5 flex min-h-12 w-full items-center justify-center rounded-lg bg-accent px-5 font-semibold text-white transition hover:bg-accent-strong disabled:cursor-not-allowed disabled:opacity-70"
         >
           {isLoading ? loadingLabel : actionLabel}
         </button>
@@ -264,7 +264,7 @@ export function Translator() {
       <section
         aria-live="polite"
         aria-busy={isLoading}
-        className="flex min-h-80 flex-col rounded-3xl border border-border bg-surface p-4 shadow-[0_18px_60px_rgba(20,18,12,0.06)] sm:p-6"
+        className="flex min-h-80 flex-col rounded-2xl border border-border bg-surface p-4 shadow-[0_14px_45px_rgba(68,45,25,0.07)] sm:p-6"
       >
         <div className="flex items-center justify-between gap-4">
           <h2 className="text-sm font-semibold">Translation</h2>
@@ -288,12 +288,12 @@ export function Translator() {
           </div>
         ) : result ? (
           <div className="flex flex-1 flex-col">
-            <p className="mt-5 whitespace-pre-wrap text-lg leading-8">
+            <p className="font-editorial mt-5 whitespace-pre-wrap text-2xl leading-9">
               {result.data.translation}
             </p>
             {result.data.explanations.length > 0 && (
               <div className="mt-8 border-t border-border pt-6">
-                <h3 className="text-lg font-bold">Why these changes</h3>
+                <h3 className="font-editorial text-2xl">Why these changes</h3>
                 <ul className="mt-4 space-y-4">
                   {result.data.explanations.map((item, index) => (
                     <li key={`${item.original}-${index}`}>
@@ -448,7 +448,7 @@ export function Translator() {
                     type="button"
                     onClick={saveEvaluation}
                     disabled={!translationRating || !explanationRating}
-                    className="min-h-10 rounded-lg bg-accent px-4 text-sm font-semibold text-white transition hover:bg-accent-strong disabled:cursor-not-allowed disabled:opacity-50 dark:text-background"
+                    className="min-h-10 rounded-lg bg-accent px-4 text-sm font-semibold text-white transition hover:bg-accent-strong disabled:cursor-not-allowed disabled:opacity-70"
                   >
                     {feedbackSaved ? "Saved locally" : "Save evaluation"}
                   </button>
@@ -458,10 +458,14 @@ export function Translator() {
           </div>
         ) : (
           <div className="flex min-h-64 flex-1 items-center justify-center text-center">
-            <p className="max-w-xs text-sm leading-6 text-muted">
-              Your translation and a quick explanation of the key changes will
-              appear here.
-            </p>
+            <div className="max-w-xs text-sm leading-6 text-muted">
+              <p>Your translation will appear here.</p>
+              <div
+                className="mx-auto my-5 w-12 border-t border-border"
+                aria-hidden="true"
+              />
+              <p>We’ll also explain the slang choices we made.</p>
+            </div>
           </div>
         )}
       </section>

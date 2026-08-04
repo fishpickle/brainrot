@@ -11,57 +11,60 @@ rolled back.
 
 **Current status:** Fresh evaluation complete; the product owner approved
 Prompt v6, and the application now uses it by default. Local end-to-end and
-production-build verification passed. Commit, tag, and model snapshot decisions
-remain outstanding.
+production-build verification passed. The launch candidate is committed and
+tagged, and Milestone 1 is complete.
 
 ### Must Have
 
 - [x] Run Prompt v6 on a fresh held-out dataset and make a final
   v5.1-versus-v6 promotion decision.
   **Why:** The latest v6 gains were measured on inputs used during development.
-- [ ] Freeze the selected launch prompt and record its prompt, model, reasoning
+- [x] Freeze the selected launch prompt and record its prompt, model, reasoning
   setting, date, and evaluation results.
   **Why:** A reproducible baseline is necessary for diagnosing behavioral
   changes.
 - [x] Choose and document the production model identifier.
   **Why:** Model choice directly affects quality, latency, cost, and
   reproducibility.
-- [ ] Decide whether to use a stable model snapshot or the moving
+- [x] Decide whether to use a stable model snapshot or the moving
   `gpt-5.6-terra` identifier.
   **Why:** A moving model may change behavior without a prompt revision.
-- [ ] Update PRODUCT.md, README.md, and the canonical specification for the
+- [x] Update PRODUCT.md, README.md, and the canonical specification for the
   single Cook it / Uncook it contract.
   **Why:** Current documentation still presents the removed intensity product.
-- [ ] Remove or formally deprecate residual intensity fields.
+- [x] Remove or formally deprecate residual intensity fields.
   **Why:** Hidden legacy behavior makes the implementation diverge from the
   product contract.
 
 ### Nice to Have
 
-- [ ] Preserve the retired intensity design in a historical decision note.
+- [x] Preserve the retired intensity design in a historical decision note.
 - [ ] Add a concise prompt-version changelog.
 - [ ] Record rejected launch alternatives and why they were deferred.
 
 ## Milestone 2 — Complete the Launch UX
 
-The exact UI changes will be specified separately before implementation.
+**Current status:** The launch visual system and responsive two-card workflow
+are approved and documented in `roadmap/ui-launch-baseline-2026-08-04.md`.
+Core-state, responsive, keyboard, contrast, and production-feedback checks
+passed. The processing disclosure remains before Milestone 2 is complete.
 
 ### Must Have
 
 - [x] Verify that the winning prompt is selected by the ordinary UI.
   **Why:** The UI currently receives the application default, which remains
   v5.1.
-- [ ] Implement the agreed pre-launch UI changes.
+- [x] Implement the agreed pre-launch UI changes.
   **Why:** The public interface must reflect the intended launch experience.
-- [ ] Review empty, typing, loading, success, explanation-free, error, and copy
+- [x] Review empty, typing, loading, success, explanation-free, error, and copy
   states on mobile and desktop.
   **Why:** These states comprise the complete core journey.
-- [ ] Confirm keyboard operation, focus order, labels, contrast, status
+- [x] Confirm keyboard operation, focus order, labels, contrast, status
   messages, and touch targets.
   **Why:** The core workflow must remain usable across common access methods.
 - [ ] Add a concise AI limitations and processing disclosure.
   **Why:** Users should understand the service before relying on its output.
-- [ ] Confirm development feedback controls are disabled in production.
+- [x] Confirm development feedback controls are disabled in production.
   **Why:** Browser-only evaluation tooling was intentionally temporary.
 
 ### Nice to Have

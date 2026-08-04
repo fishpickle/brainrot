@@ -1,15 +1,15 @@
 @import "tailwindcss";
 
 :root {
-  --background: #f7f5ef;
-  --surface: #ffffff;
-  --foreground: #191919;
-  --muted: #68665f;
-  --border: #dcd8ce;
-  --accent: #6750a4;
-  --accent-strong: #523d8d;
-  --accent-soft: #ede8fa;
-  --danger: #b42318;
+  --background: #f3f1ed;
+  --surface: #f7f4ef;
+  --foreground: #201d1a;
+  --muted: #68615a;
+  --border: #d1c7ba;
+  --accent: #8c1515;
+  --accent-strong: #741010;
+  --accent-soft: #f2ddda;
+  --danger: #8c1515;
 }
 
 @theme inline {
@@ -24,20 +24,7 @@
   --color-danger: var(--danger);
   --font-sans: "Geist", "Geist Fallback", ui-sans-serif, system-ui, sans-serif;
   --font-mono: "Geist Mono", "Geist Mono Fallback", ui-monospace, monospace;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #11110f;
-    --surface: #1a1a17;
-    --foreground: #f2f0e9;
-    --muted: #aaa79e;
-    --border: #37362f;
-    --accent: #b9a6ef;
-    --accent-strong: #cfbef8;
-    --accent-soft: #2c263c;
-    --danger: #ff8a80;
-  }
+  --font-editorial: "Iowan Old Style", "Baskerville", "Times New Roman", serif;
 }
 
 * {
@@ -60,6 +47,6 @@ textarea {
 }
 
 :focus-visible {
-  outline: 3px solid color-mix(in srgb, var(--accent) 45%, transparent);
+  outline: 3px solid color-mix(in srgb, var(--accent) 60%, transparent);
   outline-offset: 2px;
 }

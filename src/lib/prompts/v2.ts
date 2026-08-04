@@ -1,28 +1,11 @@
-import type {
-  TranslationPrompt,
-  TranslationPromptInput,
-} from "@/lib/prompts/types";
+import type { TranslationPrompt } from "@/lib/prompts/types";
 
-const intensityContracts = {
-  mild: [
-    "Mild is accessible, restrained, and broadly understandable.",
-    "Use a small number of contextually appropriate slang transformations.",
-    "Usually retain the source sentence structure and avoid stacked slang or unnecessary exaggeration.",
-    "The result should still feel translated, not merely have a slang phrase appended.",
-  ].join(" "),
-  cooked: [
-    "Cooked is clearly and consistently Gen Alpha in voice.",
-    "Use multiple contextually relevant transformations when the source supports them.",
-    "Recast rhythm, syntax, or phrasing where natural instead of preserving the source structure by default.",
-    "Keep the result coherent and understandable from context.",
-  ].join(" "),
-  "ohio-max": [
-    "Ohio Max is highly stylized, playful, and unmistakably transformed.",
-    "Use strong compression, figurative framing, rhythmic restructuring, or dense slang where they fit the source.",
-    "Keep the result interpretable and semantically faithful.",
-    "Do not mistake intensity for randomness, surrealism, hostility, or unrelated cultural references.",
-  ].join(" "),
-} satisfies Record<TranslationPromptInput["intensity"], string>;
+const forwardContract = [
+  "Cooked is clearly and consistently Gen Alpha in voice.",
+  "Use multiple contextually relevant transformations when the source supports them.",
+  "Recast rhythm, syntax, or phrasing where natural instead of preserving the source structure by default.",
+  "Keep the result coherent and understandable from context.",
+].join(" ");
 
 const fidelityContract = [
   "Preserve factual content, communicative intent, emotional and interpersonal tone, relevant implications, and paragraph structure.",
@@ -50,17 +33,16 @@ const explanationContract = [
 export const promptV2: TranslationPrompt = {
   version: "v2",
   label: "Behavioral specification v1",
-  buildInstructions({ direction, intensity }) {
+  buildInstructions({ direction }) {
     const directionContract =
       direction === "standard-to-alpha"
         ? [
             "Translate contemporary Standard American English into natural Gen Alpha slang.",
-            intensityContracts[intensity],
+            forwardContract,
             vocabularyPolicy,
           ].join(" ")
         : [
             "Translate Gen Alpha slang into natural, conversational Standard American English.",
-            "Intensity does not alter reverse translation behavior.",
             "Recover literal meaning, attitude, social intent, and implied context.",
             "Do not flatten a rebuke, joke, affectionate phrase, or other pragmatic force into a neutral paraphrase.",
             "If the source is genuinely ambiguous, use the most likely context-supported meaning without inventing certainty.",

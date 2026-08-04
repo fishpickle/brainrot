@@ -16,16 +16,17 @@ Unlike joke generators, this should feel like a real translation tool.
 
 ## MVP
 
-- Adult → Gen Alpha
-- Gen Alpha → Adult
-- Intensity:
-  - Mild
-  - Cooked
-  - Ohio Max
-- Explain why certain phrases were translated
-- Copy button
-- Responsive
-- Dark mode
+- Standard English → Gen Alpha with one canonical Cook it contract
+- Gen Alpha → Standard English with one canonical Uncook it contract
+- “Why these changes” explanations for noteworthy transformations
+- Copy-to-clipboard action
+- Mobile-first responsive interface
+- Automatic system dark mode
+- 2,000-character input limit
+
+The former Mild, Cooked, and Ohio Max intensity selector was removed after
+evaluation showed that the levels were not reliably differentiated and did not
+fit the reverse-translation experience.
 
 ## Non-goals
 
@@ -36,4 +37,5 @@ Unlike joke generators, this should feel like a real translation tool.
 
 ## Success
 
-A user can paste a paragraph, translate it in under 5 seconds, understand *why* the translation changed, and copy the result.
+A user can paste a paragraph, receive a useful translation quickly, understand
+the noteworthy changes, and copy the result.

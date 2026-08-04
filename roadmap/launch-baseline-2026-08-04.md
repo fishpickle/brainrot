@@ -4,7 +4,7 @@
 
 Prompt v6 is the promoted application default and launch candidate. The
 configuration has passed local end-to-end and production-build verification;
-it has not yet been committed, tagged, or deployed.
+it is committed and tagged but has not yet been deployed.
 
 ## Configuration
 
@@ -20,9 +20,11 @@ it has not yet been committed, tagged, or deployed.
 | Next.js | `15.5.21` |
 | Evaluation date | 2026-08-04 |
 
-The production decision between the moving `gpt-5.6-terra` identifier and an
-available fixed snapshot remains open. Changing the model requires a focused
-behavior and latency check against this baseline.
+OpenAI's current model page lists `gpt-5.6-terra` as both the model identifier
+and its only available snapshot/alias; it does not expose a separate dated
+Terra snapshot. The launch therefore retains the evaluated identifier. Any
+future model change requires a focused behavior and latency check against this
+baseline.
 
 ## Evaluation Evidence
 
@@ -59,5 +61,5 @@ monitored rather than tuned against the now-visible launch dataset.
 ## Recovery
 
 Prompt v5.1 remains available in the prompt registry as the immediate behavior
-fallback. A Git commit and annotated launch-candidate tag are still required to
-make this baseline fully recoverable.
+fallback. Commit `ccabe4c` and annotated tag `prompt-v6-launch-candidate`
+preserve the evaluated baseline.
