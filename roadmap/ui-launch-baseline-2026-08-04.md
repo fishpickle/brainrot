@@ -13,6 +13,8 @@ mode is deferred until after launch.
 - Tagline: “because every generation says it differently.”
 - Forward action: “Cook it”
 - Reverse action: “Uncook it”
+- Disclosure: “Your text is sent to OpenAI to generate a translation. AI can
+  miss context, so check important translations.”
 
 ## Visual System
 
@@ -42,6 +44,7 @@ mode is deferred until after launch.
 - [x] Text and primary-control colors meet WCAG AA contrast
 - [x] Focus ring exceeds 3:1 contrast against both launch surfaces
 - [x] Empty, populated, explanation, copy, and local-evaluation layouts reviewed
+- [x] AI limitations and OpenAI processing disclosure is visible
 - [x] Local feedback strings absent from the production bundle
 - [x] ESLint, TypeScript checking, and optimized production build passed
 

@@ -47,7 +47,8 @@ tagged, and Milestone 1 is complete.
 **Current status:** The launch visual system and responsive two-card workflow
 are approved and documented in `roadmap/ui-launch-baseline-2026-08-04.md`.
 Core-state, responsive, keyboard, contrast, and production-feedback checks
-passed. The processing disclosure remains before Milestone 2 is complete.
+passed. The limitations and processing disclosure is published, and Milestone
+2 is complete.
 
 ### Must Have
 
@@ -62,7 +63,7 @@ passed. The processing disclosure remains before Milestone 2 is complete.
 - [x] Confirm keyboard operation, focus order, labels, contrast, status
   messages, and touch targets.
   **Why:** The core workflow must remain usable across common access methods.
-- [ ] Add a concise AI limitations and processing disclosure.
+- [x] Add a concise AI limitations and processing disclosure.
   **Why:** Users should understand the service before relying on its output.
 - [x] Confirm development feedback controls are disabled in production.
   **Why:** Browser-only evaluation tooling was intentionally temporary.

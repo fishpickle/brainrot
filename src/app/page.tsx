@@ -16,7 +16,8 @@ export default function Home() {
       </header>
       <Translator />
       <footer className="mt-auto pt-10 text-center text-xs text-muted">
-        AI can miss context. Check important translations.
+        Your text is sent to OpenAI to generate a translation. AI can miss
+        context, so check important translations.
       </footer>
     </main>
   );
