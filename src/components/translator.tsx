@@ -8,6 +8,7 @@ import {
   type TranslationResponse,
   translationResponseSchema,
 } from "@/lib/translation";
+import { getClientIdentifier } from "@/lib/client-identifier";
 import {
   clearLocalFeedback,
   explanationFailureReasons,
@@ -103,8 +104,19 @@ export function Translator() {
       const response = await fetch("/api/translate", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ text, direction }),
+        body: JSON.stringify({
+          text,
+          direction,
+          clientId: getClientIdentifier(),
+        }),
       });
+
+      if (response.status === 429) {
+        throw new Error(
+          "You’re cooking too fast. Give it a moment and try again.",
+        );
+      }
+
       const body: unknown = await response.json();
 
       if (!response.ok) {

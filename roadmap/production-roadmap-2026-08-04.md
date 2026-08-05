@@ -82,26 +82,32 @@ passed. The limitations and processing disclosure is published, and Milestone
 - [ ] Add abuse and cost controls to the public translation endpoint.
   **Why:** An unauthenticated model-backed endpoint can become an uncontrolled
   expense.
-- [ ] Set explicit request, timeout, retry, output-token, and latency limits.
+- [x] Set explicit request, timeout, retry, output-token, and latency limits.
   **Why:** Predictable boundaries protect reliability and cost.
-- [ ] Verify production-safe error logging without full user inputs or secrets.
+- [x] Verify production-safe error logging without full user inputs or secrets.
   **Why:** Logs must support diagnosis without storing sensitive text.
-- [ ] Add a stable, privacy-preserving OpenAI `safety_identifier` strategy.
+- [x] Add a stable, privacy-preserving OpenAI `safety_identifier` strategy.
   **Why:** It improves abuse detection without sending identifying information.
 - [ ] Confirm preview and production environment configuration.
   **Why:** Model, key, flags, and branch behavior must not be inferred at deploy
   time.
-- [ ] Audit dependencies, secrets, screenshots, research data, and repository
+  **Status:** The intended matrix is documented; verification awaits creation
+  of the Vercel project.
+- [x] Audit dependencies, secrets, screenshots, research data, and repository
   contents.
   **Why:** A public release must not expose sensitive material accidentally.
 - [ ] Add a minimal deployed-route smoke verification.
   **Why:** A successful framework deployment does not prove model integration.
+- [x] Add request-level cost telemetry.
+  **Why:** Per-request token and model data is necessary to detect costly
+  regressions before aggregate usage becomes surprising.
+- [x] Add Vercel Web Analytics and performance monitoring.
+  **Why:** Launch decisions require basic evidence about real usage and client
+  performance.
 
 ### Nice to Have
 
-- [ ] Add request-level cost telemetry.
 - [ ] Add structured error aggregation and alerts.
-- [ ] Add Vercel Web Analytics and performance monitoring.
 
 ## Milestone 4 — Release-Candidate Validation
 

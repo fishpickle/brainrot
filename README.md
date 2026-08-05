@@ -35,6 +35,11 @@ environment variables. `OPENAI_MODEL` is optional and defaults to
 `NEXT_PUBLIC_ENABLE_LOCAL_FEEDBACK` is development-only and must remain unset
 or `false` in production.
 
+Web Analytics and Speed Insights are included through Vercel's first-party
+packages and become active after they are enabled for the Vercel project.
+Successful translation requests emit structured token and latency telemetry to
+the server runtime logs without input text, output text, or browser identifiers.
+
 ## Launch baseline
 
 - Prompt: `v6`

@@ -3,6 +3,10 @@ import { z } from "zod";
 import { promptVersions } from "@/lib/prompts/types";
 
 export const MAX_INPUT_LENGTH = 2_000;
+export const MAX_REQUEST_BYTES = 8_192;
+export const MAX_OUTPUT_TOKENS = 1_200;
+export const OPENAI_REQUEST_TIMEOUT_MS = 12_000;
+export const OPENAI_MAX_RETRIES = 1;
 
 export const translationRequestSchema = z
   .object({
@@ -13,6 +17,7 @@ export const translationRequestSchema = z
       .max(MAX_INPUT_LENGTH, `Keep it under ${MAX_INPUT_LENGTH} characters.`),
     direction: z.enum(["standard-to-alpha", "alpha-to-standard"]),
     promptVersion: z.enum(promptVersions).optional(),
+    clientId: z.string().uuid(),
   })
   .strict();
 

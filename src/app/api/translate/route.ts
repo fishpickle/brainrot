@@ -1,3 +1,5 @@
+import { createHash } from "node:crypto";
+
 import OpenAI from "openai";
 import { zodTextFormat } from "openai/helpers/zod";
 import { NextResponse } from "next/server";
@@ -7,6 +9,10 @@ import {
   getTranslationPrompt,
 } from "@/lib/prompts";
 import {
+  MAX_OUTPUT_TOKENS,
+  MAX_REQUEST_BYTES,
+  OPENAI_MAX_RETRIES,
+  OPENAI_REQUEST_TIMEOUT_MS,
   translationRequestSchema,
   translationResponseSchema,
 } from "@/lib/translation";
@@ -20,12 +26,50 @@ function getOpenAI() {
   if (!client) {
     client = new OpenAI({
       apiKey: process.env.OPENAI_API_KEY,
-      timeout: 12_000,
-      maxRetries: 1,
+      timeout: OPENAI_REQUEST_TIMEOUT_MS,
+      maxRetries: OPENAI_MAX_RETRIES,
     });
   }
 
   return client;
+}
+
+function getSafetyIdentifier(clientId: string) {
+  return createHash("sha256")
+    .update(`gen-alpha-translator:v1:${clientId}`)
+    .digest("hex");
+}
+
+async function parseRequestBody(request: Request) {
+  const contentType = request.headers.get("content-type");
+
+  if (!contentType?.toLowerCase().startsWith("application/json")) {
+    return {
+      error: "The request must use application/json.",
+      status: 415,
+    } as const;
+  }
+
+  const declaredLength = Number(request.headers.get("content-length"));
+
+  if (Number.isFinite(declaredLength) && declaredLength > MAX_REQUEST_BYTES) {
+    return { error: "The request is too large.", status: 413 } as const;
+  }
+
+  const rawBody = await request.text();
+
+  if (Buffer.byteLength(rawBody, "utf8") > MAX_REQUEST_BYTES) {
+    return { error: "The request is too large.", status: 413 } as const;
+  }
+
+  try {
+    return { body: JSON.parse(rawBody) as unknown } as const;
+  } catch {
+    return {
+      error: "The request must contain valid JSON.",
+      status: 400,
+    } as const;
+  }
 }
 
 function getModel() {
@@ -54,6 +98,8 @@ function logTranslationError(error: unknown) {
 }
 
 export async function POST(request: Request) {
+  const startedAt = Date.now();
+
   if (!process.env.OPENAI_API_KEY) {
     return NextResponse.json(
       { error: "Translation is temporarily unavailable." },
@@ -61,18 +107,25 @@ export async function POST(request: Request) {
     );
   }
 
-  let body: unknown;
+  let requestBody: Awaited<ReturnType<typeof parseRequestBody>>;
 
   try {
-    body = await request.json();
+    requestBody = await parseRequestBody(request);
   } catch {
     return NextResponse.json(
-      { error: "The request must contain valid JSON." },
+      { error: "The request could not be read." },
       { status: 400 },
     );
   }
 
-  const parsedRequest = translationRequestSchema.safeParse(body);
+  if ("error" in requestBody) {
+    return NextResponse.json(
+      { error: requestBody.error },
+      { status: requestBody.status },
+    );
+  }
+
+  const parsedRequest = translationRequestSchema.safeParse(requestBody.body);
 
   if (!parsedRequest.success) {
     return NextResponse.json(
@@ -89,10 +142,13 @@ export async function POST(request: Request) {
     const prompt = getTranslationPrompt(
       parsedRequest.data.promptVersion ?? defaultPromptVersion,
     );
+    const model = getModel();
     const response = await getOpenAI().responses.parse({
-      model: getModel(),
+      model,
+      store: false,
+      safety_identifier: getSafetyIdentifier(parsedRequest.data.clientId),
       reasoning: { effort: "none" },
-      max_output_tokens: 1_200,
+      max_output_tokens: MAX_OUTPUT_TOKENS,
       instructions: prompt.buildInstructions({
         direction: parsedRequest.data.direction,
       }),
@@ -112,6 +168,30 @@ export async function POST(request: Request) {
     if (!parsedResponse.success) {
       throw new Error("The model returned an invalid translation.");
     }
+
+    console.log(
+      JSON.stringify({
+        level: "info",
+        event: "translation.completed",
+        route: "/api/translate",
+        requestId: request.headers.get("x-vercel-id"),
+        responseId: response.id,
+        promptVersion: prompt.version,
+        model,
+        direction: parsedRequest.data.direction,
+        inputCharacters: parsedRequest.data.text.length,
+        inputTokens: response.usage?.input_tokens ?? null,
+        cachedInputTokens:
+          response.usage?.input_tokens_details.cached_tokens ?? null,
+        cacheWriteTokens:
+          response.usage?.input_tokens_details.cache_write_tokens ?? null,
+        outputTokens: response.usage?.output_tokens ?? null,
+        reasoningTokens:
+          response.usage?.output_tokens_details.reasoning_tokens ?? null,
+        totalTokens: response.usage?.total_tokens ?? null,
+        durationMs: Date.now() - startedAt,
+      }),
+    );
 
     return NextResponse.json(parsedResponse.data, {
       headers: { "X-Prompt-Version": prompt.version },
