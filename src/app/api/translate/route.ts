@@ -138,6 +138,17 @@ export async function POST(request: Request) {
     );
   }
 
+  if (
+    process.env.NODE_ENV === "production" &&
+    parsedRequest.data.promptVersion &&
+    parsedRequest.data.promptVersion !== defaultPromptVersion
+  ) {
+    return NextResponse.json(
+      { error: "Only the current translation prompt is available." },
+      { status: 400 },
+    );
+  }
+
   try {
     const prompt = getTranslationPrompt(
       parsedRequest.data.promptVersion ?? defaultPromptVersion,

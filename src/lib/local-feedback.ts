@@ -142,11 +142,11 @@ function migrateLegacyFeedback(
 }
 
 export function readLocalFeedback(): LocalFeedbackRecord[] {
-  const stored = window.localStorage.getItem(STORAGE_KEY);
-
-  if (!stored) return [];
-
   try {
+    const stored = window.localStorage.getItem(STORAGE_KEY);
+
+    if (!stored) return [];
+
     const json: unknown = JSON.parse(stored);
     const parsed = localFeedbackSchema.safeParse(json);
 

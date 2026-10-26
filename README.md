@@ -24,7 +24,29 @@ Open [http://localhost:3000](http://localhost:3000).
 ```bash
 npm run lint
 npm run build
+npm exec playwright install chromium webkit
+npm test
 ```
+
+The tests use a production build, mock successful browser translations, and
+exercise request validation and provider failures without paid API calls.
+They cover desktop Chromium plus mobile Chromium and WebKit emulation;
+physical-device Safari and Chrome checks remain a release task. GitHub Actions
+runs the audit, lint, build, and tests on pushes and pull requests.
+
+Production accepts only the current prompt. Historical prompt versions remain
+available through the development server for regression comparisons.
+Provider requests have a 12-second timeout and no automatic retries so they
+fit within the route's 15-second execution budget.
+
+For an opt-in live check, start the production build with
+`npm run start -- --port 3108`, then run `node scripts/smoke-live.mjs`.
+This makes six real provider requests using synthetic inputs and writes two
+browser screenshots to `/tmp`. Set `SMOKE_BASE_URL` to check another deployment.
+It verifies integration; review the printed translations for semantic quality.
+The URL can also be passed as the first script argument. For protected previews,
+run it through `vercel env run -- node scripts/smoke-live.mjs <preview-url>`;
+the runner scopes the short-lived Vercel OIDC header to that deployment origin.
 
 ## Vercel
 

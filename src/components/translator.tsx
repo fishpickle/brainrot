@@ -146,7 +146,9 @@ export function Translator() {
 
       setResult({
         ...completedTranslation,
-        runNumber: getNextRunNumber(completedTranslation),
+        runNumber: localFeedbackEnabled
+          ? getNextRunNumber(completedTranslation)
+          : 1,
       });
     } catch (caughtError) {
       setError(
