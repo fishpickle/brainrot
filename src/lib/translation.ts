@@ -4,7 +4,7 @@ import { promptVersions } from "@/lib/prompts/types";
 
 export const MAX_INPUT_LENGTH = 2_000;
 export const MAX_REQUEST_BYTES = 8_192;
-export const MAX_OUTPUT_TOKENS = 1_200;
+export const MAX_OUTPUT_TOKENS = 2_000;
 export const OPENAI_REQUEST_TIMEOUT_MS = 12_000;
 // Keep one provider attempt within the route's 15-second execution budget.
 export const OPENAI_MAX_RETRIES = 0;

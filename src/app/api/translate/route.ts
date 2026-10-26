@@ -154,12 +154,17 @@ export async function POST(request: Request) {
       parsedRequest.data.promptVersion ?? defaultPromptVersion,
     );
     const model = getModel();
+    // Long translations need room for both expanded wording and explanations.
+    const outputTokenLimit = Math.min(
+      MAX_OUTPUT_TOKENS,
+      Math.max(1_200, parsedRequest.data.text.length),
+    );
     const response = await getOpenAI().responses.parse({
       model,
       store: false,
       safety_identifier: getSafetyIdentifier(parsedRequest.data.clientId),
       reasoning: { effort: "none" },
-      max_output_tokens: MAX_OUTPUT_TOKENS,
+      max_output_tokens: outputTokenLimit,
       instructions: prompt.buildInstructions({
         direction: parsedRequest.data.direction,
       }),
@@ -176,7 +181,23 @@ export async function POST(request: Request) {
       response.output_parsed,
     );
 
-    if (!parsedResponse.success) {
+    if (response.status !== "completed" || !parsedResponse.success) {
+      console.error(JSON.stringify({
+        level: "error",
+        event: "translation.invalid_response",
+        responseId: response.id,
+        model,
+        promptVersion: prompt.version,
+        status: response.status,
+        incompleteReason: response.incomplete_details?.reason ?? null,
+        outputTokenLimit,
+        inputTokens: response.usage?.input_tokens ?? null,
+        outputTokens: response.usage?.output_tokens ?? null,
+        outputTypes: response.output.map((item) => item.type),
+        validationIssues: parsedResponse.success ? [] : parsedResponse.error.issues.map(
+          ({ code, path }) => ({ code, path }),
+        ),
+      }));
       throw new Error("The model returned an invalid translation.");
     }
 
@@ -191,6 +212,7 @@ export async function POST(request: Request) {
         model,
         direction: parsedRequest.data.direction,
         inputCharacters: parsedRequest.data.text.length,
+        outputTokenLimit,
         inputTokens: response.usage?.input_tokens ?? null,
         cachedInputTokens:
           response.usage?.input_tokens_details.cached_tokens ?? null,

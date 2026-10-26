@@ -38,6 +38,9 @@ Production accepts only the current prompt. Historical prompt versions remain
 available through the development server for regression comparisons.
 Provider requests have a 12-second timeout and no automatic retries so they
 fit within the route's 15-second execution budget.
+Output is capped at 1,200 tokens for short input, rising with input length to
+2,000 tokens for a full-length request. Incomplete or invalid model responses
+return a retryable user-facing error and log metadata without translation text.
 
 For an opt-in live check, start the production build with
 `npm run start -- --port 3108`, then run `node scripts/smoke-live.mjs`.
