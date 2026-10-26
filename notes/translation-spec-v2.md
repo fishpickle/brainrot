@@ -2,7 +2,7 @@
 
 **Status:** Canonical
 
-**Last updated:** 2026-07-30
+**Last updated:** 2026-10-26
 
 **Applies to:** Standard English ↔ Gen Alpha translation
 
@@ -33,6 +33,9 @@ The product should:
 - Explain only noteworthy idioms, inventions, ambiguity, or meaning-sensitive
   changes.
 - Handle paragraphs as well as short phrases.
+
+The MVP accepts up to 500 characters per request in either direction. The UI
+and API enforce the same limit; longer text must be submitted in smaller parts.
 
 Humor and delight are product goals within the fidelity boundaries below.
 

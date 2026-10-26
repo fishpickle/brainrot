@@ -154,11 +154,7 @@ export async function POST(request: Request) {
       parsedRequest.data.promptVersion ?? defaultPromptVersion,
     );
     const model = getModel();
-    // Long translations need room for both expanded wording and explanations.
-    const outputTokenLimit = Math.min(
-      MAX_OUTPUT_TOKENS,
-      Math.max(1_200, parsedRequest.data.text.length),
-    );
+    const outputTokenLimit = MAX_OUTPUT_TOKENS;
     const response = await getOpenAI().responses.parse({
       model,
       store: false,

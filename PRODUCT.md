@@ -22,7 +22,7 @@ Unlike joke generators, this should feel like a real translation tool.
 - Copy-to-clipboard action
 - Mobile-first responsive interface
 - Light theme matching the approved launch design
-- 2,000-character input limit
+- 500-character input limit
 
 The former Mild, Cooked, and Ohio Max intensity selector was removed after
 evaluation showed that the levels were not reliably differentiated and did not

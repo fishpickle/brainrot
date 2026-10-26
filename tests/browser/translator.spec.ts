@@ -73,10 +73,29 @@ test("production endpoint rejects invalid and retired contracts", async ({ reque
   const retired = await request.post("/api/translate", { data: { ...body, promptVersion: "v1" } });
   expect(retired.status()).toBe(400);
   expect(await retired.json()).toEqual({ error: "Only the current translation prompt is available." });
-  expect((await request.post("/api/translate", { data: { ...body, text: "x".repeat(2001) } })).status()).toBe(400);
+  const oversized = await request.post("/api/translate", { data: { ...body, text: "x".repeat(501) } });
+  expect(oversized.status()).toBe(400);
+  expect(await oversized.json()).toEqual({ error: "Use 500 characters or fewer." });
   expect((await request.post("/api/translate", { data: "not json" })).status()).toBe(415);
   expect((await request.post("/api/translate", {
     data: "{", headers: { "Content-Type": "application/json" },
   })).status()).toBe(400);
   expect((await request.post("/api/translate", { data: { ...body, text: "x".repeat(9000) } })).status()).toBe(413);
+});
+
+test("input stops at 500 characters and submits the exact boundary", async ({ page }) => {
+  let submittedText: string | undefined;
+  await page.route("**/api/translate", async (route) => {
+    submittedText = route.request().postDataJSON().text;
+    await route.fulfill({ json: { translation: "Boundary translation.", explanations: [] } });
+  });
+  await page.goto("/");
+  const input = page.getByLabel("Text to translate");
+  await expect(input).toHaveAttribute("maxlength", "500");
+  await input.fill("a".repeat(501));
+  await expect(input).toHaveValue("a".repeat(500));
+  await expect(page.getByText("500/500", { exact: true })).toBeVisible();
+  await page.getByRole("button", { name: "Cook it", exact: true }).click();
+  await expect(page.getByText("Boundary translation.", { exact: true })).toBeVisible();
+  expect(submittedText).toBe("a".repeat(500));
 });

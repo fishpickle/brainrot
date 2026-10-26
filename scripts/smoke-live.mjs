@@ -1,5 +1,6 @@
-// Opt-in check: six real translations against an already running server.
+// Opt-in check: eight real translations against an already running server.
 import { chromium, webkit, devices } from "@playwright/test";
+import { apiSmokeCases } from "./smoke-cases.mjs";
 
 const baseURL = process.argv[2] || process.env.SMOKE_BASE_URL || "http://127.0.0.1:3108";
 const origin = new URL(baseURL).origin;
@@ -49,12 +50,7 @@ for (const [engine, direction, text] of [
   }
 }
 
-for (const [name, text, direction] of [
-  ["factual", "The museum closes at 5 p.m. on Tuesday for maintenance.", "standard-to-alpha"],
-  ["profanity", "This fucking printer broke again.", "standard-to-alpha"],
-  ["plain-reverse", "The meeting starts at noon.", "alpha-to-standard"],
-  ["long-input", "The club meets on Tuesday at noon. Bring a notebook and a pencil. ".repeat(32).slice(0, 2000), "standard-to-alpha"],
-]) {
+for (const [name, text, direction] of apiSmokeCases) {
   const startedAt = Date.now();
   const response = await fetch(`${baseURL}/api/translate`, {
     method: "POST", headers: { "Content-Type": "application/json", ...protectionHeaders },
@@ -69,3 +65,14 @@ for (const [name, text, direction] of [
   if (!response.ok || !body.translation) throw new Error("Live API translation failed");
 }
 console.log(JSON.stringify({ completed: samples.length, minDurationMs: Math.min(...samples.map(sample => sample.durationMs)), maxDurationMs: Math.max(...samples.map(sample => sample.durationMs)) }));
+
+const oversized = await fetch(`${baseURL}/api/translate`, {
+  method: "POST", headers: { "Content-Type": "application/json", ...protectionHeaders },
+  redirect: "error", signal: AbortSignal.timeout(20_000),
+  body: JSON.stringify({ text: "x".repeat(501), direction: "standard-to-alpha", clientId: crypto.randomUUID() }),
+});
+const oversizedBody = await oversized.json();
+if (oversized.status !== 400 || oversizedBody.error !== "Use 500 characters or fewer.") {
+  throw new Error("The deployed endpoint did not enforce the 500-character limit.");
+}
+console.log(JSON.stringify({ case: "over-limit-501", status: oversized.status }));

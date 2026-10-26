@@ -38,13 +38,13 @@ Production accepts only the current prompt. Historical prompt versions remain
 available through the development server for regression comparisons.
 Provider requests have a 12-second timeout and no automatic retries so they
 fit within the route's 15-second execution budget.
-Output is capped at 1,200 tokens for short input, rising with input length to
-2,000 tokens for a full-length request. Incomplete or invalid model responses
+Input is limited to 500 characters in both the UI and API. Output is capped at
+1,200 tokens to leave room for the translation and explanations. Incomplete or invalid model responses
 return a retryable user-facing error and log metadata without translation text.
 
 For an opt-in live check, start the production build with
 `npm run start -- --port 3108`, then run `node scripts/smoke-live.mjs`.
-This makes six real provider requests using synthetic inputs and writes two
+This makes eight real provider requests using synthetic inputs and writes two
 browser screenshots to `/tmp`. Set `SMOKE_BASE_URL` to check another deployment.
 It verifies integration; review the printed translations for semantic quality.
 The URL can also be passed as the first script argument. For protected previews,
